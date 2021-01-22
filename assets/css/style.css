@@ -5,7 +5,9 @@
     padding:0;
     border:0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     
     font-family: 'Oswald', sans-serif;     
@@ -27,3 +29,82 @@ body {
     font-size: 20px; 
  }
  /* ---------- NAVIGATION ---------- */
+  .logo {
+    width: 50%;
+    height: 50%;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+.navbar {
+    background-color: rgb(87 171 36 / 91%);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: rgb(219 226 215);
+    margin-bottom: 0;
+    width: 100%;
+    border: 0;
+}
+.navbar-brand {
+    margin-right: 0;
+}
+.navbar .navbar-brand {
+    font-weight:400;
+    padding: 0;
+}
+
+.navbar .navbar-nav a {
+    font-weight: 400;
+}
+
+.navbar .navbar-toggler {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;  
+}
+.navbar-light .navbar-nav .nav-link:hover {
+     color: black;
+}
+
+    .underline {
+        text-decoration: none;
+        position: relative;
+    }
+
+    .underline:after {
+        position: absolute;
+        content:'';
+        height: 0.15rem;
+        bottom: 8px;
+        
+
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 10%;
+        background:transparent;
+
+        -o-transition: .7s;
+        -webkit-transition: .7s;
+        transition: .7s;
+    }
+
+    .underline:hover:after {
+        width: 80%;
+        background: black;
+    }
+
+
+
+    
+
