@@ -104,6 +104,13 @@ body {
         background: black;
     }
 
+    hr {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 1px solid rgb(0 0 0 / 44%);
+}
+
 /* ---------- FOOTER ---------- */
 footer {
     width: 100%;
