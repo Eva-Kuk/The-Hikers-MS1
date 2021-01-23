@@ -19,7 +19,7 @@ body {
 
  h1 {
     font-family: 'Special Elite', cursive;
-    font-size: 38px;
+    font-size: 3px;
  }
  h2 {
      font-family: 'Special Elite', cursive;
@@ -111,6 +111,56 @@ body {
     border-top: 1px solid rgb(0 0 0 / 44%);
 }
 
+/* ---------- Home/welcome page/jumbotron ---------- */
+.welcome-sign {
+    width: 59rem;
+}
+.welcome-sign-top {
+font-size: 2.8rem;
+color: white;
+}
+
+.welcome-sign-bottom {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.home-container{
+    height: 100vh;
+    background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: rgb(6 6 6 / 53%); 
+    margin-top: 20rem;
+}
+
+
+
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    border-radius:0.9rem;
+}
+
+.btn-primary {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.btn-primary:hover{
+    background-color: green;
+    border-color: green;
+}
+
 /* ---------- FOOTER ---------- */
 footer {
     width: 100%;
@@ -196,5 +246,14 @@ footer .contact {
     font-size:0.9rem;
 }
  }
+/*-----Media to Welcome sign------*/
+  @media screen and (max-width: 937px) { 
+      .welcome-sign-top {
+    font-size: 2.0rem;
+}
 
-    
+.lead {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+  } 
