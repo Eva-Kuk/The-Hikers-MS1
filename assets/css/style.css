@@ -19,7 +19,7 @@ body {
 
  h1 {
     font-family: 'Special Elite', cursive;
-    font-size: 3px;
+    font-size: 38px;
  }
  h2 {
      font-family: 'Special Elite', cursive;
@@ -129,6 +129,8 @@ color: white;
 
 .home-container{
     height: 100vh;
+    
+/* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
     background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -139,9 +141,8 @@ color: white;
 .jumbotron {
     background-color: rgb(6 6 6 / 53%); 
     margin-top: 20rem;
+    border-radius:0.9rem;
 }
-
-
 
 .btn-lg {
     padding: .5rem 1rem;
@@ -161,6 +162,25 @@ color: white;
     border-color: green;
 }
 
+/* ---------- ABOUT ---------- */
+
+
+
+/* ---------- GALLERY ---------- */
+
+
+
+
+
+
+/* ---------- CONTACT ---------- */
+
+
+
+
+
+
+
 /* ---------- FOOTER ---------- */
 footer {
     width: 100%;
@@ -176,21 +196,20 @@ footer {
 	position: fixed;
 	z-index: 1020;
 }
-
-dl, ol, ul {
+ ul {
     margin-top: 0;
     margin-bottom: 0rem;
 }
+
 footer .contact {
 	width: 100%;
     font-weight: 300;
-    align-content: center;
     letter-spacing: 2px;
     margin: 0px 0px;
     margin-left: 15px;
 }
 
-.contact-links li {
+.contact-links-item {
     display: inline-block;
 }
 
