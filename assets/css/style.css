@@ -15,8 +15,10 @@ body {
     background-color: rgb(48, 48, 48);
     color:rgb(226, 226, 226);
     margin:0;
-    height: 100vh;
+
+    height:100vh;
     width: 100vw;
+   
 }
 
  h1 {
@@ -117,14 +119,14 @@ body {
 
 /* ---------- Home/welcome page/jumbotron ---------- */
     .welcome-sign {
-        width: 59rem;
+        width: 75%;
     }
     .welcome-sign-top {
     font-size: 2.8rem;
     color: white;
     }
 
-    .welcome-sign-bottom {
+    .sign-button {
         font-size: 1.4rem;
         font-weight: 300;
         letter-spacing: 2px;
@@ -140,6 +142,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    z-index: 1;
 }
 
 .jumbotron {
@@ -241,8 +248,14 @@ h3 {
 
 /* ---------- CONTACT ---------- */
 
+contact-sent-btn{
+    width
+}
 
-
+.input-box{
+    width: 75%;
+    display: block;
+}
 
 
 /* ---------- FOOTER ---------- */
