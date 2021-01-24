@@ -26,6 +26,7 @@ body {
      font-size: 24px;
  }
  h3 {
+    font-family: 'Special Elite', cursive;
     font-size: 20px; 
  }
  /* ---------- NAVIGATION ---------- */
@@ -163,9 +164,77 @@ color: white;
 }
 
 /* ---------- ABOUT ---------- */
+#about {
 
+}
+.content-item {
+    float: left;
+}
+.content-item-text {
+    float: left;
+}
+.about{
+    width: 70%;
+}
+.about-content {
+        margin-top: 12px;
+}
 
+.content-item-text {
+   text-align: justify; 
+}
 
+h2 {
+    text-align: center;
+    font-weight: 700;
+  
+}
+
+.heading-text {
+    background-color: transparent;
+    text-transform: uppercase;
+   
+	margin: 50px 0px;
+	padding: 5px 2px;
+    text-align: center;
+    letter-spacing: 2px;
+	border-radius: 8px;
+        -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 0px;
+     align-items: center;
+}
+.heading-text h1{
+    padding-top: 8px;
+    margin-bottom: 0px;
+}
+.container {
+  align-items: center;
+}
+
+.heading-text {
+    margin:8px 0px;
+}
+
+.contact-email {
+    color: black;
+}
+.contact-email:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.7rem;
+}
+h3 {
+ 
+    font-size: 20px;
+    text-align: center;
+}
 /* ---------- GALLERY ---------- */
 
 
