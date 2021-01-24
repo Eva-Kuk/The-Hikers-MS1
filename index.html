@@ -49,7 +49,7 @@
     <section id="welcome">
         <!---------------------- Home/welcome page  ----------------------->
         <!------- CREDIT: inspiration/code snipped from Whiskey project in Bootstrap ------->
-        <div class="container-fluid d-flex justify-content-center home-container">
+        <div class="container-fluid  justify-content-center home-container">
             <div class="row">
                 <div class="col-12">
                     <div class=" welcome-sign">
@@ -81,8 +81,8 @@
 
         <div class="container about-content">
             <div class="row  content-item">
-                <div class="col-md d-flex">
-                    <div class="card card-body flex-fill">
+                <div class="col-md">
+                    <div class="card card-body">
                         <img src="assets/images/about-team.jpg" class="card-img" alt="The hikers team">
                         <div class="card-desc">
                             <h3>Meet our team</h3>
@@ -109,7 +109,7 @@
                 <div class="col-12">
                     <h2><i class="fab fas fas fa-hiking"></i> Tour option to chose :</h2>
                     <p> We are organizing hiking tours from half day up to three days including a certified tour
-                        guide with a high sense of humor and include
+                        guide with a good sense of humor and include
                         different variations for the trails in the region you choose to go to, depending on your
                         time, desire, age and level of advancement,
                         we will select and organize a trip for you. The price is estimated depending on the number
@@ -164,10 +164,14 @@
 
 
         <section>
-        <!------------------------ Gallery page ------------------------------>
-
-
-
+            <!------------------------ Gallery page ------------------------------>
+            <div class="container">
+                <div class="row heading-text">
+                    <div class="col-12">
+                        <h1>Gallery</h1>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -184,28 +188,82 @@
 
         </section>
 
-        <section>
+        <section id="contact">
             <!----------------- Contact and Enquiry Form page --------------------->
+            <div class="container">
+                <div class="row heading-text">
+                    <div class="col">
+                        <h1>Contact and Enquiry Form</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row content-item-text">
+                    <div class="col">
+                        <h2>Contact Us</h2>
+                        <p>
+                            If you would like to leave a comment for us, have a questions about our tours, or the one
+                            you are interested in, call us on this number
+                            <a href="tel:+012345678" aria-label="Our Phone Number">
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                555 4657800
+                            </a>or fill out the contact form and write your enquiry and we will get back to you as soon
+                            as possible.
+                            If you would like to be up to date, join our group on facebook or instagram
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col">
+                    <form id="contact-form" autocomplete="off" aria-label="contact form">
+                        <fieldset>
+                            <legend>Contact form</legend>
+                            <div class="form-group">
+                                <label for="full-name">Your Full Name:</label>
+                                <input type="text" class="input-box" id="full-name" name="full-name"
+                                    placeholder="Your full name..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="text" class="input-box" id="email" name="email"
+                                    placeholder="Your email address..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tours">Tours available</label>
+                                <select id="tours" name="tours" class="input-box">
+                                    <option value="wiclow-tour">Wiclow mountain tour</option>
+                                    <option value="conemara-tour">Conemara mountain tour</option>
+                                    <option value="clifs-of-mohers-tour">Cliffs of moher tour</option>
+                                    <option value="other-tour">Other tour</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" class="input-box">
+                                    <option value="tours">Enquire about tours available</option>
+                                    <option value="different-tour">Enquire about different tour</option>
+                                    <option value="testimonials">Write testimonial</option>
+                                    <option value="other-tour">Other query</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="text">Your Message </label>
+                                <textarea id="text" name="text" class="input-box" cols="40" rows="10"
+                                    placeholder="Your enquire/comment/ here..."></textarea>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary" value="Send" aria-label="Send Form">Send</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </section>
+
 
 
 

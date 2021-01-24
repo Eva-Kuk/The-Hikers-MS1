@@ -12,22 +12,27 @@ body {
     
     font-family: 'Oswald', sans-serif;     
     font-size: 18px;
-    background-color: rgb(226, 226, 226);
-    color:rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
+    color:rgb(226, 226, 226);
     margin:0;
+    height: 100vh;
+    width: 100vw;
 }
 
  h1 {
     font-family: 'Special Elite', cursive;
     font-size: 38px;
+    color:rgb(226, 226, 226);
  }
  h2 {
      font-family: 'Special Elite', cursive;
      font-size: 24px;
+     color:rgb(48, 48, 48);
  }
  h3 {
     font-family: 'Special Elite', cursive;
     font-size: 20px; 
+    color: rgb(48, 48, 48);
  }
  /* ---------- NAVIGATION ---------- */
   .logo {
@@ -87,8 +92,6 @@ body {
         content:'';
         height: 0.15rem;
         bottom: 8px;
-        
-
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -113,23 +116,23 @@ body {
 }
 
 /* ---------- Home/welcome page/jumbotron ---------- */
-.welcome-sign {
-    width: 59rem;
-}
-.welcome-sign-top {
-font-size: 2.8rem;
-color: white;
-}
-
-.welcome-sign-bottom {
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 2px;
+    .welcome-sign {
+        width: 59rem;
+    }
+    .welcome-sign-top {
+    font-size: 2.8rem;
     color: white;
-}
+    }
 
-.home-container{
-    height: 100vh;
+    .welcome-sign-bottom {
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    .home-container{
+        height: 100vh;
     
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
     background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
@@ -164,15 +167,8 @@ color: white;
 }
 
 /* ---------- ABOUT ---------- */
-#about {
 
-}
-.content-item {
-    float: left;
-}
-.content-item-text {
-    float: left;
-}
+
 .about{
     width: 70%;
 }
@@ -229,6 +225,7 @@ h2 {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.7rem;
+    margin-bottom: 1rem;
 }
 h3 {
  
@@ -243,8 +240,6 @@ h3 {
 
 
 /* ---------- CONTACT ---------- */
-
-
 
 
 
