@@ -110,6 +110,15 @@ body {
     border: 0;
     border-top: 2px solid white;
 }
+ @media screen and (max-width: 576px){
+      .underline:after{
+          transition: none;
+      }
+      .underline:hover:after {
+        width: 0%;
+        background: transparent;
+    }
+ }
 
 /* ---------- Home/welcome page/jumbotron ---------- */
     .welcome-sign {
