@@ -5,9 +5,7 @@
     padding:0;
     border:0;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 body {
     
     font-family: 'Oswald', sans-serif;     
@@ -15,10 +13,8 @@ body {
     background-color: rgb(48, 48, 48);
     color:rgb(226, 226, 226);
     margin:0;
-
     height:100vh;
     width: 100vw;
-   
 }
 
  h1 {
@@ -56,7 +52,7 @@ body {
     padding-bottom: 0px;
     letter-spacing: 2px;
     font-size: 22px;
-    color: rgb(219 226 215);
+    color: rgb(226, 226, 226);
     margin-bottom: 0;
     width: 100%;
     border: 0;
@@ -99,7 +95,6 @@ body {
         right: 0;
         width: 10%;
         background:transparent;
-
         -o-transition: .7s;
         -webkit-transition: .7s;
         transition: .7s;
@@ -111,10 +106,9 @@ body {
     }
 
     hr {
-    margin-top: 3rem;
-    margin-bottom: 0rem;
+    height: 50%;
     border: 0;
-    border-top: 1px solid rgb(0 0 0 / 44%);
+    border-top: 2px solid white;
 }
 
 /* ---------- Home/welcome page/jumbotron ---------- */
@@ -175,11 +169,12 @@ body {
 
 /* ---------- ABOUT ---------- */
 
-
-#about{
-    width: 70%;
-    height: 600px;
+#position-about {
+    border-top:3px solid transparent;
+    margin-top: -3px;
+    height: 100vh;
 }
+
 .about-content {
         margin-top: 12px;
 }
@@ -208,8 +203,10 @@ h2 {
      align-items: center;
 }
 .heading-text h1{
-    padding-top: 8px;
-    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+        
 }
 .container {
   align-items: center;
@@ -219,13 +216,7 @@ h2 {
     margin:8px 0px;
 }
 
-.contact-email {
-    color: black;
-}
-.contact-email:hover {
-    color: white;
-    text-decoration: none;
-}
+
 
 .card-body {
     -ms-flex: 1 1 auto;
@@ -238,34 +229,19 @@ h3 {
  
     font-size: 20px;
     text-align: center;
+    margin-top: 23px;
 }
 
 /* ---------- TOURS ---------- */
+#position-tours {
+    border-top:3px solid transparent;
+    margin-top: -3px;
+    height: 100vh;
+}
 #tour {
     margin-right: 1rem;
+ 
 }
-
-
-
-
-
-
-/* ---------- GALLERY ---------- */
-#gallery{
-clear: both;
-  line-height: 0px; 
-  column-count:4 ;
-  column-gap: 0px;
-
-}
-#gallery img{
-    width: 100%;  
-}
-
-
-
-
-
 
 #image-tours {
    background-attachment: fixed;
@@ -282,11 +258,48 @@ clear: both;
     margin-bottom: 0px; 
 }
 
+
+
+
+/* ---------- GALLERY ---------- */
+#position-gallery{
+    border-top:3px solid transparent;
+    margin-top: -3px;
+    height: 100vh;
+}
+
+
+/* #gallery{
+clear: both;
+  line-height: 0px; 
+  column-count:4 ;
+  column-gap: 0px;
+
+}
+#gallery img{
+    width: 100%;  
+}
+
+*/
+
 /* ---------- CONTACT ---------- */
 /*
 .contact-sent-btn{
     width
 }*/
+.contact-details {
+    color:red;
+}
+.contact-details:hover {
+    color:green;
+    text-decoration: none;
+}
+
+#position-contact {
+    border-top:3px solid transparent;
+    margin-top: -3px;
+    height: 100vh;
+}
 
 .input-box{
     width: 75%;
@@ -347,7 +360,6 @@ footer .contact {
 
 .contact-links a:hover {
     color:black;
-    margin: auto 5%;
     font-weight: 300;
 }
 
@@ -393,6 +405,7 @@ footer .contact {
     font-size:0.9rem;
 }
  }
+ 
 /*-----Media to Welcome sign------*/
   @media screen and (max-width: 937px) { 
       .welcome-sign-top {
