@@ -203,8 +203,7 @@ h2 {
     text-align: center;
     letter-spacing: 2px;
 	border-radius: 8px;
-        -webkit-box-shadow: var(--box-shadow);
-    box-shadow: var(--box-shadow);
+
     margin-bottom: 0px;
      align-items: center;
 }
@@ -241,6 +240,16 @@ h3 {
     text-align: center;
 }
 /* ---------- GALLERY ---------- */
+#gallery{
+clear: both;
+  line-height: 0px; 
+  column-count:4 ;
+  column-gap: 0px;
+
+}
+#gallery img{
+    width: 100%;  
+}
 
 
 
@@ -249,7 +258,7 @@ h3 {
 
 #image-tours {
    background-attachment: fixed;
-   /* ---------- Credit Photo by Sebastian Voortman from Pexels ---------- */
+   /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
     background-image: url('../images/forest.jpg');
     background-position: center;
     background-size: cover;
@@ -263,10 +272,10 @@ h3 {
 }
 
 /* ---------- CONTACT ---------- */
-
-contact-sent-btn{
+/*
+.contact-sent-btn{
     width
-}
+}*/
 
 .input-box{
     width: 75%;

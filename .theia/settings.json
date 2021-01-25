@@ -19,5 +19,15 @@
       "**/core.mongo*": true,
       "**/core.python*": true
    },
-   "emmet.extensionsPath": ".theia"
+"emmet.extensionsPath": ".theia",
+"cSpell.words": [
+    "Arek",
+    "Hylands",
+    "Lukas",
+    "Medvedevas",
+    "Pexels",
+    "Sanman",
+    "Voortman",
+    "moher"
+]
 }
