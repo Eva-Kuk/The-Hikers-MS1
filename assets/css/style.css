@@ -239,6 +239,17 @@ h3 {
     font-size: 20px;
     text-align: center;
 }
+
+/* ---------- TOURS ---------- */
+#tour {
+    margin-right: 1rem;
+}
+
+
+
+
+
+
 /* ---------- GALLERY ---------- */
 #gallery{
 clear: both;
