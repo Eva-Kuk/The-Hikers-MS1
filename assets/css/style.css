@@ -34,8 +34,8 @@ body {
  }
  /* ---------- NAVIGATION ---------- */
   .logo {
-    width: 50%;
-    height: 50%;
+    width: 110px;
+    height: 58px;
     margin-left: 0px;
     padding-left: 10px;
     padding-top: 5px;
@@ -110,15 +110,7 @@ body {
     border: 0;
     border-top: 2px solid white;
 }
- @media screen and (max-width: 576px){
-      .underline:after{
-          transition: none;
-      }
-      .underline:hover:after {
-        width: 0%;
-        background: transparent;
-    }
- }
+
 
 /* ---------- Home/welcome page/jumbotron ---------- */
     .welcome-sign {
@@ -426,3 +418,14 @@ footer .contact {
     letter-spacing: 2px;
 }
   } 
+
+  /* ------Media query for navbar links----*/
+   @media screen and (max-width: 576px){
+      .underline:after{
+          transition: none;
+      }
+      .underline:hover:after {
+        width: 0%;
+        background: transparent;
+    }
+ }
