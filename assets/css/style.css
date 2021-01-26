@@ -5,9 +5,7 @@
     padding:0;
     border:0;
 }
-
 body {
-    
     font-family: 'Oswald', sans-serif;     
     font-size: 18px;
     background-color: rgb(48, 48, 48);
@@ -16,19 +14,20 @@ body {
     height:100vh;
     width: 100vw;
 }
-
+h1,
+h2,
+h3 {
+ font-family: 'Special Elite', cursive;
+}
  h1 {
-    font-family: 'Special Elite', cursive;
-    font-size: 38px;
+    font-size: 29px;
     color:rgb(226, 226, 226);
  }
  h2 {
-     font-family: 'Special Elite', cursive;
      font-size: 24px;
      color:rgb(48, 48, 48);
  }
  h3 {
-    font-family: 'Special Elite', cursive;
     font-size: 20px; 
     color: rgb(48, 48, 48);
  }
@@ -41,7 +40,6 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
  }
-
 #navbarNav {
     justify-content: flex-end;
 }
@@ -75,6 +73,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;  
+    text-align: center;
 }
 .navbar-light .navbar-nav .nav-link:hover {
      color: black;
@@ -106,24 +105,29 @@ body {
 }
 
 /* ---------------- Home/welcome page/jumbotron ---------------- */
-.welcome-sign {
-    width: 75%;
-}
+
 .welcome-sign-top {
-    font-size: 2.8rem;
-    letter-spacing: 2px;
+    font-size: 24px;
+    letter-spacing: 1px;
     color: white;
+    margin-bottom: 5px;
 }
 .welcome-sign-bottom {
-    font-size: 1.9rem;
+    font-size: 18px;
     letter-spacing: 1px;
-    margin-bottom: 35px;
+   
 }
-
+ hr {   
+    width: 35%;
+    height:3px;
+    border: 0;
+    border: 0;
+    background-color: red;
+    
+ }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
 /*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
 .home-container{
-
 background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -134,10 +138,9 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     width: auto;
     margin-bottom: 0px;
 }
-
 .jumbotron {
     background-color: rgb(6 6 6 / 53%); 
-    margin-top: 20rem;
+  
     border-radius:0.9rem;
 }
 .sign-button {
@@ -146,18 +149,23 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     letter-spacing: 2px;
     color: white;
 }
-    
+
 .btn-lg {
-    padding: .5rem 1rem;
-    font-size: 0.8rem;
+     font-size: 0.6rem;
     line-height: 1.5;
     border-radius:0.9rem;
+    margin-top: 2px;
 }
 
 .btn-primary {
     color: white;
     background-color: red;
     border-color: red;
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 }
 
 .btn-primary:hover{
@@ -232,10 +240,10 @@ h3 {
 
 /* ---------- TOURS ---------- */
 #position-tours {
-    border-top:3px solid transparent;
-    margin-top: -3px;
-    height: 100vh;
-    margin-right: 1rem;
+    border-top:1px solid transparent;
+    margin-top: -1px;
+    height: auto;
+   /* margin-right: 1rem;*/
 }
 
 #image-tours {
@@ -257,14 +265,14 @@ h3 {
 #position-gallery{
     border-top:3px solid transparent;
     margin-top: -3px;
-    height: 100vh;
+  
 }
 .image-style {
     max-width: 100%;
     height: auto;
-    border: 11px solid white;
+    border: 7px solid white;
     border-radius: 5px;
-    margin: 5%;
+    
 }
 
 
@@ -278,7 +286,24 @@ h3 {
 /*
 .contact-sent-btn{
     width
-}*/
+}
+
+.btn-lg{
+    margin-top: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+*/
+#contact{
+   padding-bottom: 2rem;
+}
+
+
+
+.margin-right {
+    margin-right: 10px;
+}
 .contact-details {
     color:red;
 }
@@ -294,8 +319,11 @@ h3 {
 }
 
 .input-box{
-    width: 75%;
+    width: 100%;
     display: block;
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
 }
 
 
@@ -356,7 +384,7 @@ footer .contact {
 
 .contact-links-item a {
     color: white;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     padding-left: 2px;
     text-decoration: none;
 }
@@ -386,21 +414,83 @@ footer .contact {
 .social-network i:hover{
      color:black;
 }
-
-
+/*-----Media to heading-text on each section/page------*/
+@media screen and (min-width: 341px) {
+    h1 {
+    font-size: 38px;
+}
+}
 
 /*-----Media to Footer------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
     font-size:100%;
 }
-
 footer .contact {
     font-size:0.9rem;
 }
  }
  
 /*-----Media to Welcome sign------*/
+ @media screen and (min-width:380px){
+.welcome-sign-top {
+    font-size: 28px;
+    letter-spacing: 1px;
+   
+}
+.welcome-sign-bottom {
+    font-size: 20px;
+    letter-spacing: 1px;
+   
+ }
+ @media screen and (min-width:423px){
+.welcome-sign-top {
+    font-size: 32px;
+    letter-spacing: 1px;
+   
+}
+.welcome-sign-bottom {
+    font-size: 22px;
+    letter-spacing: 1px;
+   
+ }
+ @media screen and (min-width:516px){
+.welcome-sign-top {
+    font-size: 36px;
+    letter-spacing: 1px;
+   
+}
+.welcome-sign-bottom {
+    font-size: 23px;
+    letter-spacing: 1px;
+   
+ }
+ @media screen and (min-width:570px){
+.welcome-sign-top {
+    font-size: 40px;
+    letter-spacing: 1px;
+   
+}
+.welcome-sign-bottom {
+    font-size: 26px;
+    letter-spacing: 1px;
+   
+ }
+@media screen and (min-width:766px){
+.welcome-sign-top {
+    font-size: 48px;
+    letter-spacing: 1px;
+   
+}
+.welcome-sign-bottom {
+    font-size: 28px;
+    letter-spacing: 1px;
+   
+ }
+
+
+
+/*
   @media screen and (min-width: 861px) { 
     .welcome-sign-top {
         font-size: 1.6rem;
@@ -456,9 +546,9 @@ footer .contact {
     font-size: 1.9rem;
     letter-spacing: 2px;
     }
-
-
- }
+}
+*/
+ 
   /* ------Media query for navbar links----*/
    @media screen and (min-width: 576px){
       .underline:after{
