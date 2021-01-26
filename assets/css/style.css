@@ -32,7 +32,7 @@ body {
     font-size: 20px; 
     color: rgb(48, 48, 48);
  }
- /* ---------- NAVIGATION ---------- */
+ /* -------------------- NAVIGATION -------------------- */
   .logo {
     width: 110px;
     height: 58px;
@@ -80,68 +80,59 @@ body {
      color: black;
 }
 
-    .underline {
-        text-decoration: none;
-        position: relative;
-    }
-
-    .underline:after {
-        position: absolute;
-        content:'';
-        height: 0.15rem;
-        bottom: 8px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 10%;
-        background:transparent;
-        -o-transition: .7s;
-        -webkit-transition: .7s;
-        transition: .7s;
-    }
-
-    .underline:hover:after {
-        width: 80%;
-        background: black;
-    }
-
-    hr {
-    height: 50%;
-    border: 0;
-    border-top: 2px solid white;
+.underline {
+    text-decoration: none;
+    position: relative;
 }
 
+.underline:after {
+    position: absolute;
+    content:'';
+    height: 0.15rem;
+    bottom: 8px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 10%;
+    background:transparent;
+    -o-transition: .7s;
+    -webkit-transition: .7s;
+    transition: .7s;
+}
 
-/* ---------- Home/welcome page/jumbotron ---------- */
-    .welcome-sign {
-        width: 75%;
-    }
-    .welcome-sign-top {
+.underline:hover:after {
+    width: 80%;
+    background: black;
+}
+
+/* ---------------- Home/welcome page/jumbotron ---------------- */
+.welcome-sign {
+    width: 75%;
+}
+.welcome-sign-top {
     font-size: 2.8rem;
+    letter-spacing: 2px;
     color: white;
-    }
+}
+.welcome-sign-bottom {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
 
-    .sign-button {
-        font-size: 1.4rem;
-        font-weight: 300;
-        letter-spacing: 2px;
-        color: white;
-    }
-
-    .home-container{
-        height: 100vh;
-    
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
-    background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
+/*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
+.home-container{
+
+background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     
     height: 100vh;
-    width: 100vw;
+    width: auto;
     margin-bottom: 0px;
-    z-index: 1;
 }
 
 .jumbotron {
@@ -149,10 +140,16 @@ body {
     margin-top: 20rem;
     border-radius:0.9rem;
 }
-
+.sign-button {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: white;
+}
+    
 .btn-lg {
     padding: .5rem 1rem;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     border-radius:0.9rem;
 }
@@ -169,7 +166,9 @@ body {
 }
 
 /* ---------- ABOUT ---------- */
-
+.about-margin {
+    margin-right: 14px;
+}
 #position-about {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -177,7 +176,7 @@ body {
 }
 
 .about-content {
-        margin-top: 12px;
+        margin-top: 120px;
 }
 
 .content-item-text {
@@ -187,7 +186,6 @@ body {
 h2 {
     text-align: center;
     font-weight: 700;
-  
 }
 
 .heading-text {
@@ -201,14 +199,15 @@ h2 {
 	border-radius: 8px;
 
     margin-bottom: 0px;
-     align-items: center;
+    align-items: center;
 }
 .heading-text h1{
     margin-top: 15px;
     margin-bottom: 8px;
     padding-top: 10px;
-        
 }
+        
+
 .container {
   align-items: center;
 }
@@ -216,8 +215,6 @@ h2 {
 .heading-text {
     margin:8px 0px;
 }
-
-
 
 .card-body {
     -ms-flex: 1 1 auto;
@@ -238,10 +235,7 @@ h3 {
     border-top:3px solid transparent;
     margin-top: -3px;
     height: 100vh;
-}
-#tour {
     margin-right: 1rem;
- 
 }
 
 #image-tours {
@@ -259,29 +253,26 @@ h3 {
     margin-bottom: 0px; 
 }
 
-
-
-
 /* ---------- GALLERY ---------- */
 #position-gallery{
     border-top:3px solid transparent;
     margin-top: -3px;
     height: 100vh;
 }
-
-
-/* #gallery{
-clear: both;
-  line-height: 0px; 
-  column-count:4 ;
-  column-gap: 0px;
-
-}
-#gallery img{
-    width: 100%;  
+.image-style {
+    max-width: 100%;
+    height: auto;
+    border: 11px solid white;
+    border-radius: 5px;
+    margin: 5%;
 }
 
-*/
+
+
+
+
+
+
 
 /* ---------- CONTACT ---------- */
 /*
@@ -336,7 +327,6 @@ footer {
 	    -ms-flex-align: center;
 	align-items: center;
 	position: fixed;
-	z-index: 1020;
 }
  ul {
     margin-top: 0;
@@ -397,6 +387,9 @@ footer .contact {
      color:black;
 }
 
+
+
+/*-----Media to Footer------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
     font-size:100%;
@@ -408,19 +401,66 @@ footer .contact {
  }
  
 /*-----Media to Welcome sign------*/
-  @media screen and (max-width: 937px) { 
-      .welcome-sign-top {
-    font-size: 2.0rem;
+  @media screen and (min-width: 861px) { 
+    .welcome-sign-top {
+        font-size: 1.6rem;
 }
+    .welcome-sign-bottom {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+  
+ }
+  
 
-.lead {
-    font-size: 1.3rem;
+  @media screen and (min-width: 1187px) { 
+    .welcome-sign-top {
+        font-size: 2.2rem;
+}
+    .welcome-sign-bottom {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+}
+  
+
+  @media screen and (min-width: 1225px) { 
+    .welcome-sign-top {
+        font-size: 2.4rem;
+}
+    .welcome-sign-bottom {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        }
+
+ }
+
+
+ @media screen and (min-width: 1265px) { 
+    .welcome-sign-top {
+    font-size: 2.6rem;
+}
+  .welcome-sign-bottom {
+    font-size: 1.6rem;
     letter-spacing: 2px;
-}
-  } 
+    }
+   
+ }
 
+
+ @media screen and (min-width: 1346px) { 
+  .welcome-sign-top {
+    font-size: 2.8rem;
+}
+  .welcome-sign-bottom {
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    }
+
+
+ }
   /* ------Media query for navbar links----*/
-   @media screen and (max-width: 576px){
+   @media screen and (min-width: 576px){
       .underline:after{
           transition: none;
       }
