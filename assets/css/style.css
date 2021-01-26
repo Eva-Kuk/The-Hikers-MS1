@@ -49,7 +49,7 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(226, 226, 226);
     margin-bottom: 0;
     width: 100%;
@@ -166,7 +166,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     padding-top: 6px;
     padding-bottom: 6px;
 }
-}
+
 
 .btn-primary:hover{
     background-color: green;
@@ -299,11 +299,6 @@ h3 {
    padding-bottom: 2rem;
 }
 
-
-
-.margin-right {
-    margin-right: 10px;
-}
 .contact-details {
     color:red;
 }
@@ -348,7 +343,7 @@ footer {
 	bottom: 0px;
 	height: 3.5rem;
     background-color:rgb(99 175 52);
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     color: white;
 	display: flex;
 	    -webkit-box-align: center;
@@ -374,7 +369,7 @@ footer .contact {
 }
 
 .contact-links i {
-    font-size:110%;
+    font-size:17px;
 }
 
 .contact-links a:hover {
@@ -404,13 +399,11 @@ footer .contact {
         -ms-flex-align: center;	
     align-items: center;
 }
-
 .social-network a {
     color: white;
 	margin: 5px;
 	padding: 5px;
 }
-
 .social-network i:hover{
      color:black;
 }
@@ -424,11 +417,17 @@ footer .contact {
 /*-----Media to Footer------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
-    font-size:100%;
+    font-size:10px;
 }
 footer .contact {
     font-size:0.9rem;
 }
+.contact-links-item a {
+    font-size: 11px;
+}
+
+
+
  }
  
 /*-----Media to Welcome sign------*/
@@ -436,119 +435,46 @@ footer .contact {
 .welcome-sign-top {
     font-size: 28px;
     letter-spacing: 1px;
-   
 }
 .welcome-sign-bottom {
     font-size: 20px;
     letter-spacing: 1px;
-   
  }
+}
  @media screen and (min-width:423px){
 .welcome-sign-top {
     font-size: 32px;
     letter-spacing: 1px;
-   
 }
 .welcome-sign-bottom {
     font-size: 22px;
     letter-spacing: 1px;
-   
  }
+}
  @media screen and (min-width:516px){
 .welcome-sign-top {
     font-size: 36px;
-    letter-spacing: 1px;
-   
 }
 .welcome-sign-bottom {
     font-size: 23px;
-    letter-spacing: 1px;
-   
  }
+}
  @media screen and (min-width:570px){
 .welcome-sign-top {
     font-size: 40px;
-    letter-spacing: 1px;
-   
 }
 .welcome-sign-bottom {
     font-size: 26px;
-    letter-spacing: 1px;
-   
  }
+}
 @media screen and (min-width:766px){
 .welcome-sign-top {
     font-size: 48px;
-    letter-spacing: 1px;
-   
 }
 .welcome-sign-bottom {
     font-size: 28px;
-    letter-spacing: 1px;
-   
  }
-
-
-
-/*
-  @media screen and (min-width: 861px) { 
-    .welcome-sign-top {
-        font-size: 1.6rem;
 }
-    .welcome-sign-bottom {
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-    }
-  
- }
-  
-
-  @media screen and (min-width: 1187px) { 
-    .welcome-sign-top {
-        font-size: 2.2rem;
-}
-    .welcome-sign-bottom {
-        font-size: 1.3rem;
-        letter-spacing: 2px;
-    }
-}
-  
-
-  @media screen and (min-width: 1225px) { 
-    .welcome-sign-top {
-        font-size: 2.4rem;
-}
-    .welcome-sign-bottom {
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-        }
-
- }
-
-
- @media screen and (min-width: 1265px) { 
-    .welcome-sign-top {
-    font-size: 2.6rem;
-}
-  .welcome-sign-bottom {
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    }
-   
- }
-
-
- @media screen and (min-width: 1346px) { 
-  .welcome-sign-top {
-    font-size: 2.8rem;
-}
-  .welcome-sign-bottom {
-    font-size: 1.9rem;
-    letter-spacing: 2px;
-    }
-}
-*/
- 
   /* ------Media query for navbar links----*/
    @media screen and (min-width: 576px){
       .underline:after{
@@ -559,3 +485,6 @@ footer .contact {
         background: transparent;
     }
  }
+
+
+ 
