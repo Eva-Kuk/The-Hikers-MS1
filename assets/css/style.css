@@ -37,7 +37,6 @@ h3 {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 2px;
-    font-size: 1.5rem;
  }
  p {
     letter-spacing: 1px;
@@ -93,29 +92,9 @@ h3 {
      color: black;
 }
 
-.underline {
-    text-decoration: none;
-    position: relative;
-}
 
-.underline:after {
-    position: absolute;
-    content:'';
-    height: 0.15rem;
-    bottom: 8px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 10%;
-    background:transparent;
-    -o-transition: .7s;
-    -webkit-transition: .7s;
-    transition: .7s;
-}
-
-.underline:hover:after {
-    width: 80%;
-    background: black;
+.navbar .navbar-toggler:focus{
+    outline-color:rgb(87 171 36 / 91%);
 }
 
 /* ---------------------------------------- Home/welcome page/jumbotron ---------------- */
@@ -474,16 +453,6 @@ footer .contact {
  }
 }
 
-  /* ------------------------------------------------------------Media query for navbar links----*/
-   @media screen and (min-width: 576px){
-      .underline:after{
-          transition: none;
-      }
-      .underline:hover:after {
-        width: 0%;
-        background: transparent;
-    }
- }
 
   /* ------------------------------------------------------------Media query for about section----*/
   @media screen and (max-width: 576px){
