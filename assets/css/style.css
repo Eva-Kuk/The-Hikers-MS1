@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Special+Elite&display=swap');
 
-html{
+html {
 overflow-x: hidden; 
 }
+
 *{
     margin:0;
     padding:0;
     border:0;
 }
+
 body {
     font-family: 'Oswald', sans-serif;     
     font-size: 18px;
@@ -111,8 +113,8 @@ h3 {
 .welcome-sign-bottom {
     font-size: 18px;
     letter-spacing: 1px;
-   
 }
+
  hr {   
     width: 35%;
     height:3px;
@@ -120,7 +122,6 @@ h3 {
     border: 0;
     background-color: red;
     margin: 0 auto;
-    
  }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
 /*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
@@ -211,12 +212,15 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     margin:8px 0px;
 }
 
-.card-body {
+.card {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.7rem;
-    margin-bottom: 1rem;
+   
+}
+.card-about{
+     margin-bottom: 1rem;
 }
 
 h3 {
@@ -229,7 +233,6 @@ h3 {
     border-top:1px solid transparent;
     margin-top: -1px;
     height: auto;
-   /* margin-right: 1rem;*/
 }
 
 #image-tours {
@@ -246,36 +249,32 @@ h3 {
     font-weight: 300;
     margin-bottom: 0px; 
 }
+.card-tours {
+ 
+  margin-bottom: 2.2rem;
+}
 
 /* ------------------------------------------------------------------- GALLERY --------------------------------------------- */
 #position-gallery{
     border-top:3px solid transparent;
     margin-top: -3px;
-  
 }
 .image-style {
     max-width: 100%;
     height: auto;
     border: 7px solid white;
-    border-radius: 5px;
-    
+    border-radius: 0.3rem;   
 }
-
-
-
-
-
-
-
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
 
 .contact-sent-btn{
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 15px;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-top: 0.9rem;
+    width: auto;
 }
 
 #contact{
@@ -299,15 +298,24 @@ h3 {
 .input-box{
     width: 100%;
     display: block;
-    background-color: gray;
-    border: 1px solid lightgrey;
+    background-color:#a7a9ab;;
+    border: 2px solid #f3f3f3;
     border-radius: 3px;
 }
 
-.label {
+label {
     letter-spacing: 1px;
     margin-bottom: 0.3rem;
 }
+
+
+.input-box
+{
+    color: black;
+    letter-spacing: 1px;
+}
+
+
 
 #image-contact {
    background-attachment: fixed;
@@ -348,7 +356,7 @@ footer .contact {
     font-weight: 300;
     letter-spacing: 2px;
     margin: 0px 0px;
-    margin-left: 15px;
+    margin-left: 0.9rem;
 }
 
 .contact-links-item {
@@ -388,8 +396,8 @@ footer .contact {
 }
 .social-network a {
     color: white;
-	margin: 5px;
-	padding: 5px;
+	margin:0.3rem;
+	padding: 0.3rem;
 }
 .social-network i:hover{
      color:black;
@@ -397,78 +405,110 @@ footer .contact {
 /*--------------------------------------------------------Media to heading-text on each section/page------*/
 @media screen and (min-width: 341px) {
     h1 {
-    font-size: 38px;
+    font-size: 2.4rem;
 }
 }
 
 /*-----------------------------------------------------------Media to Footer------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
-    font-size:10px;
+    font-size:0.6rem;
 }
 footer .contact {
     font-size:0.9rem;
 }
 .contact-links-item a {
-    font-size: 11px;
+    font-size: 0.7rem;
 }
  }
  
 /*-------------------------------------------------------------Media to Welcome sign------*/
  @media screen and (min-width:380px){
 .welcome-sign-top {
-    font-size: 28px;
+    font-size: 1.8rem;
     letter-spacing: 1px;
 }
 .welcome-sign-bottom {
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 1px;
  }
 }
  @media screen and (min-width:423px){
 .welcome-sign-top {
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 .welcome-sign-bottom {
-    font-size: 22px;
+    font-size: 1.37rem;
     letter-spacing: 1px;
  }
 }
  @media screen and (min-width:516px){
 .welcome-sign-top {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 .welcome-sign-bottom {
-    font-size: 23px;
+    font-size: 1.4rem;
  }
 }
  @media screen and (min-width:570px){
 .welcome-sign-top {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .welcome-sign-bottom {
-    font-size: 26px;
+    font-size: 1.6rem;
  }
 }
 @media screen and (min-width:766px){
 .welcome-sign-top {
-    font-size: 46px;
+    font-size: 2.8rem;
 }
 .welcome-sign-bottom {
-    font-size: 27px;
+    font-size: 1.7rem;
  }
 }
 
 
-  /* ------------------------------------------------------------Media query for about section----*/
+  /* ------------------------------------------------------------Media query for ABOUT section----*/
   @media screen and (max-width: 576px){
  .about-content {
-    margin-top: 20px;
+    margin-top: 1.3rem;
 }
 }
 @media screen and (max-width: 768px){
 #position-about {
     height: auto;
 }
+}
+  /* ------------------------------------------------------------Media query for TOURS section----*/
+   @media screen and (max-width: 1200px){
+    .tours-style{
+        margin-top: 7rem;
+    }
+}
+
+  @media screen and (max-width: 1200px){
+    #position-tours{
+        height: 100vh;
+    }
+}
+
+    @media screen and (max-width: 768px){
+    #position-tours{
+        height: auto;
+    }
+
+    .tours-images-style{
+        margin-top: 2.0rem;
+    }
+
+    .tours-style {
+        margin-top: 1.1rem;
+    }
+}
+ /* ------------------------------------------------------------Media query for TOURS section----*/
+
+ @media screen and (max-width:384px){
+h1 {
+    font-size: 1.75rem;
 }
