@@ -31,7 +31,21 @@ h3 {
     font-size: 20px; 
     color: rgb(48, 48, 48);
  }
- /* -------------------- NAVIGATION -------------------- */
+ h4 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+ }
+ p {
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 18px;
+ }
+ 
+ /* --------------------------------------------------- NAVIGATION -------------------- */
   .logo {
     width: 110px;
     height: 58px;
@@ -104,7 +118,7 @@ h3 {
     background: black;
 }
 
-/* ---------------- Home/welcome page/jumbotron ---------------- */
+/* ---------------------------------------- Home/welcome page/jumbotron ---------------- */
 
 .welcome-sign-top {
     font-size: 24px;
@@ -133,47 +147,39 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
     height: 100vh;
     width: auto;
     margin-bottom: 0px;
 }
 .jumbotron {
     background-color: rgb(6 6 6 / 53%); 
-  
     border-radius:0.9rem;
-}
-.sign-button {
-    font-size: 1.2rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    color: white;
 }
 
 .btn-lg {
-     font-size: 0.6rem;
+    font-size: 0.9rem;
     line-height: 1.5;
-    border-radius:0.9rem;
-    margin-top: 2px;
 }
 
 .btn-primary {
     color: white;
     background-color: red;
     border-color: red;
+    letter-spacing: 2px;
+    border-radius:0.7rem;
+}
+.btn-primary:hover{
+    background-color: green;
+    border-color: green;
+}
+.btn-style{
     padding-right: 9px;
     padding-left: 9px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
-
-.btn-primary:hover{
-    background-color: green;
-    border-color: green;
-}
-
-/* ---------- ABOUT ---------- */
+/* ------------------------------------------------------ ABOUT ------------------------------- */
 .about-margin {
     margin-right: 14px;
 }
@@ -184,7 +190,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
 }
 
 .about-content {
-        margin-top: 120px;
+    margin-top: 90px;
 }
 
 .content-item-text {
@@ -199,13 +205,11 @@ h2 {
 .heading-text {
     background-color: transparent;
     text-transform: uppercase;
-   
-	margin: 50px 0px;
+   	margin: 50px 0px;
 	padding: 5px 2px;
     text-align: center;
     letter-spacing: 2px;
 	border-radius: 8px;
-
     margin-bottom: 0px;
     align-items: center;
 }
@@ -238,7 +242,7 @@ h3 {
     margin-top: 23px;
 }
 
-/* ---------- TOURS ---------- */
+/* ----------------------------------------------------------------- TOURS ------------------------------------------- */
 #position-tours {
     border-top:1px solid transparent;
     margin-top: -1px;
@@ -261,7 +265,7 @@ h3 {
     margin-bottom: 0px; 
 }
 
-/* ---------- GALLERY ---------- */
+/* ------------------------------------------------------------------- GALLERY --------------------------------------------- */
 #position-gallery{
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -282,19 +286,16 @@ h3 {
 
 
 
-/* ---------- CONTACT ---------- */
-/*
-.contact-sent-btn{
-    width
-}
+/* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
 
-.btn-lg{
-    margin-top: 13px;
+.contact-sent-btn{
+    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-   
+    margin-top: 15px;
 }
-*/
+
 #contact{
    padding-bottom: 2rem;
 }
@@ -337,7 +338,7 @@ h3 {
     margin-bottom: 0px; 
 }
 
-/* ---------- FOOTER ---------- */
+/* ---------------------------------------------------------------------- FOOTER -------------------------------------------------- */
 footer {
     width: 100%;
 	bottom: 0px;
@@ -407,14 +408,14 @@ footer .contact {
 .social-network i:hover{
      color:black;
 }
-/*-----Media to heading-text on each section/page------*/
+/*--------------------------------------------------------Media to heading-text on each section/page------*/
 @media screen and (min-width: 341px) {
     h1 {
     font-size: 38px;
 }
 }
 
-/*-----Media to Footer------*/
+/*-----------------------------------------------------------Media to Footer------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
     font-size:10px;
@@ -425,12 +426,9 @@ footer .contact {
 .contact-links-item a {
     font-size: 11px;
 }
-
-
-
  }
  
-/*-----Media to Welcome sign------*/
+/*-------------------------------------------------------------Media to Welcome sign------*/
  @media screen and (min-width:380px){
 .welcome-sign-top {
     font-size: 28px;
@@ -469,13 +467,14 @@ footer .contact {
 }
 @media screen and (min-width:766px){
 .welcome-sign-top {
-    font-size: 48px;
+    font-size: 46px;
 }
 .welcome-sign-bottom {
-    font-size: 28px;
+    font-size: 27px;
  }
 }
-  /* ------Media query for navbar links----*/
+
+  /* ------------------------------------------------------------Media query for navbar links----*/
    @media screen and (min-width: 576px){
       .underline:after{
           transition: none;
@@ -486,5 +485,14 @@ footer .contact {
     }
  }
 
-
- 
+  /* ------------------------------------------------------------Media query for about section----*/
+  @media screen and (max-width: 576px){
+ .about-content {
+    margin-top: 20px;
+}
+}
+@media screen and (max-width: 768px){
+#position-about {
+    height: auto;
+}
+}
