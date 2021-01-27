@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Special+Elite&display=swap');
 
+html{
+overflow-x: hidden; 
+}
 *{
     margin:0;
     padding:0;
@@ -116,6 +119,7 @@ h3 {
     border: 0;
     border: 0;
     background-color: red;
+    margin: 0 auto;
     
  }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
@@ -176,9 +180,10 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
    text-align: justify; 
 }
 
-h2 {
-    text-align: center;
+.tours-style h2 {
+    text-align: left;
     font-weight: 700;
+    color: white;
 }
 
 .heading-text {
@@ -198,7 +203,6 @@ h2 {
     padding-top: 10px;
 }
         
-
 .container {
   align-items: center;
 }
@@ -214,9 +218,8 @@ h2 {
     padding: 0.7rem;
     margin-bottom: 1rem;
 }
+
 h3 {
- 
-    font-size: 20px;
     text-align: center;
     margin-top: 23px;
 }
@@ -297,10 +300,14 @@ h3 {
     width: 100%;
     display: block;
     background-color: gray;
-    border: 1px solid gray;
+    border: 1px solid lightgrey;
     border-radius: 3px;
 }
 
+.label {
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
 
 #image-contact {
    background-attachment: fixed;
