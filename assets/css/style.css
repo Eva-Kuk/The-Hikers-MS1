@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&family=Special+Elite&display=swap');
 
+:root {
+    --primary--clr:#57ab24;
+    --secondary--clr:#dd3044;
+    --background--clr:#303030;
+    --text--color--clr:#f8f9fa;
+    --heading--h1:#f8f9fa;
+    --heading--h2--h3:#303030;
+}
 html {
 overflow-x: hidden; 
 }
@@ -12,9 +20,9 @@ overflow-x: hidden;
 
 body {
     font-family: 'Oswald', sans-serif;     
-    font-size: 18px;
-    background-color: rgb(48, 48, 48);
-    color:rgb(226, 226, 226);
+    font-size: 1.15rem;
+    background-color:var(--background--clr);
+    color: var(--text--color--clr);
     margin:0;
     height:100vh;
     width: 100vw;
@@ -25,16 +33,16 @@ h3 {
  font-family: 'Special Elite', cursive;
 }
  h1 {
-    font-size: 29px;
-    color:rgb(226, 226, 226);
+    font-size: 1.8rem;
+    color:var(--heading--h1);
  }
  h2 {
-     font-size: 24px;
-     color:rgb(48, 48, 48);
+     font-size: 1.5rem;
+     color:var(--heading--h2--h3);
  }
  h3 {
-    font-size: 20px; 
-    color: rgb(48, 48, 48);
+    font-size: 1.25rem; 
+    color: var(--heading--h2--h3);
  }
  h4 {
     font-size: 1.3rem;
@@ -63,12 +71,12 @@ h3 {
 }
 
 .navbar {
-    background-color: rgb(87 171 36 / 91%);
+    background-color:var(--primary--clr);
     padding-top: 0px;
     padding-bottom: 0px;
     letter-spacing: 2px;
     font-size: 20px;
-    color: rgb(226, 226, 226);
+    color: var(--text--color--clr);
     margin-bottom: 0;
     width: 100%;
     border: 0;
@@ -86,20 +94,20 @@ h3 {
 }
 
 .navbar .navbar-toggler {
-    color: black;
+    color: var(--background--clr);
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white;  
+    color: var(--text--color--clr);
     text-align: center;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-     color: black;
+     color: var(--background--clr);
 }
 
 
 .navbar .navbar-toggler:focus{
-    outline-color:rgb(87 171 36 / 91%);
+    outline-color:rgb(87 171 36);
 }
 
 /* ---------------------------------------- Home/welcome page/jumbotron ---------------- */
@@ -107,7 +115,7 @@ h3 {
 .welcome-sign-top {
     font-size: 24px;
     letter-spacing: 1px;
-    color: white;
+    color: var(--text--color--clr);
     margin-bottom: 5px;
 }
 .welcome-sign-bottom {
@@ -120,13 +128,13 @@ h3 {
     height:3px;
     border: 0;
     border: 0;
-    background-color: red;
+    background-color: var(--secondary--clr);
     margin: 0 auto;
  }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
 /*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
 .home-container{
-background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
+background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,9 +142,17 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
     height: 100vh;
     width: auto;
     margin-bottom: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
 }
 .jumbotron {
-    background-color: rgb(6 6 6 / 53%); 
+    background-color:rgb(6 6 6 / 72%); 
     border-radius:0.9rem;
 }
 
@@ -146,15 +162,15 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
 }
 
 .btn-primary {
-    color: white;
-    background-color: red;
-    border-color: red;
+    color: var(--text--color--clr);
+    background-color: var(--secondary--clr);
+    border-color: var(--secondary--clr);
     letter-spacing: 2px;
     border-radius:0.7rem;
 }
 .btn-primary:hover{
-    background-color: green;
-    border-color: green;
+    background-color: var(--primary--clr);
+    border-color: var(--primary--clr);
 }
 .btn-style{
     padding-right: 9px;
@@ -167,7 +183,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
 .about-margin {
     margin-right: 14px;
 }
-#position-about {
+#about {
     border-top:3px solid transparent;
     margin-top: -3px;
     height: 100vh;
@@ -184,7 +200,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom right fixed;
 .tours-style h2 {
     text-align: left;
     font-weight: 700;
-    color: white;
+    color: var(--text--color--clr);
 }
 
 .heading-text {
@@ -229,7 +245,7 @@ h3 {
 }
 
 /* ----------------------------------------------------------------- TOURS ------------------------------------------- */
-#position-tours {
+#tours {
     border-top:1px solid transparent;
     margin-top: -1px;
     height: auto;
@@ -242,7 +258,7 @@ h3 {
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 600px;
+    height: 800px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
     position: relative;
@@ -255,16 +271,24 @@ h3 {
 }
 
 /* ------------------------------------------------------------------- GALLERY --------------------------------------------- */
-#position-gallery{
-    border-top:3px solid transparent;
-    margin-top: -3px;
+#gallery{
+    border-top:7px solid transparent;
+    margin-top: -7px;
 }
 .image-style {
     max-width: 100%;
     height: auto;
-    border: 7px solid white;
-    border-radius: 0.3rem;   
+    border: 6px solid white;
+    border-radius: 0.3rem;  
+    padding: 4px; 
+    margin: 15px;
 }
+
+.image-style:hover{
+    box-shadow: 0 0 4px 2px white;
+}
+
+
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
 
@@ -277,19 +301,19 @@ h3 {
     width: auto;
 }
 
-#contact{
+#contact-bottom{
    padding-bottom: 2rem;
 }
 
 .contact-details {
-    color:red;
+    color:var(--secondary--clr);
 }
 .contact-details:hover {
-    color:green;
+    color:var(--primary--clr);
     text-decoration: none;
 }
 
-#position-contact {
+#contact {
     border-top:3px solid transparent;
     margin-top: -3px;
     height: 100vh;
@@ -304,14 +328,13 @@ h3 {
 }
 
 label {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 0.3rem;
 }
 
-
 .input-box
 {
-    color: black;
+    color: var(--background--clr);
     letter-spacing: 1px;
 }
 
@@ -324,7 +347,7 @@ label {
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 600px;
+    height: 800px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
     position: relative;
@@ -339,7 +362,7 @@ footer {
 	height: 3.5rem;
     background-color:rgb(99 175 52);
     font-size: 0.9rem;
-    color: white;
+    color: var(--text--color--clr);
 	display: flex;
 	    -webkit-box-align: center;
 	    -ms-flex-align: center;
@@ -368,12 +391,12 @@ footer .contact {
 }
 
 .contact-links a:hover {
-    color:black;
+    color:var(--background--clr);
     font-weight: 300;
 }
 
 .contact-links-item a {
-    color: white;
+    color: var(--text--color--clr);
     /*margin-right: 10px;*/
     padding-left: 2px;
     text-decoration: none;
@@ -395,12 +418,12 @@ footer .contact {
     align-items: center;
 }
 .social-network a {
-    color: white;
+    color: var(--text--color--clr);
 	margin:0.3rem;
 	padding: 0.3rem;
 }
 .social-network i:hover{
-     color:black;
+     color:var(--background--clr);
 }
 /*--------------------------------------------------------Media to heading-text on each section/page------*/
 @media screen and (min-width: 341px) {
@@ -409,7 +432,7 @@ footer .contact {
 }
 }
 
-/*-----------------------------------------------------------Media to Footer------*/
+/*-----------------------------------------------------------Media to Footer-------------------------------*/
  @media screen and (max-width: 523px) {
    .contact-links i {
     font-size:0.6rem;
@@ -422,7 +445,7 @@ footer .contact {
 }
  }
  
-/*-------------------------------------------------------------Media to Welcome sign------*/
+/*-------------------------------------------------------------Media to Welcome sign----------------------*/
  @media screen and (min-width:380px){
 .welcome-sign-top {
     font-size: 1.8rem;
@@ -468,8 +491,7 @@ footer .contact {
  }
 }
 
-
-  /* ------------------------------------------------------------Media query for ABOUT section----*/
+  /* ------------------------------------------------------------Media query for ABOUT section----------------*/
   @media screen and (max-width: 576px){
  .about-content {
     margin-top: 1.3rem;
@@ -480,7 +502,7 @@ footer .contact {
     height: auto;
 }
 }
-  /* ------------------------------------------------------------Media query for TOURS section----*/
+  /* ------------------------------------------------------------Media query for TOURS section----------------*/
    @media screen and (max-width: 1200px){
     .tours-style{
         margin-top: 7rem;
@@ -506,9 +528,11 @@ footer .contact {
         margin-top: 1.1rem;
     }
 }
- /* ------------------------------------------------------------Media query for TOURS section----*/
+ /* ------------------------------------------------------------Media query for TOURS section------------------*/
 
  @media screen and (max-width:384px){
 h1 {
     font-size: 1.75rem;
 }
+ }
+

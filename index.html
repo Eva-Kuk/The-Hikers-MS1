@@ -30,16 +30,16 @@
                             <a class="nav-link" id="navbar-color-home" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color-about" href="#position-about">About</a>
+                            <a class="nav-link" id="navbar-color-about" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color-tours" href="#position-tours">Tours</a>
+                            <a class="nav-link" id="navbar-color-tours" href="#tours">Tours</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="navbar-color-gallery" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color-contact" href="#position-contact">Contact</a>
+                            <a class="nav-link" id="navbar-color-contact" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -47,19 +47,19 @@
         </div>
     </header>
 
-    <section class="container-fluid d-flex h-100 home-container" >
+    <section class="container-fluid home-container" >
         <!----------------------Home/welcome page----------------------->
         <!-------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized------->
         <div class="container">
-            <div class="row align-items-center h-100">
-                <div class="col-sm-12 auto-centering">
+            <div class="row align-items-center">
+                <div class="col-sm-12">
                         <div class="jumbotron text-center">
                             <h1 class="welcome-sign-top">Unforgettable Hiking In Ireland</h1>
                             <hr>
                             <p class="lead welcome-sign-bottom">Travelling shouldn't be just a tour, It should be a tale.<br>
                                 And we are striving to make it a very special one</p>
                             <p>
-                                <a class="btn btn-primary btn-lg btn-style" href="#position-contact" role="button">Book a tour with
+                                <a class="btn btn-primary btn-lg btn-style" href="#contact" role="button">Book a tour with
                                     us!</a>
                             </p>
                         </div>
@@ -69,7 +69,7 @@
     </section>
 
     <!------------------------About page------------------------>
-    <div id="position-about">
+    <div id="about">
         <section>
             <div class="about-margin">
             <div class="container">
@@ -82,12 +82,15 @@
 
             <div class="container  about-content">
                 <div class="row  d-flex align-items-center content-item">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 ">
                         <div class="card card-about">
+                            <a href="assets/images/about-team.jpg" target="_blank">
                             <img src="assets/images/about-team.jpg" class="card-img" alt="The hikers team">
+                            </a>
                             <div class="card-desc">
-                                <h3>Meet Our Team</h3>
+                            <h3>Meet Our Team</h3>
                             </div>
+                             
                         </div>
                     </div>
                     <div class="col-12 col-md-6 content-item-text">
@@ -115,7 +118,7 @@
     <!------------------------Tours page------------------------>
     <section id="image-tours"></section>
 
-    <div id="position-tours">
+    <div id="tours">
         <section>
             <div class="container">
                 <div class="row mt-5 heading-text">
@@ -137,11 +140,11 @@
                             of days you choose, season, accommodation and food you choose. Tell us what you expect and
                             we
                             will organize a trip for you. <br>For more information:<br>
-                            <a href="#position-contact" class="contact-details" aria-label="Our contact link">
+                            <a href="#position-contact" class="contact-details" aria-label="Go to our contact form">
                                 <strong><i class="fas fa-envelope" aria-hidden="true"></i> Contact Us </strong>
                             </a><br>
                                 
-                            <a href="tel:+55545667800" class="contact-details" aria-label="Our Phone Number">
+                            <a href="tel:+55545667800" class="contact-details" aria-label="Go to our Phone Number">
                                 <i class="fas fa-phone-alt" aria-hidden="true"></i> 555 4657800
                             </a>
                         </p>
@@ -197,8 +200,8 @@
     <!-----------------Contact and Enquiry Form page--------------------->
     <section id="image-contact"></section>
 
-    <div id="position-contact">
-        <section id="contact">
+    <div id="contact">
+        <section id="contact-bottom">
             <div class="container">
                 <div class="row mt-5 heading-text">
                     <div class="col">
@@ -213,7 +216,7 @@
                         <p>
                             If you would like to leave a comment for us, have a questions about our tours, or the one you are interested in,
                             fill out the contact form and write your enquiry and we will get back to you as soon as possible or <strong>Call Us:</strong> 
-                            <a href="tel:+55545667800" class="contact-details" aria-label="Our Phone Number">
+                            <a href="tel:+55545667800" class="contact-details" aria-label="Go to our Phone Number">
                                 <i class="fas fa-phone-alt" aria-hidden="true"></i> 555 4657800
                             </a>or 
                             Join our group on Facebook or Instagram if you would like to follow our latest tours.
@@ -275,13 +278,13 @@
         <div class="contact">
             <ul class="contact-links">
                 <li class="contact-links-item">
-                    <a href="mailto:thehikers@ireland.ie" aria-label="Our Email Address">
+                    <a href="mailto:thehikers@ireland.ie" aria-label="Go to our Email Address (opens in new tab)">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                         thehikers@ireland.ie
                     </a>
                 </li>
                 <li class="contact-links-item">
-                    <a href="tel:+5554567800" aria-label="Our Phone Number">
+                    <a href="tel:+5554567800" aria-label="Go to our Phone Number">
                         <i class="fas fa-phone-alt" aria-hidden="true"></i>
                         555 4657800
                     </a>
@@ -290,17 +293,17 @@
         </div>
         <ul class="social-network">
             <li>
-                <a href="https://www.facebook.com" target="_blank" aria-label="Find Us Facebook">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Go to our Facebook page(opens in a new tab)">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
             <li>
-                <a href="https://twitter.com" target="_blank" aria-label="Find Us Twitter">
+                <a href="https://twitter.com" target="_blank" aria-label="Go to our Twitter page(opens in a new tab)">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
             <li>
-                <a href="https://instagram.com" target="_blank" aria-label="Find Us Instagram">
+                <a href="https://instagram.com" target="_blank" aria-label="Go to our Instagram page(opens in a new tab)">
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
