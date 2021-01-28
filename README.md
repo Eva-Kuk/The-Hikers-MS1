@@ -146,9 +146,9 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 
 **2. Integrations**
-- [Bootstrap](https://getbootstrap.com/) -by linking via BootstrapCDN to HTML Doc. 
-- [Font awesome](https://fontawesome.com/)  Icons for Social Media links in Footer and Tours section
-- [Google Fonts](https://fonts.google.com/)  Overall Typography import.
+- [Bootstrap](https://getbootstrap.com/) - by linking via BootstrapCDN to HTML Doc. 
+- [Font awesome](https://fontawesome.com/) - Icons for Social Media links in Footer and Tours section
+- [Google Fonts](https://fonts.google.com/) - Overall Typography import.
 
 **3. Workspace, version control and Repository storage**
 - [GitPod](https://github.com/mkuti/corklagos-venture/blob/master/gitpod.io)- Main workspace IDE (Integrated Development Environment)
@@ -156,7 +156,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [GitHub](https://github.com/) - A cloud-based hosting service to manage my Git repositories.
 
 **4. Other**
--
+- [Photoshop](https://www.photoshop.com/en) - for resizing
 -
 -
 -
@@ -177,7 +177,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [stackoverflow](https://stackoverflow.com/) -General resource.
 - [css-tricks](https://css-tricks.com/)-General resource.
 - [w3schools](https://www.w3schools.com/default.asp)-General resource.
-- [CommonMark](https://commonmark.org/help/) - For Markdown language reference.
+- [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis) - For Markdown language reference.
 - [FlexBox Froggy Game ](http://flexboxfroggy.com/) - Learning platform for FlexBox.
 - [css-diner.netlify](https://css-diner.netlify.app/#) - Learning platform for type selectors
 - [kurshtml](https://www.kurshtml.edu.pl/index.html) - Polish learning web with courses CSS and HTML

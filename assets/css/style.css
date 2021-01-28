@@ -2,62 +2,65 @@
 
 :root {
     --primary--clr:#57ab24;
-    --secondary--clr:#dd3044;
+    --secondary--clr:#e41d34;
     --background--clr:#303030;
     --text--color--clr:#f8f9fa;
     --heading--h1:#f8f9fa;
     --heading--h2--h3:#303030;
 }
-html {
-overflow-x: hidden; 
-}
-
 *{
     margin:0;
     padding:0;
     border:0;
 }
 
+html {
+    overflow-x: hidden; 
+}
+
 body {
     font-family: 'Oswald', sans-serif;     
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     background-color:var(--background--clr);
     color: var(--text--color--clr);
     margin:0;
     height:100vh;
-    width: 100vw;
+  /*  width: 100vw;*/
 }
+
 h1,
 h2,
 h3 {
  font-family: 'Special Elite', cursive;
 }
  h1 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     color:var(--heading--h1);
+    letter-spacing: 1px;
  }
  h2 {
      font-size: 1.5rem;
      color:var(--heading--h2--h3);
  }
  h3 {
-    font-size: 1.25rem; 
+    font-size: 1.4rem; 
+    letter-spacing: 1px;
     color: var(--heading--h2--h3);
  }
  h4 {
     font-size: 1.3rem;
     margin-bottom: .5rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.6;
     letter-spacing: 2px;
  }
  p {
     letter-spacing: 1px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 1.3rem;
  }
  
- /* --------------------------------------------------- NAVIGATION -------------------- */
+ /*---------------------------- NAVIGATION --------------------*/
   .logo {
     width: 110px;
     height: 58px;
@@ -102,7 +105,7 @@ h3 {
     text-align: center;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-     color: var(--background--clr);
+    color: var(--background--clr);
 }
 
 
@@ -146,11 +149,8 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
-
 }
+
 .jumbotron {
     background-color:rgb(6 6 6 / 72%); 
     border-radius:0.9rem;
@@ -180,9 +180,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
 }
 
 /* ------------------------------------------------------ ABOUT ------------------------------- */
-.about-margin {
-    margin-right: 14px;
-}
+
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -257,7 +255,7 @@ h3 {
     background-image: url('../images/forest.jpg');
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    /*width: 100vw*/
     height: 800px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
@@ -266,7 +264,6 @@ h3 {
     margin-bottom: 0px; 
 }
 .card-tours {
- 
   margin-bottom: 2.2rem;
 }
 
@@ -287,8 +284,6 @@ h3 {
 .image-style:hover{
     box-shadow: 0 0 4px 2px white;
 }
-
-
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
 
@@ -338,15 +333,13 @@ label {
     letter-spacing: 1px;
 }
 
-
-
 #image-contact {
    background-attachment: fixed;
    /* ---------- Credit Photo by Sebastian Voortman from Pexels ---------- */
     background-image: url('../images/happy-girl.jpg');
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    /*width: 100vw;*/
     height: 800px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
@@ -423,116 +416,132 @@ footer .contact {
 	padding: 0.3rem;
 }
 .social-network i:hover{
-     color:var(--background--clr);
-}
-/*--------------------------------------------------------Media to heading-text on each section/page------*/
-@media screen and (min-width: 341px) {
-    h1 {
-    font-size: 2.4rem;
-}
+    color:var(--background--clr);
 }
 
+
+/*--------------------------------------------------------Media to background images for smaller devices------*/
+
+ @media screen and (max-width: 1024px){
+     #image-contact {
+   /* ---------- Credit Photo by Sebastian Voortman from Pexels ---------- */
+    background-image: url('../images/happy-girl-mobile.jpg');
+    }
+    #image-tours {
+    /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
+        background-image: url('../images/forest-mobile.jpg');
+    }
+    /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
+    .home-container{
+        background-image: url('../images/hero-image-mobile.jpg') ;
+    }
+ }
+/*--------------------------------------------------------Media to heading-text on each section/page------*/
+ @media screen and (max-width: 576px) {
+    h1,
+    h3,
+    h4,
+    p {
+        letter-spacing: 0;
+    }
+ }
 /*-----------------------------------------------------------Media to Footer-------------------------------*/
- @media screen and (max-width: 523px) {
+@media screen and (max-width: 523px) {
    .contact-links i {
     font-size:0.6rem;
-}
+    }
 footer .contact {
     font-size:0.9rem;
-}
+    }
 .contact-links-item a {
     font-size: 0.7rem;
+    }       
 }
- }
  
 /*-------------------------------------------------------------Media to Welcome sign----------------------*/
- @media screen and (min-width:380px){
+@media screen and (min-width:380px){
 .welcome-sign-top {
     font-size: 1.8rem;
     letter-spacing: 1px;
-}
+    }
 .welcome-sign-bottom {
     font-size: 1.25rem;
     letter-spacing: 1px;
- }
+    }
 }
  @media screen and (min-width:423px){
-.welcome-sign-top {
-    font-size: 2rem;
-    letter-spacing: 1px;
-}
-.welcome-sign-bottom {
-    font-size: 1.37rem;
-    letter-spacing: 1px;
- }
+    .welcome-sign-top {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    .welcome-sign-bottom {
+        font-size: 1.37rem;
+        letter-spacing: 1px;
+    }
 }
  @media screen and (min-width:516px){
-.welcome-sign-top {
-    font-size: 2.25rem;
-}
-.welcome-sign-bottom {
-    font-size: 1.4rem;
- }
+    .welcome-sign-top {
+        font-size: 2.25rem;
+    }
+    .welcome-sign-bottom {
+        font-size: 1.4rem;
+    }
 }
  @media screen and (min-width:570px){
-.welcome-sign-top {
-    font-size: 2.5rem;
-}
-.welcome-sign-bottom {
-    font-size: 1.6rem;
- }
+    .welcome-sign-top {
+        font-size: 2.5rem;
+    }
+    .welcome-sign-bottom {
+        font-size: 1.6rem;
+    }
 }
 @media screen and (min-width:766px){
-.welcome-sign-top {
-    font-size: 2.8rem;
+    .welcome-sign-top {
+        font-size: 2.8rem;
+    }
+    .welcome-sign-bottom {
+        font-size: 1.7rem;
+    }
 }
-.welcome-sign-bottom {
-    font-size: 1.7rem;
- }
-}
-
   /* ------------------------------------------------------------Media query for ABOUT section----------------*/
-  @media screen and (max-width: 576px){
- .about-content {
-    margin-top: 1.3rem;
-}
+@media screen and (max-width: 576px){
+    .about-content {
+        margin-top: 1.3rem;
+    }
+
 }
 @media screen and (max-width: 768px){
-#position-about {
-    height: auto;
-}
+    #about {
+        height: auto;
+    }
 }
   /* ------------------------------------------------------------Media query for TOURS section----------------*/
-   @media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px){
     .tours-style{
         margin-top: 7rem;
     }
 }
 
-  @media screen and (max-width: 1200px){
-    #position-tours{
+@media screen and (max-width: 1200px){
+    #tours{
         height: 100vh;
     }
 }
 
-    @media screen and (max-width: 768px){
-    #position-tours{
+@media screen and (max-width: 768px){
+    #tours{
         height: auto;
     }
-
     .tours-images-style{
         margin-top: 2.0rem;
     }
-
     .tours-style {
         margin-top: 1.1rem;
     }
 }
  /* ------------------------------------------------------------Media query for TOURS section------------------*/
-
- @media screen and (max-width:384px){
-h1 {
-    font-size: 1.75rem;
-}
- }
-
+@media screen and (max-width: 384px){
+    h1 {
+        font-size: 1.75rem;
+    }
+}   
