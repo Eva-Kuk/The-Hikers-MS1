@@ -43,7 +43,7 @@ h3 {
      color:var(--heading--h2--h3);
  }
  h3 {
-    font-size: 1.4rem; 
+    font-size: 1.1rem; 
     letter-spacing: 1px;
     color: var(--heading--h2--h3);
  }
@@ -52,7 +52,7 @@ h3 {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
  }
  p {
     letter-spacing: 1px;
@@ -78,7 +78,7 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: var(--text--color--clr);
     margin-bottom: 0;
     width: 100%;
@@ -124,6 +124,7 @@ h3 {
 .welcome-sign-bottom {
     font-size: 18px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
  hr {   
@@ -234,7 +235,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
    
 }
 .card-about{
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -243,6 +244,10 @@ h3 {
 }
 
 /* ----------------------------------------------------------------- TOURS ------------------------------------------- */
+.margin-text {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 #tours {
     border-top:1px solid transparent;
     margin-top: -1px;
@@ -255,7 +260,7 @@ h3 {
     background-image: url('../images/forest.jpg');
     background-position: center;
     background-size: cover;
-    /*width: 100vw*/
+    /*width: 100vw;*/
     height: 800px;
     padding-bottom: 50px;
     background-repeat: no-repeat;
@@ -286,7 +291,9 @@ h3 {
 }
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
-
+.margin {
+    margin-top: ;
+}
 .contact-sent-btn{
     padding-right: 0.9rem;
     padding-left: 0.9rem;
@@ -354,7 +361,7 @@ footer {
 	bottom: 0px;
 	height: 3.5rem;
     background-color:rgb(99 175 52);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     color: var(--text--color--clr);
 	display: flex;
 	    -webkit-box-align: center;
@@ -440,9 +447,13 @@ footer .contact {
  @media screen and (max-width: 576px) {
     h1,
     h3,
-    h4,
+    h4, {
+         letter-spacing: 0;
+    }
+
     p {
         letter-spacing: 0;
+       /* text-align: left;*/
     }
  }
 /*-----------------------------------------------------------Media to Footer-------------------------------*/
@@ -495,6 +506,7 @@ footer .contact {
         font-size: 1.6rem;
     }
 }
+/*
 @media screen and (min-width:766px){
     .welcome-sign-top {
         font-size: 2.8rem;
@@ -502,7 +514,7 @@ footer .contact {
     .welcome-sign-bottom {
         font-size: 1.7rem;
     }
-}
+}*/
   /* ------------------------------------------------------------Media query for ABOUT section----------------*/
 @media screen and (max-width: 576px){
     .about-content {
@@ -524,7 +536,7 @@ footer .contact {
 
 @media screen and (max-width: 1200px){
     #tours{
-        height: 100vh;
+        height: auto;
     }
 }
 
