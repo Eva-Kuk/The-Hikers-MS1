@@ -244,9 +244,12 @@ h3 {
 }
 
 /* ----------------------------------------------------------------- TOURS ------------------------------------------- */
+.video-card-tours{
+    height: 400px;
+    margin-bottom: 40px;
+}
 .margin-text {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    
 }
 #tours {
     border-top:1px solid transparent;
@@ -278,7 +281,7 @@ h3 {
     margin-top: -7px;
 }
 .image-style {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border: 6px solid white;
     border-radius: 0.3rem;  
@@ -288,6 +291,11 @@ h3 {
 
 .image-style:hover{
     box-shadow: 0 0 4px 2px white;
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */

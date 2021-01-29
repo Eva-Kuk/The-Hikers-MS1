@@ -34,7 +34,8 @@ mockups
 ---
 
  - This is my first Milestone 1 project which is part of the Code Institute’s FullStack Software Development Diploma Course. This project demonstrates the skills and knowledge of the HTML, CSS, Bootstrap 4 and User Centric Frontend Development modules which I have learned recently on the course. 
- - The aim of this fictional website is to promote The Hikers group on the market, make the group recognizable and to present their offer of organized trips in the Irish mountains for people looking for adventure, unforgettable experiences, interested in discovering Irish mountain trails, spending time actively.
+ - The aim of this website is to promote The Hikers group on the market, make the group recognizable and to present their offer of organized trips in the Irish mountains for people looking for adventure, unforgettable experiences, interested in discovering Irish mountain trails, spending time actively.
+ - My project is for educational purpose only
 ---
 
 ## User stories
@@ -173,7 +174,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ## Resources
 - [Code Institute Course Content](https://courses.codeinstitute.net/login) -Main source of fundamental knowledge.
 - Code Institute SLACK Community - Main source of assistance
-- [youtube](https://www.youtube.com/) - General resource.
+- [youtube](https://www.youtube.com/) - General resource, add videos.
 - [stackoverflow](https://stackoverflow.com/) -General resource.
 - [css-tricks](https://css-tricks.com/)-General resource.
 - [w3schools](https://www.w3schools.com/default.asp)-General resource.
@@ -189,7 +190,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [freelogodesign](https://www.freelogodesign.org/ ) Logo design tool
 - [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/) -to choose colors for web
 - [css Variables](https://www.youtube.com/watch?v=PHO6TBq_auI&ab_channel=KevinPowell) - An introduction to CSS custom properties
-- [youtube](https://www.youtube.com/)
+- [](https://www.youtube.com/)
 
 ----
 
@@ -239,6 +240,12 @@ This project has been deployed on GitHub Pages with the following process:
 
 ## Credits
 - Bootstrap code used for navbar
+
+
+- [stackoverflow - Orel Eliyahu](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked) solution for Bootstrap toggle menu on one page site does not un collapse when clicked
+- [youtube](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns)
+
+
 
 **Media**
 
