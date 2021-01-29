@@ -13,16 +13,17 @@
     padding:0;
     border:0;
 }
-
+/*
 html {
     overflow-x: hidden; 
-}
+}*/
 
 body {
     font-family: 'Oswald', sans-serif;     
     font-size: 1.2rem;
     background-color:var(--background--clr);
     color: var(--text--color--clr);
+    letter-spacing: 1px;
     margin:0;
     height:100vh;
   /*  width: 100vw;*/
@@ -36,7 +37,6 @@ h3 {
  h1 {
     font-size: 2.8rem;
     color:var(--heading--h1);
-    letter-spacing: 1px;
  }
  h2 {
      font-size: 1.5rem;
@@ -44,7 +44,6 @@ h3 {
  }
  h3 {
     font-size: 1.1rem; 
-    letter-spacing: 1px;
     color: var(--heading--h2--h3);
  }
  h4 {
@@ -52,12 +51,9 @@ h3 {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 1px;
  }
  p {
-    letter-spacing: 1px;
-    font-weight: 200;
-    font-size: 1.3rem;
+    font-weight: 300;
  }
  
  /*---------------------------- NAVIGATION --------------------*/
@@ -65,28 +61,28 @@ h3 {
     width: 110px;
     height: 58px;
     margin-left: 0px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
- }
+    padding: 5px 0px 5px  10px;
+}
+
 #navbarNav {
     justify-content: flex-end;
 }
 
 .navbar {
     background-color:var(--primary--clr);
+    color: var(--text--color--clr);
+    margin-bottom: 0;
     padding-top: 0px;
     padding-bottom: 0px;
     letter-spacing: 2px;
     font-size: 1.5rem;
-    color: var(--text--color--clr);
-    margin-bottom: 0;
     width: 100%;
     border: 0;
 }
 .navbar-brand {
     margin-right: 0;
 }
+
 .navbar .navbar-brand {
     font-weight:400;
     padding: 0;
@@ -104,30 +100,30 @@ h3 {
     color: var(--text--color--clr);
     text-align: center;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--background--clr);
 }
 
-
-.navbar .navbar-toggler:focus{
+.navbar .navbar-toggler:focus {
     outline-color:rgb(87 171 36);
 }
 
-/* ---------------------------------------- Home/welcome page/jumbotron ---------------- */
-
+/* ----------------------------------------SITE HOME/WELCOME - jumbotron ---------------- */
 .welcome-sign-top {
     font-size: 24px;
     letter-spacing: 1px;
     color: var(--text--color--clr);
     margin-bottom: 5px;
 }
+
 .welcome-sign-bottom {
     font-size: 18px;
     letter-spacing: 1px;
     text-align: center;
 }
 
- hr {   
+hr {   
     width: 35%;
     height:3px;
     border: 0;
@@ -137,8 +133,8 @@ h3 {
  }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
 /*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
-.home-container{
-background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
+.home-container {
+    background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -146,7 +142,6 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     height: 100vh;
     width: auto;
     margin-bottom: 0px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,11 +164,11 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     letter-spacing: 2px;
     border-radius:0.7rem;
 }
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--primary--clr);
     border-color: var(--primary--clr);
 }
-.btn-style{
+.btn-style {
     padding-right: 9px;
     padding-left: 9px;
     padding-top: 6px;
@@ -181,7 +176,7 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
 }
 
 /* ------------------------------------------------------ ABOUT ------------------------------- */
-
+/*-----------------#about style needed to lover the header out from the navbar in the about section -----------*/ 
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -209,20 +204,19 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
 	padding: 5px 2px;
     text-align: center;
     letter-spacing: 2px;
-	border-radius: 8px;
     margin-bottom: 0px;
-    align-items: center;
 }
-.heading-text h1{
-    margin-top: 15px;
-    margin-bottom: 8px;
+
+.heading-text h1 {
+    margin-top: 23px;
+    margin-bottom: 16px;
     padding-top: 10px;
 }
-        
+/*        
 .container {
   align-items: center;
 }
-
+*/
 .heading-text {
     margin:8px 0px;
 }
@@ -232,9 +226,9 @@ background: url('../images/hero-image.jpg') no-repeat bottom center fixed;
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.7rem;
-   
 }
-.card-about{
+
+.card-about {
     margin-bottom: 1rem;
 }
 
@@ -244,7 +238,7 @@ h3 {
 }
 
 /* ----------------------------------------------------------------- TOURS ------------------------------------------- */
-.video-card-tours{
+.video-card-tours {
     height: 400px;
     margin-bottom: 40px;
 }
@@ -269,12 +263,59 @@ h3 {
     font-weight: 300;
     margin-bottom: 0px; 
 }
+
+/* -------------------------- Credit: w3school snipped code/customized Image Hoover Overlay Fade for the images-------------------------- */
 .card-tours {
-  margin-bottom: 2.2rem;
+    margin-bottom: 2.2rem;
+    position: relative;
+    width: 50%;
 }
 
+.card-img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-tours:hover .card-img {
+    opacity: 0.7;
+}
+
+.card-tours:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color:rgb(6 6 6 / 72%); ;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8%;
+}
+
+.phone-number{
+    color: var(--text--color--clr);
+}
+.phone-number:hover{
+    color: var(--primary--clr) ;
+    text-decoration: none;
+}
 /* ------------------------------------------------------------------- GALLERY --------------------------------------------- */
-#gallery{
+#gallery {
     border-top:7px solid transparent;
     margin-top: -7px;
 }
@@ -288,26 +329,25 @@ h3 {
     margin-bottom: 15px;
 }
 
-.image-style:hover{
+.image-style:hover {
     align-items: center;
 }
 
-
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
-.margin {
-    margin-top: ;
-}
 .contact-sent-btn{
-    padding-right: 0.9rem;
-    padding-left: 0.9rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    margin-top: 0.9rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin-top: 36px;
     width: auto;
 }
 
-#contact-bottom{
-   padding-bottom: 2rem;
+.margin {
+    margin-top: 26px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .contact-details {
@@ -324,7 +364,7 @@ h3 {
     height: 100vh;
 }
 
-.input-box{
+.input-box {
     width: 100%;
     display: block;
     background-color:#a7a9ab;;
@@ -450,13 +490,16 @@ footer .contact {
  @media screen and (max-width: 576px) {
     h1,
     h3,
-    h4, {
+    h4 {
          letter-spacing: 0;
     }
 
     p {
         letter-spacing: 0;
        /* text-align: left;*/
+    }
+    .content-item-text {
+        text-align: left; 
     }
  }
 /*-----------------------------------------------------------Media to Footer-------------------------------*/
