@@ -248,9 +248,7 @@ h3 {
     height: 400px;
     margin-bottom: 40px;
 }
-.margin-text {
-    
-}
+
 #tours {
     border-top:1px solid transparent;
     margin-top: -1px;
@@ -286,17 +284,14 @@ h3 {
     border: 6px solid white;
     border-radius: 0.3rem;  
     padding: 4px; 
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .image-style:hover{
-    box-shadow: 0 0 4px 2px white;
-}
-.image {
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
+
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
 .margin {
