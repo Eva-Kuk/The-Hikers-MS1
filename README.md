@@ -93,7 +93,7 @@ The main purpose of the structure is to enable users to quickly navigate through
 
 - Pages/Section: Home, About/Tours, Gallery, Contact
 - Fixed navigation bar - Menu headings and pointing to each of the 4 Pages
-- Fixed footer with Contact email-link and phone number and Social Madia icons
+- Fixed footer with Contact email-link and phone number and Social Media icons
 
 ---
 **5. Surface**
@@ -175,8 +175,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [Code Institute Course Content](https://courses.codeinstitute.net/login) -Main source of fundamental knowledge.
 - Code Institute SLACK Community - Main source of assistance
 - [youtube](https://www.youtube.com/) - General resource, add videos.
-- [stackoverflow](https://stackoverflow.com/) -General resource.
-- [css-tricks](https://css-tricks.com/)-General resource.
+- [Stack Overflow](https://stackoverflow.com/) -General resource.
+- [CSS-Tricks](https://css-tricks.com/)-General resource.
 - [w3schools](https://www.w3schools.com/default.asp)-General resource.
 - [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis) - For Markdown language reference.
 - [FlexBox Froggy Game ](http://flexboxfroggy.com/) - Learning platform for FlexBox.
@@ -186,11 +186,11 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 - [ Wireframing design tool.](https://balsamiq.com/wireframes/) - Wire framing design tool.
-- [Bootsrap Grid Explanation by Anna Greaves ](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
+- [Bootstrap Grid Explanation by Anna Greaves ](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
 - [freelogodesign](https://www.freelogodesign.org/ ) Logo design tool
 - [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/) -to choose colors for web
 - [css Variables](https://www.youtube.com/watch?v=PHO6TBq_auI&ab_channel=KevinPowell) - An introduction to CSS custom properties
-- [](https://www.youtube.com/)
+- [boxshadowgenerator](https://html-css-js.com/css/generator/box-shadow/) -  box shadow generator for gallery images
 
 ----
 
@@ -239,11 +239,10 @@ This project has been deployed on GitHub Pages with the following process:
 ---
 
 ## Credits
-- Bootstrap code used for navbar
-
-
-- [stackoverflow - Orel Eliyahu](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked) solution for Bootstrap toggle menu on one page site does not un collapse when clicked
-- [youtube](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns)
+- [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) Bootstrap code used for navbar
+- [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked) solution for Bootstrap collapsing back toggle menu on small devices
+- [JimLynks](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact) Inspiration for using cards for tour section
+- [Stack Overflow - "djibe"](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns)- Code idea for cards for tour section 
 
 
 

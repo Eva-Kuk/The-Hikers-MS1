@@ -176,16 +176,13 @@ hr {
 }
 
 /* ------------------------------------------------------ ABOUT ------------------------------- */
-/*-----------------#about style needed to lover the header out from the navbar in the about section -----------*/ 
+/*-----------------#about needed to lover the header out from the navbar in the about section -----------*/ 
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
     height: 100vh;
 }
 
-.about-content {
-    margin-top: 90px;
-}
 
 .content-item-text {
    text-align: justify; 
@@ -231,6 +228,9 @@ hr {
 .card-about {
     margin-bottom: 1rem;
 }
+.card-about:hover{
+    box-shadow: 0px 0px 7px 3px #fff;
+}
 
 h3 {
     text-align: center;
@@ -238,15 +238,17 @@ h3 {
 }
 
 /* ----------------------------------------------------------------- TOURS ------------------------------------------- */
-.video-card-tours {
-    height: 400px;
-    margin-bottom: 40px;
-}
 
+/*-----------------#tours needed to lover the header out from the navbar in the about section -----------*/ 
 #tours {
     border-top:1px solid transparent;
     margin-top: -1px;
     height: auto;
+}
+
+.video-card-tours {
+    height: 400px;
+    margin-bottom: 40px;
 }
 
 #image-tours {
@@ -315,6 +317,7 @@ h3 {
     text-decoration: none;
 }
 /* ------------------------------------------------------------------- GALLERY --------------------------------------------- */
+/*-----------------#gallery needed to lover the header out from the navbar in the about section -----------*/ 
 #gallery {
     border-top:7px solid transparent;
     margin-top: -7px;
@@ -331,9 +334,18 @@ h3 {
 
 .image-style:hover {
     align-items: center;
+    box-shadow: 0px 0px 12px 5px #fff;
 }
 
 /* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
+/*-----------------#contact needed to lover the header out from the navbar in the about section -----------*/
+#contact {
+    border-top:3px solid transparent;
+    margin-top: -3px;
+    height: 100vh;
+}
+
+
 .contact-sent-btn{
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -358,11 +370,7 @@ h3 {
     text-decoration: none;
 }
 
-#contact {
-    border-top:3px solid transparent;
-    margin-top: -3px;
-    height: 100vh;
-}
+
 
 .input-box {
     width: 100%;
@@ -404,7 +412,7 @@ footer {
 	bottom: 0px;
 	height: 3.5rem;
     background-color:rgb(99 175 52);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text--color--clr);
 	display: flex;
 	    -webkit-box-align: center;
@@ -505,13 +513,13 @@ footer .contact {
 /*-----------------------------------------------------------Media to Footer-------------------------------*/
 @media screen and (max-width: 523px) {
    .contact-links i {
-    font-size:0.6rem;
+    font-size:0.7rem;
     }
 footer .contact {
     font-size:0.9rem;
     }
 .contact-links-item a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     }       
 }
  
@@ -564,15 +572,22 @@ footer .contact {
   /* ------------------------------------------------------------Media query for ABOUT section----------------*/
 @media screen and (max-width: 576px){
     .about-content {
-        margin-top: 1.3rem;
+            margin-top: 0px;
     }
-
+ #about {
+        height: auto;
+    }
 }
 @media screen and (max-width: 768px){
     #about {
         height: auto;
     }
+    .heading-text h1 {
+        margin-top: 14px;
+    margin-bottom: 0px;
+    }
 }
+
   /* ------------------------------------------------------------Media query for TOURS section----------------*/
 @media screen and (max-width: 1200px){
     .tours-style{
