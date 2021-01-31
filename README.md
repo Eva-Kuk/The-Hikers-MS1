@@ -2,8 +2,8 @@
 
 ![altthehikers](assets/images/logo.png)
 
-The aim of this project is to create a website for the THE HIKERS group and help it to promote it on the market 
-
+The name of the group The Hikers was created by a group of friends whose passion is hiking.
+This is a fictional project created for education purposes only.
 ## Table of contents
 
 - [Overview](#overview)
@@ -32,18 +32,18 @@ mockups
 
 ## Overview
 ---
-
  - This is my first Milestone 1 project which is part of the Code Institute’s FullStack Software Development Diploma Course. This project demonstrates the skills and knowledge of the HTML, CSS, Bootstrap 4 and User Centric Frontend Development modules which I have learned recently on the course. 
  - The aim of this website is to promote The Hikers group on the market, make the group recognizable and to present their offer of organized trips in the Irish mountains for people looking for adventure, unforgettable experiences, interested in discovering Irish mountain trails, spending time actively.
- - My project is for educational purpose only.
 ---
 
 ## User stories
-1. As a new visitor, I want to navigate the site easily so that I can find what I need  effectively
-2. As a new visitor I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour
-3. As an interested customer, I want to know how to contact the group to find out about new tours
-4. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
-5. As an interested customer I would like to see some visual examples from previous tours
+1. As a user, I want to navigate the site easily so that I can find what I need  effectively
+2. As a user visiting Ireland I am searching for an interesting options for trips in Ireland
+3. As a user living in Ireland I am looking for interesting ideas for hiking and spending my free time in the mountain
+4. As a user I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour
+5. As an interested customer, I want to know how to contact the group to find out about new tours
+6. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
+7. As an interested customer I would like to see some visual examples from previous tours
 ----
 ## UX
 
@@ -54,7 +54,7 @@ The purpose of this project is generally simple but effective eye catching websi
 
 **1. Strategy**
 
-My goal in this project is to promote the group on the market and increase interest in the tours they offer and grow their business by providing the UX simple, clean and user-friendly. 
+My goal in this project is to promote the group THE HIKERS on the market and increase interest in the tours they offer and grow their business by providing the UX simple, clean and user-friendly. 
 
 ### Business goals:
 - Promote the new group on the market
@@ -79,8 +79,9 @@ I chose the MVP (Minimal Viable Product) approach which:
 - It defines content quickly and focuses on contacting via email or social media. 
 
 **3. Structure**
-
-The main purpose of the structure is to enable users to quickly navigate through the website, easily assimilate information and have overview from of the trips to show what can be expected by buyers on the offered trips. A selection of high-quality images that gives special accent for the website. Contact details are provided via the e-mail contact form  and links to social media in the footer. 
+- The purpose of the Structure has been created as a single page containing sections/pages separated by eye-catching pictures using a parallax effect to encourage and attract the visitor's interest and  to enable users to quickly navigate through the website, easily assimilate information and have overview from of the trips to show what can be expected by buyers on the offered trips.
+- Contact details have been placed in different parts of the website (footer, contact form, main page button, tours section) for easy access by the user and are provided via the e-mail, phone number and links to social media. 
+- I decided to put the Gallery section separately to facilitate faster page loading due to the large number of photos
 
 **4. Skeleton**
 
@@ -91,7 +92,8 @@ The main purpose of the structure is to enable users to quickly navigate through
 - [Gallery](assets/wireframes/gallery-page.png)
 - [Contact](assets/wireframes/contact-page.png)
 
-- Pages/Section: Home, About/Tours, Gallery, Contact
+- Pages/Section: Home, About/Tours, Contact
+- Gallery in a separated page (changed through project development)
 - Fixed navigation bar - Menu headings and pointing to each of the 4 Pages
 - Fixed footer with Contact email-link and phone number and Social Media icons
 
@@ -100,8 +102,10 @@ The main purpose of the structure is to enable users to quickly navigate through
 
  **Colors**
 - As a primary color, I have chosen color green (#57ab24) that is not only associated with Ireland, but also suggest freshness, nature and green landscapes. They will also match the photos I have selected for the site. 
-- As a additional color I choose a red (#dd3044) which i picked by the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will be noticed by the user immediately. - -For the other colors I have chosen a combination of dark grey nad off-white to give your website a softer, more inviting look and readability and also maintain strong, balanced contrast: background color (#303030), body-text color (#f8f9fa), headings #f8f9fa and #303030.
-
+- As a additional color I choose a red (#dd3044) which i picked by the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will
+ be noticed by the user immediately.
+ -For the other colors I have chosen a combination of dark grey nad off-white, which are the darker and lighter shades of primary green colors to give a website a balanced contrast: 
+ background color (#2b2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2b2d2a) .
 
  **Typography**
  
@@ -109,13 +113,12 @@ The main purpose of the structure is to enable users to quickly navigate through
 - For the content I have chosen Oswald font with fall-back font of Sans-Serif, which is popular pairing font with "Special Elite" according to www.fontsgoogle.com 
 
  **Images**
-The image selection has been chosen very carefully to visually presents to charm users of the website with the beauty ofIreland and encourage to participate in offered trips
-The hero image (View of Wicklow landscape) and background images (forest and happy-girl) and for tours section were downloaded from the Pexels and Pixaby.I have chosen a group of selected images for the about section and the gallery.
+
+- The image selection has been chosen very carefully to visually presents to charm users of the website with the beauty of Ireland and encourage to participate in offered trips
+The hero image (View of Wicklow landscape) and background images (forest and happy-girl) and for tours section were downloaded from the Pexels and Pixaby. I have chosen a group of selected images for the about section and the gallery.
 
 ---
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 **Existing Features**
 - Designed with HTML5, CSS and Bootstrap.
@@ -130,26 +133,25 @@ In this section, you should go over the different parts of your project, and des
 **Features Left to Implement when skills develop**
 
 Another feature idea
-- 	As the owner is originally from Poland to encourage Polish tourists to more explore Ireland, it is      hoped to add a bilingual option (English & Polish) which will translate the page into the appropriate language.
-- The Sent button need to be functional so the details can be sent tot the server (PHP and Java script once learned)
-- Add short videos of excursions on the trip, which today were not of good quality and must be recorded and edited again 
+- As the owner is originally from Poland to encourage Polish visitors to explore Ireland, it is hoped to add a bilingual option (English & Polish) which will translate the page into the appropriate language.
+- The "Sent" button contact form need to be functional so the details can be sent to the server via php
+- Change short videos of excursions on the organized group trips, which today were implemented from youtube
 - More comprehensive Tours section write more about tours option, and more detailed 
 - Integration of Social media Page to have a live update feeds of planned trips and events.
+- Improve gallery section maybe by using javascript
 ---
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
 **1. Languages**
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) - the current standard that is used
+- [CSS3](https://en.wikipedia.org/wiki/CSS) - the current standard that is used
 
 
 **2. Integrations**
-- [Bootstrap](https://getbootstrap.com/) - by linking via BootstrapCDN to HTML Doc. 
-- [Font awesome](https://fontawesome.com/) - Icons for Social Media links in Footer and Tours section
-- [Google Fonts](https://fonts.google.com/) - Overall Typography import.
+- [Bootstrap 4.5.2](https://getbootstrap.com/) - by linking via Bootstrap CDN to HTML Doc making the design responsive. 
+- [Font Awesome](https://fontawesome.com/) - Icons for Social Media links in Footer and Tours section
+- [Google Fonts](https://fonts.google.com/) - to import typography of the website into the stylesheet file.
 
 **3. Workspace, version control and Repository storage**
 - [GitPod](https://github.com/mkuti/corklagos-venture/blob/master/gitpod.io)- Main workspace IDE (Integrated Development Environment)
@@ -157,10 +159,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [GitHub](https://github.com/) - A cloud-based hosting service to manage my Git repositories.
 
 **4. Other**
-- [Photoshop](https://www.photoshop.com/en) - for resizing
--
--
--
+- [Photoshop](https://www.photoshop.com/en) - for photo editing
 
 **5. IDE Extensions used in GitPod**
 - Auto Close Tag
@@ -173,19 +172,19 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ---
 ## Resources
 - [Code Institute Course Content](https://courses.codeinstitute.net/login) -Main source of fundamental knowledge.
-- Code Institute SLACK Community - Main source of assistance
+- Code Institute SLACK Community - Source of assistance
 - [youtube](https://www.youtube.com/) - General resource, add videos.
 - [Stack Overflow](https://stackoverflow.com/) -General resource.
 - [CSS-Tricks](https://css-tricks.com/)-General resource.
 - [w3schools](https://www.w3schools.com/default.asp)-General resource.
-- [markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#emphasis) - For Markdown language reference.
+- [CommonMark](https://commonmark.org/) - For Markdown language reference.
 - [FlexBox Froggy Game ](http://flexboxfroggy.com/) - Learning platform for FlexBox.
 - [css-diner.netlify](https://css-diner.netlify.app/#) - Learning platform for type selectors
 - [kurshtml](https://www.kurshtml.edu.pl/index.html) - Polish learning web with courses CSS and HTML
 - [pasja-informatyki](https://pasja-informatyki.pl/) - Polish learning website
 - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
-- [ Wireframing design tool.](https://balsamiq.com/wireframes/) - Wire framing design tool.
+- [Balsamic](https://balsamiq.com/wireframes/) - Wireframing design tool to create wireframes.
 - [Bootstrap Grid Explanation by Anna Greaves ](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
 - [freelogodesign](https://www.freelogodesign.org/ ) Logo design tool
 - [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/) -to choose colors for web
@@ -201,10 +200,38 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ---
 ## Testing
 
--
--
--
 
+
+
+
+**Project Bugs And solutions**
+
+During the development of this project, trying to use the combination of Bootstrap, CSS3 and Html5 together was a big challenge for me and I had the impression that my project is one big virus which, after fixing one problem, crashes into another. In general, it seems to me that most of the problems I had were caused by insufficient knowledge of the newly learned programs and tools as well as experimenting with them, and here are some of them:
+1. The contact links in the footer did not appeared correctly, after hover over with the mouse they fell apart, after consulting it with tutor assistance, the problem was wrong code in hover in contact-links which I set earlier by mistake. The solution was remove that line of code
+
+![alttheissue](assets/images/contact-links-footer-problem.png)  ![altfoundissue](assets/images/contact-links-footer-problem-found.png)  ![altfixedissue](assets/images/contact-links-footer-fixed.png)
+
+2. Problem with scrolling horizontal bar that appeared. To get around this after consulting it with the tutor assistance first I gave the html a value overflow:hidden which worked good, but later I found the real reason why the horizontal scrolling appeared. I noticed on the unicorn revealer that my background images were overflowing. 
+I set for the both background images and for the whole body width: 100vw; which caused the problem. To solve this I removed the with of the pictures and the body
+![altscrollingbarissue](assets/images/scrolling-bar-issue.png)
+
+---
+
+![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue.png)
+
+---
+
+![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue1.png)
+
+----
+
+![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue2.png)
+
+3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem was a very large margin which I set for the images for the whole margin.The solution was to remove margin and set margin:top and margin:bottom only.
+![altleftsidegap](assets/images/left-side-gap.png)
+4. Issue with the fixed top navbar was overlying on the other content and the headings on each section were hidden behind the navbar. After consulting with the tutor assistance the solution for this was set for each section an id="about/tours/contact/gallery" and in stylesheet.css set: border-top:3px solid transparent;
+    margin-top: -3px;
+    
 ---
 
 ## Project barriers and the solutions
@@ -239,36 +266,30 @@ This project has been deployed on GitHub Pages with the following process:
 ---
 
 ## Credits
-- [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) Bootstrap code used for navbar
-- [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked) solution for Bootstrap collapsing back toggle menu on small devices
-- [JimLynks](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact) Inspiration for using cards for tour section
-- [Stack Overflow - "djibe"](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns)- Code idea for cards for tour section 
-
-
 
 **Media**
-
-The text, images, links and other data in the database was sourced from various local websites including but not limited to
--
--
+- The gallery images and for about section in this project are owned and provided by THE HIKERS group. I have permission from people who are in these photos to use them in this project.
+- The background images for the parallax effect, as the images for the "Tour" section were selected from a free stock photo libraries  [Pexels](https://www.pexels.com/) and  [Pixabay](https://pixabay.com/)
+- The logo was made by THE HIKERS group (myself) using [Free Logo Design](https://www.freelogodesign.org/)
 
 **Content**
-The text for section Y was copied from the Wikipedia article Z
+
+All text content on the website was written by me
 
 **Code Snippets**
--
--
--
+- Template code for navbar using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/)and heavily modified to suit the sites needs.
+- Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
+- Solution for using cards for tour section [JimLynks](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
+- Code idea for cards for tour section [Stack Overflow - "djibe"](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns).
+- Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
+-  Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
 
----
 ## Acknowledgments
 
 I would like to thank:
+- My mentor, Aron Sinnott, for his guidance through my journey with MS1 project, lots of great advices and ideas which helped me a lot to improve my project development
+- My tutor Cormac for his big support he offered me, troubleshooting guide, his patience, and every single advice
+- I am very grateful and would like to say a special thank to the Jim JimLynks for his huge help getting started the project, and a lot of his free time he offered me, for all his support and great advices,
+- Slack Community and Student  Support CI staff for fantastic support they offered, who have helped guide me to solutions in my project.
 
-I received inspiration for this project from:
 
-
----
-## Support
-
-For any issue resolution or assistance, please email Ewa Kukla kuklaewa@gmail.com
