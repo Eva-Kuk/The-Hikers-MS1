@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <!----------------------Site navigation------------------------>
-        <!-------CREDIT: navbar code customized from Bootstrap 4.5------->
+        <!--Site navigation-->
+        <!--CREDIT: navbar code customized from Bootstrap 4.5-->
         <div class="container-fluid navalert-container">
             <nav class="navbar navbar-expand-sm navbar-light fixed-top">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="assets/images/logo.png"
@@ -49,8 +49,8 @@
     </header>
 
     <section class="container-fluid home-container" >
-        <!----------------------Home/welcome page----------------------->
-        <!-------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized------->
+        <!--Home/welcome page-->
+        <!--CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized-->
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12">
@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <!------------------------About page------------------------>
+    <!--About page-->
     <section id="about">
         <div class="about-margin">
             <div class="container">
@@ -78,10 +78,9 @@
                     </div>
                 </div>
             </div>
-
             <div class="container about-content">
                 <div class="row mt-5 content-item">
-                    <div class="col-12 col-lg-6 ">
+                    <div class="col-12 col-md d-flex align-items-center">
                         <div class="card card-about">
                             <a href="assets/images/about-team.jpg" target="_blank">
                             <img src="assets/images/about-team.jpg" class="card-img" alt="The hikers team">
@@ -89,10 +88,9 @@
                             <div class="card-desc">
                             <h3>Meet Our Team</h3>
                             </div>
-                                
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 content-item-text">
+                    <div class="col-12 col-md content-item-text">
                         <h4> Welcome to the Ireland hiking of our dreams, We hope yours too</h4>
                         <p>If you love hiking, you are fascinated by wonderful views and magnificent scenery, and looking for adventure
                             packed with an interesting stories about the Irish history, then you are in the right place!
@@ -102,34 +100,68 @@
                         </p>
                         <p>Our main organizer and Certified Guide – Arek is very passionate about Irish history and can tell you
                             many interesting stories about this beautiful, scenic and wonderful country.
-
                         </p>
-                        <p><strong style="font-weight: 400;">We hope to see you soon on one of our trips</strong>
+                         <p><strong>We hope to see you soon on one of our trips</strong>
+                        </p>    
+                    </div>
+                </div>
+            </div>
+                <div class="container about-content">
+                <div class="row mt-5 content-item">
+                    <div class="col-12 col-md d-flex align-items-center">
+                        <div class="card card-map">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2441313.9710834716!2d-10.345289730090613!3d53.305732790519244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sireland!5e0!3m2!1spl!2sie!4v1612296675326!5m2!1spl!2sie" width="100%" height="291" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <div class="card-desc">
+                            <h3>Map of Ireland</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md content-item-text">
+                        <h4>About Ireland’s Highest Mountains:</h4>
+                        <p>There are many excellent opportunities in Ireland for hiking.
+                            Many of Ireland's largest mountain ranges stretch along the coast,
+                            offering breathtaking views of the coast as well as the mountains.  
+                            Whether you want to hike Ireland's highest peak, Carrauntoohil, or
+                            enjoy stunning views of Connemara, you won't be disappointed. 
                         </p>
+                        <p>
+                            Here is a list of the 5 highest mountains in Ireland:
+                        </p>
+                        <p>
+                        <ol class="fa-ul mountain">
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Carrauntoohil, Height: 1038 m, Location: Co Kerry</li>
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Cnoc na Péiste, Height: 988 m, Location: Co Kerry</li>
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Mount Brandon, Height: 952 m,  Location: Co Kerry</li>
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Lugnaquillal, Height: 925 m,  Location: Co Wicklow</li>
+                            <li><span class="fa-li"><i class="fas fa-mountain"></i></span>Galtymore, Height: 918 m, Location: Co Limerick & Co Tipperary</li>
+                        </ol>
+                        
+                        </p>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <!-----section for background image with parallax effect------>
-    <section id="image-tours"></section>
+   <!--section for background image with parallax effect-->
+    <div id="image-tours"></div>
  
-    <!------------------------Tours page------------------------>
+    <!--Tours page-->
    
         <section id="tours">
             <div class="container">
-                <div class="row mt-5 heading-text">
+                <div class="row mt-4 heading-text">
                     <div class="col-12">
-                        <h1>Tour option</h1>
+                        <h1>Tours</h1>
                     </div>
                 </div>
             </div>
 
             <div class="container">
-                <div class="row my-5 content-item-text ">
+                <div class="row my-4 content-item-text ">
                     <div class="col-12 tours-style">
-                        <h2><i class="fab fas fas fa-hiking"></i> Tour option to chose :</h2>
+                        <h2><i class="fab fas fas fa-hiking" aria-hidden="true"></i> About Tours:</h2>
                         <p> We organize tours from short strolls to multi-day hikes with our Certified Guide who will 
                             look after not only your safety but also entertainment, as  good sense of humour is Arek’s
                             tremendous asset. Our tours include a variation of the trails in the region of your choice
@@ -145,53 +177,52 @@
                     </div>
                 </div>
             </div>
-            <!-------CREDIT: Idea how to make cards from Jim Lynx MS1 project------->
+            <!--CREDIT: Idea/code how to make cards from Jim Lynx MS1 project-->
             <div class="container">
-                <div class="row my-4">
+                <div class="row mt-4">
                     <div class="col tours-images-style">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md d-flex">
-                                <div class="card card-tours flex-fill">
-                                    <!-------CREDIT: Photo by Steven Hylands from Pexels------->
-                                    <img src="assets/images/wicklow.jpg" class="card-img" alt="Wicklow mountain view">
+                            <div class="col-md d-flex padding">
+                                <div class="card card-tours">
+                                    <!--CREDIT: Photo by Steven Hylands from Pexels-->
+                                    <img src="assets/images/wicklow1.jpg" class="card-img" alt="Wicklow mountain view">
                                         <div class="middle">
                                             <div class="text">
                                                 <a href="tel:+55545667800" class="phone-number" aria-label="Go to our Phone Number">Call Us For More Information</a>
                                             </div>
                                         </div>
                                     <div class="card-desc">
-                                        <h3>Wicklow Mountain Tours</h3>
+                                        <h3>Wicklow Mountain Tour</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md d-flex">
-                                <div class="card card-tours flex-fill">
-                                    <!-------CREDIT: Image by _Artemis_ from Pixabay------->
-                                    <img src="assets/images/connemara.jpg" class="card-img" alt="Connemara mountain view">
+                            <div class="col-md d-flex padding">
+                                <div class="card card-tours">
+                                    <!--CREDIT: Image by _Artemis_ from Pixabay-->
+                                    <img src="assets/images/connemara2.jpg" class="card-img" alt="Connemara mountain view">
                                         <div class="middle">
                                             <div class="text">
                                                 <a href="tel:+55545667800" class="phone-number" aria-label="Go to our Phone Number">Call Us For More Information</a>
                                             </div>
                                         </div>
                                     <div class="card-desc">
-                                        <h3>Connemara Mountain Tours</h3>
+                                        <h3>Connemara Mountain Tour</h3>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md d-flex">
-                                <div class="card card-tours flex-fill">
-                                    <!-------CREDIT: Image by Nanni05 from Pixabay------->
-                                    <img src="assets/images/cliffs-of-moher.jpg" class="card-img"
-                                        alt="Land Rover driving through mud">
+                            <div class="col-md d-flex padding">
+                                <div class="card card-tours">
+                                    <!--CREDIT: Image by Nanni05 from Pixabay-->
+                                    <img src="assets/images/cliffs-of-moher1.jpg" class="card-img" alt="Cliffs of Moher view">
                                     <div class="middle">
                                         <div class="text">
                                             <a href="tel:+55545667800" class="phone-number" aria-label="Go to our Phone Number">Call Us For More Information</a>
                                         </div>
                                     </div>    
                                     <div class="card-desc">
-                                        <h3>Cliffs Of Moher Tours</h3>
+                                        <h3>Cliffs Of Moher Tour</h3>
                                     </div>
                                 </div>
                             </div>
@@ -200,35 +231,48 @@
                 </div>
             </div>
         </div> 
+         <div class="container">
+                <div class="row mt-5 tours-style">
+                    <div class="col-12">
+                        <h2><i class="fas fa-video" aria-hidden="true"></i> Our video trips...</h2>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row ">
                     <div class="col tours-images-style">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md d-flex">
+                            <div class="col-md padding">
                                 <div class="card video-card-tours">
-                                    <!-------CREDIT: Video from youtube.com made by Video © www.absolutevisuals.ie------->
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CdBXc3zW30Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="video-wrapper">
+                                    <!-- CREDIT: Video from youtube.com made by Video © www.absolutevisuals.ie -->
+                                    <iframe width="727" height="409" src="https://www.youtube.com/embed/CdBXc3zW30Q"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                     <div class="card-body-desc">
-                                        <h3 class="margin-text"><i class="fas fa-video" aria-hidden="true"></i> Glendalough, Wicklow Video</h3>
+                                        <h3><i class="fas fa-video" aria-hidden="true"></i> Glendalough, Wicklow</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md d-flex">
+                            <div class="col-md padding">
                                 <div class="card video-card-tours">
-                                    <!-------CREDIT: Video from youtube.com made by Video © www.absolutevisuals.ie------->
-                                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jx6hBW7mMng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="card-body-desc">
-                                        <h3 class="margin-text"><i class="fas fa-video" aria-hidden="true"></i> Connemara Video</h3>
+                                     <div class="video-wrapper">
+                                    <!-- CREDIT: Video from youtube.com made by Video © www.absolutevisuals.ie -->
+                                   <iframe width="727" height="409" src="https://www.youtube.com/embed/Jx6hBW7mMng"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                   <div class="card-body-desc">
+                                        <h3><i class="fas fa-video" aria-hidden="true"></i> Connemara</h3>
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-md d-flex">
+                             <div class="col-md padding">
                                 <div class="card video-card-tours ">
-                                    <!-------CREDIT: Video from youtube.com made by https://graylineireland.com------->
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7o-Lh7m2Maw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                     <div class="video-wrapper">
+                                    <!-- CREDIT: Video from youtube.com made by https://graylineireland.com -->
+                                    <iframe width="727" height="409" src="https://www.youtube.com/embed/7o-Lh7m2Maw"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                     <div class="card-desc">
-                                        <h3 class="margin-text"><i class="fas fa-video" aria-hidden="true"></i> Cliffs Of Moher Video</h3>
+                                        <h3><i class="fas fa-video" aria-hidden="true"></i> Cliffs Of Moher</h3>
                                     </div>
                                 </div>
                             </div>
@@ -239,12 +283,10 @@
         </div> 
     </section>
 
+    <!-- div for background image with parallax effect -->
+    <div id="image-contact"></div>
 
-
-    <!-----section for background image with parallax effect------>
-    <section id="image-contact"></section>
-
-    <!-----------------Contact and Enquiry Form page--------------------->
+    <!-- Contact and Enquiry Form page -->
     <section id="contact">
         <div class="container">
             <div class="row mt-5 heading-text">
@@ -256,12 +298,13 @@
         <div class="container">
             <div class="row content-item-text">
                 <div class="col">
+                    
                     <p class="margin">
                         If you would like to leave a comment or have a question about one of our tours or have 
                         a specific place you would like to visit, please fill in the form below and we will get
                             back to you as soon as possible.
                     </p>
-                    <p class="margin">You can also<strong>Call Us</strong>on
+                    <p class="margin">You can also <strong> Call Us</strong> on
                         <a href="tel:+55545667800" class="contact-details" aria-label="Go to our Phone Number">
                             <i class="fas fa-phone-alt" aria-hidden="true"></i> 555 4657800
                         </a>or join our Facebook and Instagram pages for more information and updates from our latest tours.
@@ -271,7 +314,7 @@
             </div>
         </div>
         <div class="container mb-5">
-            <div class="col">
+            <div class="col px-1">
                 <form id="contact-form" autocomplete="off" aria-label="contact form">
                     <div class="form-group">
                         <label for="full-name">Your Full Name:</label>
@@ -316,7 +359,7 @@
             </div>
         </div>
     </section>
-    <!-----------------Footer page--------------------->
+    <!-- Footer page -->
     <footer>
         <div class="contact">
             <ul class="contact-links">

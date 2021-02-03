@@ -41,9 +41,8 @@ mockups
 2. As a user visiting Ireland I am searching for an interesting options for trips in Ireland
 3. As a user living in Ireland I am looking for interesting ideas for hiking and spending my free time in the mountain
 4. As a user I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour
-5. As an interested customer, I want to know how to contact the group to find out about new tours
-6. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
-7. As an interested customer I would like to see some visual examples from previous tours
+5. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
+6. As an interested customer I would like to see some visual examples from previous tours
 ----
 ## UX
 
@@ -228,11 +227,53 @@ I set for the both background images and for the whole body width: 100vw; which 
 ![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue2.png)
 
 3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem was a very large margin which I set for the images for the whole margin.The solution was to remove margin and set margin:top and margin:bottom only.
+
 ![altleftsidegap](assets/images/left-side-gap.png)
+
 4. Issue with the fixed top navbar was overlying on the other content and the headings on each section were hidden behind the navbar. After consulting with the tutor assistance the solution for this was set for each section an id="about/tours/contact/gallery" and in stylesheet.css set: border-top:3px solid transparent;
     margin-top: -3px;
     
 ---
+1. As a user, I want to navigate the site easily so that I can find what I need  effectively.
+- No matter what page the user lands on, they can easily find and use navigation bar.
+- The logo image always leads back to the home page.
+- The home page call to action button leads the client to a contact form.
+
+
+2. As a user visiting Ireland I am searching for an interesting options for trips in Ireland.
+- Links clearly labelled  easy to find on the navigation bar leading to Trips page where presented a samples of video showing a beauty Ireland.
+- Links clearly labelled  easy to find on the navigation bar leading to Gallery page depict gallery from the past tours.
+- A clearly labeled About page easy to find in the navigation bar which contains photos ot the group team an text about the group.
+
+3. As a user living in Ireland I am looking for interesting ideas for hiking and spending my free time in the mountain.
+- Links clearly labelled on navigation bar easy to find leading to Trips and Gallery page to show a samples of video images from the trips.
+- Clearly labelled easy to find contact and social media links.
+
+4. As a user I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour.
+- Contact details are always displayed on the sticky footer easy to find.
+- On the home page is call to action button which leads to contact page.
+- On the Tours page there is a link which lead to contact page.
+- On the Tours page call to action button on each tour lead to contact through the phone number.
+
+5. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
+- Clearly labelled social media links displayed on the sticky footer easy to find.
+
+6. As an interested customer I would like to see some visual examples from previous tours
+- Links clearly labelled easy to find on the navigation bar leading to Trips and Gallery page to show a samples of video images from the trips.
+
+
+Validator 
+1. Warning: The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
+- Solution - I removed all hyphens in a comments and left just two.
+2. Warning: Section lacks heading. Consider using h2-h6 elements to add identifying heading to all sections.
+- Solutions - The error was related to the sections that I set for the background images. I changed the sections to div.
+3. Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+- Solutions - attribute removed.
+4. Error: Bad value 100% for attribute width and height on element iframe: Expected a digit but saw % instead.
+- Solution - The attributes for width and height in all iframe elements changed to its previous size. iframe wrapped with div video-wrapper and styled in css for responsive video
+1![altValidator.w3.org](assets/images/validator-w3-org.png)
+
+
 
 ## Project barriers and the solutions
 -
@@ -258,10 +299,17 @@ I set for the both background images and for the whole body width: 100vw; which 
 ## Deployment
 
 This project has been deployed on GitHub Pages with the following process:
--
--
--
 
+- All code was written on Gitpod, an online IDE.
+- The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/Eva-Kuk/The-Hikers-MS1).
+- Under the settings section of the GitHub repository, scroll down to GitHub Pages section.
+- Under 'Source' drop-down, the 'Master branch' was selected.
+- Once selected, this publishes the project to GitHub Pages and displays the site's url.
+- There is no difference between the deployed version and the development version.
+- The code can be run locally through clone or download.
+- You can do this by opening the repository, clicking on the green 'Code' button and selecting either 'clone or download'.
+- The Clone option provides a url, which you can use on your desktop IDE.
+- The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine.
 
 ---
 
@@ -273,16 +321,17 @@ This project has been deployed on GitHub Pages with the following process:
 - The logo was made by THE HIKERS group (myself) using [Free Logo Design](https://www.freelogodesign.org/)
 
 **Content**
+The text for the part about the 10 Irish highest mountains was taken and modified for the website needs from [maps.ie](https://www.maps.ie/mountaineering-map-ireland.htm) and [en.wikipedia.org](https://en.wikipedia.org/wiki/Lists_of_mountains_in_Ireland)
+The rest of the text on that website was written by me
 
-All text content on the website was written by me
 
 **Code Snippets**
 - Template code for navbar using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/)and heavily modified to suit the sites needs.
 - Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
-- Solution for using cards for tour section [JimLynks](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
-- Code idea for cards for tour section [Stack Overflow - "djibe"](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns).
+- Code idea for cards for tour section [JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
 - Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
--  Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
+- Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
+- Code for font awesome icon a list in about section [Fon Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list).
 
 ## Acknowledgments
 

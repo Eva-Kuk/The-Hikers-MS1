@@ -24,10 +24,9 @@ html {
 
 body {
     font-family: 'Oswald', sans-serif;     
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color:var(--background--clr);
     color: var(--text--color--clr);
-    letter-spacing: 1px;
     margin:0;
     height:100vh;
   /* 
@@ -38,27 +37,34 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
  font-family: 'Special Elite', cursive;
 }
+
  h1 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     color:var(--heading--h1);
  }
+
  h2 {
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      color:var(--heading--h2--h3);
+     letter-spacing: 1px;
  }
+
  h3 {
-    font-size: 1.1rem; 
+    font-size: 0.9rem; 
     color: var(--heading--h2--h3);
  }
+
  h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.3;
+    letter-spacing: 1px;
  }
+
  p {
     font-weight: 300;
  }
@@ -82,10 +88,11 @@ h3 {
     padding-top: 0px;
     padding-bottom: 0px;
     letter-spacing: 2px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
     border: 0;
 }
+
 .navbar-brand {
     margin-right: 0;
 }
@@ -116,17 +123,17 @@ h3 {
     outline-color:rgb(87 171 36);
 }
 
-/* ------------------------------ HOME/WELCOME - jumbotron ---------------- */
+/* -------------------------- HOME/WELCOME - jumbotron ---------------- */
 .welcome-sign-top {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     color: var(--text--color--clr);
     margin-bottom: 5px;
+    font-weight:600;
 }
 
 .welcome-sign-bottom {
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -156,10 +163,13 @@ hr {
 .jumbotron {
     background-color:rgb(6 6 6 / 72%); 
     border-radius:0.9rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .btn-lg {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.5;
 }
 
@@ -181,7 +191,7 @@ hr {
     padding-bottom: 6px;
 }
 
-/* --------------------------------------- ABOUT ------------------------------- */
+/* -------------------------------- ABOUT ------------------------------- */
 /*
 #about needed to lover the header out from 
 the navbar which overlying the content 
@@ -190,40 +200,29 @@ in the about section
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
-    height: 100vh;
-}
-
-
-.content-item-text {
-   text-align: justify; 
+    height: auto;
 }
 
 .tours-style h2 {
     text-align: left;
     font-weight: 700;
     color: var(--text--color--clr);
+    padding-bottom: 5px;
 }
 
 .heading-text {
     background-color: transparent;
     text-transform: uppercase;
-   	margin: 50px 0px;
 	padding: 5px 2px;
     text-align: center;
     letter-spacing: 2px;
-    margin-bottom: 0px;
 }
 
 .heading-text h1 {
     margin-top: 23px;
-    margin-bottom: 16px;
     padding-top: 10px;
 }
-/*        
-.container {
-  align-items: center;
-}
-*/
+
 .heading-text {
     margin:8px 0px;
 }
@@ -233,21 +232,28 @@ in the about section
     flex: 1 1 auto;
     min-height: 1px;
     padding: 0.7rem;
+    margin-bottom: 10px;
 }
 
-.card-about {
-    margin-bottom: 1rem;
-}
-.card-about:hover{
+.card-about:hover {
     box-shadow: 0px 0px 7px 3px #fff;
 }
 
 h3 {
     text-align: center;
-    margin-top: 23px;
+    margin-top: 17px;
+    margin-bottom: 5px;
 }
 
-/* ----------------------------------------------------------------- TOURS ------------------------------------------- */
+.fa-li {
+    font-size: 0.9rem;
+}
+
+.fa-ul {
+    margin-left: 1.5rem;
+}
+
+/* ----------------------------- TOURS ---------------------------- */
 
 /*
 #tours needed to lover the header out from 
@@ -256,13 +262,40 @@ in the about section
 */ 
 #tours {
     border-top:3px solid transparent;
-    margin-top: -px;
+    margin-top: -3px;
     height: auto;
 }
 
+.padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .video-card-tours {
-    height: 400px;
-    margin-bottom: 40px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+   
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tours-images-style {
+        margin-top: 10px;
+        margin-bottom: 10px;
 }
 
 #image-tours {
@@ -286,7 +319,7 @@ in the about section
 
 /* --- Credit: w3school snipped code/customized for Image Hoover Overlay Fade for the images and edited slightly to fit project needs-------------- */
 .card-tours {
-    margin-bottom: 2.2rem;
+    margin-top: 10px;
     position: relative;
     width: 50%;
 }
@@ -322,14 +355,15 @@ in the about section
 .text {
     background-color:rgb(6 6 6 / 72%); ;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 14px;
+    padding: 10px 22px;
     border-radius: 8%;
 }
 
 .phone-number{
     color: var(--text--color--clr);
 }
+
 .phone-number:hover{
     color: var(--primary--clr) ;
     text-decoration: none;
@@ -344,14 +378,15 @@ in the about section
     border-top:3px solid transparent;
     margin-top: -3px;
 }
+
 .image-style {
     width: 100%;
     height: auto;
     border: 6px solid white;
     border-radius: 0.3rem;  
     padding: 4px; 
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom:1.2rem;
 }
 
 .image-style:hover {
@@ -359,7 +394,7 @@ in the about section
     box-shadow: 0px 0px 12px 5px #fff;
 }
 
-/* --------------------------------------------------------------------- CONTACT ------------------------------------------------ */
+/* ------------------------------------------------- CONTACT --------------------------------------------- */
 /*
 #contact needed to lover the header out from 
 the navbar which overlying the content  
@@ -371,32 +406,31 @@ in the about section
     height: 100vh;
 }
 
-
-.contact-sent-btn{
+.contact-sent-btn {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-left: 0.9rem;
     padding-right: 0.9rem;
-    margin-top: 36px;
+    margin-top: 25px;
     width: auto;
+    margin-bottom: 5rem;
 }
 
 .margin {
-    margin-top: 38px;
-    margin-bottom: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .contact-details {
     color:var(--secondary--clr);
 }
+
 .contact-details:hover {
     color:var(--primary--clr);
     text-decoration: none;
 }
-
-
 
 .input-box {
     width: 100%;
@@ -411,8 +445,7 @@ label {
     margin-bottom: 0.3rem;
 }
 
-.input-box
-{
+.input-box {
     color: var(--background--clr);
     letter-spacing: 1px;
 }
@@ -436,13 +469,12 @@ label {
     margin-bottom: 0px; 
 }
 
-/* ---------------------------------------------------------------------- FOOTER -------------------------------------------------- */
+/* ---------------------------------- FOOTER --------------------------------------- */
 footer {
     width: 100%;
 	bottom: 0px;
 	height: 3.5rem;
     background-color:rgb(99 175 52);
-    font-size: 1.1rem;
     color: var(--text--color--clr);
 	display: flex;
 	    -webkit-box-align: center;
@@ -456,11 +488,12 @@ footer {
 }
 
 footer .contact {
-	width: 100%;
+    width: 100%;
+    font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 2px;
     margin: 0px 0px;
-    margin-left: 0.9rem;
+    margin-left: 0.8rem;
 }
 
 .contact-links-item {
@@ -468,7 +501,7 @@ footer .contact {
 }
 
 .contact-links i {
-    font-size:17px;
+    font-size:0.7rem;
 }
 
 .contact-links a:hover {
@@ -481,6 +514,7 @@ footer .contact {
     /*margin-right: 10px;*/
     padding-left: 2px;
     text-decoration: none;
+    font-size: 0.6rem;
 }
 
 .social-network {
@@ -498,18 +532,18 @@ footer .contact {
         -ms-flex-align: center;	
     align-items: center;
 }
+
 .social-network a {
     color: var(--text--color--clr);
 	margin:0.3rem;
 	padding: 0.3rem;
 }
-.social-network i:hover{
+
+.social-network i:hover {
     color:var(--background--clr);
 }
 
-
-/*--------------------------------------------------------Media to background images for smaller devices------*/
-
+/*--------------------------Media to background images for smaller devices------------------------*/
  @media screen and (max-width: 1024px){
      #image-contact {
    /* ---------- Credit Photo by Sebastian Voortman from Pexels ---------- */
@@ -524,127 +558,106 @@ footer .contact {
         background-image: url('../images/hero-image-mobile.jpg') ;
     }
  }
-/*--------------------------------------------------------Media to heading-text on each section/page------*/
- @media screen and (max-width: 576px) {
-    h1,
-    h3,
-    h4 {
-         letter-spacing: 0;
+
+/*-------------------------------------------Media for Small devices------------------------------*/
+@media screen and (min-width:360px){
+    .welcome-sign-top {
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+    .welcome-sign-bottom {
+        font-size: 20px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    .video-card-tours {
+        margin-bottom: 30px;
+    }
+}
+
+/*-------------------------------------------Media for Medium devices devices------------------------------*/
+@media screen and (min-width:768px){
+    .welcome-sign-top {
+        font-size: 34px;
+        letter-spacing: 1px;
+        
+    }
+    .welcome-sign-bottom {
+        font-size: 24px;
+        padding-right: 12px;
+        padding-left: 12px;
+        letter-spacing: 1px;
     }
 
-    p {
-        letter-spacing: 0;
-       /* text-align: left;*/
+    .jumbotron {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 5px;
+         padding-right: 5px;
     }
-    .content-item-text {
-        text-align: left; 
+    .card-tours {
+        margin-left: 7px;
+        margin-right: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
- }
-/*-----------------------------------------------------------Media to Footer-------------------------------*/
-@media screen and (max-width: 523px) {
-   .contact-links i {
-    font-size:0.7rem;
+    .video-card-tours {
+         margin-left: 7px;
+        margin-right: 7px
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+    }
+    /*#about {
+        height: auto;
+    }
+    #tours {
+        height: auto;
+    }*/
+    .align-items-center {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .contact-links i {
+        font-size:0.9rem;
+    }
+    footer .contact {
+        font-size:1rem;
+    }
+    .contact-links-item a {
+        font-size: 0.8rem;
+    }  
+}
+
+/*-------------------------------------------Media for Large devices------------------------------*/
+@media screen and (min-width:1024px){
+/*#about {
+    height: auto;
+    }
+#tours {
+    height: auto;
+    }*/
+.contact-links i {
+    font-size:1rem;
     }
 footer .contact {
-    font-size:0.9rem;
+    font-size:1.1rem;
     }
 .contact-links-item a {
     font-size: 0.9rem;
-    }       
-}
- 
-/*-------------------------------------------------------------Media to Welcome sign----------------------*/
-@media screen and (min-width:380px){
-.welcome-sign-top {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    }
-.welcome-sign-bottom {
-    font-size: 1.25rem;
-    letter-spacing: 1px;
-    }
-}
- @media screen and (min-width:423px){
-    .welcome-sign-top {
-        font-size: 2rem;
-        letter-spacing: 1px;
-    }
-    .welcome-sign-bottom {
-        font-size: 1.37rem;
-        letter-spacing: 1px;
-    }
-}
- @media screen and (min-width:516px){
-    .welcome-sign-top {
-        font-size: 2.25rem;
-    }
-    .welcome-sign-bottom {
-        font-size: 1.4rem;
-    }
-}
- @media screen and (min-width:570px){
-    .welcome-sign-top {
-        font-size: 2.5rem;
-    }
-    .welcome-sign-bottom {
-        font-size: 1.6rem;
-    }
-}
-/*
-@media screen and (min-width:766px){
-    .welcome-sign-top {
-        font-size: 2.8rem;
-    }
-    .welcome-sign-bottom {
-        font-size: 1.7rem;
-    }
-}*/
-  /* ------------------------------------------------------------Media query for ABOUT section----------------*/
-@media screen and (max-width: 576px){
-    .about-content {
-            margin-top: 0px;
-    }
- #about {
-        height: auto;
-    }
-}
-@media screen and (max-width: 768px){
-    #about {
-        height: auto;
-    }
-    .heading-text h1 {
-        margin-top: 14px;
-    margin-bottom: 0px;
+    }  
+.navbar {
+    font-size: 1.4rem;
     }
 }
 
-  /* ------------------------------------------------------------Media query for TOURS section----------------*/
-@media screen and (max-width: 1200px){
-    .tours-style{
-        margin-top: 7rem;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    #tours{
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #tours{
-        height: auto;
-    }
-    .tours-images-style{
-        margin-top: 2.0rem;
-    }
-    .tours-style {
-        margin-top: 1.1rem;
-    }
-}
- /* ------------------------------------------------------------Media query for TOURS section------------------*/
-@media screen and (max-width: 384px){
-    h1 {
-        font-size: 1.75rem;
-    }
-}   
