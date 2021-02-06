@@ -22,7 +22,7 @@ This is a fictional project created for education purposes only.
 ## Demo
 ---
 ![altamiresponsive](assets/testing/am-i-responsive.jpg)
-A live demo can be found [here](https://8000-c5c12ea7-7be9-4930-9796-697f3321352d.ws-eu03.gitpod.io/index.html#tours)
+A live demo can be found [here](https://eva-kuk.github.io/The-Hikers-MS1/)
 
 ## Overview
 ---
@@ -98,14 +98,14 @@ I chose the MVP (Minimal Viable Product) approach which:
  **Colors**
 - As a primary color, I have chosen color green (#6cd22d) that is not only associated with Ireland, but also suggest freshness, nature and green landscapes. They will also match the images I have selected for the site. 
 - As a additional color I choose a red (#dd3044) which i picked by the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will
- be noticed by the user immediately. The choice was made by reading this article [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/).
+ be noticed by the user immediately. The choice was made by reading this article [web builder expert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/).
  - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
  background color (#2B2D2A), body-text color (#fbfbfb), headings (#fbfbfb) and (#2B2D2A) .
 
  **Typography**
  
 - For the main headings I have chosen the same font that was used in The Hikers logo which is the "Special Elite" with the group of fall-back font of cursive
-- For the content I have chosen Oswald font with fall-back font of Sans-Serif, which is popular pairing font with "Special Elite" according to www.fontsgoogle.com 
+- For the content I have chosen Oswald font with fall-back font of Sans-Serif, which is popular pairing font with "Special Elite" according to [google fonts](https://fonts.google.com/)
 
  **Images**
 
@@ -243,12 +243,12 @@ The rest of the text on that website was written by me
 
 
 **Code Snippets**
-- Template code for navbar using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/)and heavily modified to suit the sites needs.
+- Template code for navbar using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) and heavily modified to suit the sites needs.
 - Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
-- Code idea for cards for tour section used with a permission from[JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
+- Code idea for cards for tour section used with a permission from [JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
 - Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
 - Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
-- Code for font awesome icon a list in about section [Fon Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list).
+- Code for font awesome icon a list in about section [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list).
 
 ## Acknowledgments
 

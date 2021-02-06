@@ -55,15 +55,17 @@ margin-top: -3px;`
     - SOLUTION1: by changing `width:100%`, `height:auto` but didn't work as expected,
     - SOLUTION2: by removing `background-attachment: fixed;` but didn't work as expected,
     - SOLUTION3:  by replacing in media queries pictures for smaller devices with new ones with reduced size
+
 ![altmediaquerieslandscape](assets/testing/media-queries-landscape.jpg)
 
 ------
 
 ![altmediaqueriessmallerdevices](assets/testing/media-queries-smaller-devices.jpg)
 
-6. 
-Page sections don't adjust their size with the change of different devices and don't cover the size of the entire screen. The background image is visible at the bottom of the page
+6. Page sections don't adjust their size with the change of different devices and don't cover the size of the entire screen. The background image is visible at the bottom of the page
+    
     - SOLUTION1: by setting the media query `height:` from `auto` to `100vh` first from small to large devices then opposite did not give the expected result, because sometimes the page content was chopped or didn't look nice.
+    
     - SOLUTION2: by adding more content to About and Tours page and setting media query which didn't work as well
     `@media screen and (min-width:1650px) {
     #tours {
@@ -174,9 +176,9 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 6. Expected: Embedded video links open in small and full screen
     - Testing: Tested every video separately by clicking at each video
     - Result: All video links acted as expected
-
+---
 ### Responsive Design
-
+---
 - The website has been tested by using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and also on [Am I Responsive](http://ami.responsivedesign.is/)
     and [Responsinator](http://www.responsinator.com/) on a number of devices with varying screen dimensions, 
     for both portraits and landscape including iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 plus, iPhone 11, iPad, iPad Pro, Moto G4, Galaxy S5, Surface Duo,
@@ -187,20 +189,20 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 ---
 ## Testing Compatibility
 ---
-The website was tested on the following browsers and operating systems:
-Google Chrome (Windows 10, Android 11).
-Microsoft Edge (Windows 10).
-Microsoft Internet Explorer 11 (Windows 10).
-Safari.
-Firefox (Windows 10).
-Opera (Windows 10).
-The following issue was detected during browser compatibility testing:
+- The website was tested on the following browsers and operating systems:
+    - Google Chrome (Windows 10, Android 11).
+    - Microsoft Edge (Windows 10).
+    - Microsoft Internet Explorer 11 (Windows 10).
+    - Safari.
+    - Firefox (Windows 10).
+    - Opera (Windows 10).
+    - The following issue was detected during browser compatibility testing:
 
 ---
 ## Testing Performance
 ---
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
-The results on the end were satysfying but there were some issues which needed to be fixed:
+The results on the end were satysfying for desctop devices bit performance od mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
 -   Test for desktop devices
 ![altlighthouseteste](assets/testing/lighthouse-test-desktop.jpg)
 - Test for mobile devices
