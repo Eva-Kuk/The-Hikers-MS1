@@ -12,23 +12,17 @@ This is a fictional project created for education purposes only.
 - [Features](#features)
 - [Technologies used](#technologies-used)
 - [Resources](#resources)
-- [References for learning](#references-for-learning)
 - [Testing](#testing)
-- [Project barriers and the solutions](#project-barriers-and-the-solutions)
 - [Code validity](#code-validity)
 - [Version Control](#version-control)
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgments](#acknowledgments)
-- [Support](#support)
 
 ## Demo
 ---
-A live demo can be found [here](#)
-mockups
-
-
-
+![altamiresponsive](assets/testing/am-i-responsive.jpg)
+A live demo can be found [here](https://8000-c5c12ea7-7be9-4930-9796-697f3321352d.ws-eu03.gitpod.io/index.html#tours)
 
 ## Overview
 ---
@@ -37,12 +31,12 @@ mockups
 ---
 
 ## User stories
-1. As a user, I want to navigate the site easily so that I can find what I need  effectively
-2. As a user visiting Ireland I am searching for an interesting options for trips in Ireland
-3. As a user living in Ireland I am looking for interesting ideas for hiking and spending my free time in the mountain
-4. As a user I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour
-5. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
-6. As an interested customer I would like to see some visual examples from previous tours
+1. As a user, I want to navigate the site easily, so that I can find what I need  effectively.
+2. As a site visitor, I want to search for an interesting options for tours in Ireland, so I can decide if I am interested in buying one.
+3. As a user I want to be able to contact the site owner so I can get more information about their offer options.
+4. As an interested and potential customer, I want to follow the site owner on social media, so that I can keep up to date with its upcoming tours.
+5. As an interested customer I want to see some visual examples from previous site owner tours, so I can see what to expect.
+6. As a user I want to easily understand the purpose of their site.
 ----
 ## UX
 
@@ -65,7 +59,7 @@ My goal in this project is to promote the group THE HIKERS on the market and inc
 - Easy to read information About Us, eye-catching pictures encouraging customers to  take advantage of the offer long enough to understand the content but not to overwhelm.
 - Easy to find contact details to ask questions about a trip
 - Easy to find links to social media accounts to follow the group
-- Design with mobile devices in mind as this is probably the most common way to find information looking for holidays, trips 
+- Design in mind for mobile devicesas first as this is recently the most common way searching for information
 - Fixed navigation bar providing user easy navigation reference.
 - Fixed footer providing quick reference to Social Media links.
 
@@ -78,33 +72,35 @@ I chose the MVP (Minimal Viable Product) approach which:
 - It defines content quickly and focuses on contacting via email or social media. 
 
 **3. Structure**
-- The purpose of the Structure has been created as a single page containing sections/pages separated by eye-catching pictures using a parallax effect to encourage and attract the visitor's interest and  to enable users to quickly navigate through the website, easily assimilate information and have overview from of the trips to show what can be expected by buyers on the offered trips.
+- The purpose of the Structure has been created as a single page containing sections/sites separated by eye-catching pictures using a parallax effect to encourage and attract the visitor's interest and  to enable users to quickly navigate through the website, easily assimilate information and have overview from of the trips to show what can be expected by buyers on the offered trips.
 - Contact details have been placed in different parts of the website (footer, contact form, main page button, tours section) for easy access by the user and are provided via the e-mail, phone number and links to social media. 
-- I decided to put the Gallery section separately to facilitate faster page loading due to the large number of photos
+- I decided to put the Gallery site separately to facilitate faster page loading due to the large number of images
+- A form will be added to contact page with the following fields: "Full Name", "Email Address", "Tours Available" and "Subject" which are options to select. "Full Name", "Email Address" will be required in order to submit the form, "Email" input must be the valid format. User is alerted of correct input if data is invalid.
 
 **4. Skeleton**
 
 ## Wireframe mockups:
+
 - [Home](assets/wireframes/home-page.png)
 - [About](assets/wireframes/about-page.png)
 - [Tours](assets/wireframes/tours-page.png)
 - [Gallery](assets/wireframes/gallery-page.png)
 - [Contact](assets/wireframes/contact-page.png)
 
-- Pages/Section: Home, About/Tours, Contact
+- Pages/Section: Home, About, Tours, Contact
 - Gallery in a separated page (changed through project development)
-- Fixed navigation bar - Menu headings and pointing to each of the 4 Pages
-- Fixed footer with Contact email-link and phone number and Social Media icons
+- Fixed navigation bar - Menu headings and pointing to each of the 5 Pages
+- Fixed footer with Contact email-link and phone number and Social Media icons, which will be opened in a new tab.
 
 ---
 **5. Surface**
 
  **Colors**
-- As a primary color, I have chosen color green (#57ab24) that is not only associated with Ireland, but also suggest freshness, nature and green landscapes. They will also match the photos I have selected for the site. 
+- As a primary color, I have chosen color green (#6cd22d) that is not only associated with Ireland, but also suggest freshness, nature and green landscapes. They will also match the images I have selected for the site. 
 - As a additional color I choose a red (#dd3044) which i picked by the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will
- be noticed by the user immediately.
- -For the other colors I have chosen a combination of dark grey nad off-white, which are the darker and lighter shades of primary green colors to give a website a balanced contrast: 
- background color (#2b2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2b2d2a) .
+ be noticed by the user immediately. The choice was made by reading this article [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/).
+ - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
+ background color (#2B2D2A), body-text color (#fbfbfb), headings (#fbfbfb) and (#2B2D2A) .
 
  **Typography**
  
@@ -115,29 +111,29 @@ I chose the MVP (Minimal Viable Product) approach which:
 
 - The image selection has been chosen very carefully to visually presents to charm users of the website with the beauty of Ireland and encourage to participate in offered trips
 The hero image (View of Wicklow landscape) and background images (forest and happy-girl) and for tours section were downloaded from the Pexels and Pixaby. I have chosen a group of selected images for the about section and the gallery.
-
+- Video movies from the trips are from the youtube for a better quality, showing an example of tours and a beauty of Ireland
 ---
 ## Features
 
 **Existing Features**
 - Designed with HTML5, CSS and Bootstrap.
-- One page with 4 sections acting as individual pages and one separate page for the gallery images 
+- One page with 4 sections acting as individual pages and one separate page for the gallery images. 
 - Fixed navigation allows user to easily navigate, regardless of which page visited.
-- Fixed footer allows the user to easily access to social media links and contact details like email and phone number
-- Fixed, stacked images for mobile views
-- Home page and Contact And Enquiry Form with radio buttons
-- Tours page and contact have additional Contact Us  and phone option
-- In gallery page each picture has been linked, so that the user can see the image in a larger size
+- Fixed footer allows the user to easily access to social media links and contact details like email and phone number.
+- Fixed, stacked images for mobile views.
+- Home page and Contact And Enquiry Form with radio buttons.
+- Tours page and contact have additional Contact Us  and phone option.
+- In gallery page each picture has been linked and open in a new tab, so that the user can see the image in a larger size.
 
 **Features Left to Implement when skills develop**
 
 Another feature idea
-- As the owner is originally from Poland to encourage Polish visitors to explore Ireland, it is hoped to add a bilingual option (English & Polish) which will translate the page into the appropriate language.
-- The "Sent" button contact form need to be functional so the details can be sent to the server via php
-- Change short videos of excursions on the organized group trips, which today were implemented from youtube
-- More comprehensive Tours section write more about tours option, and more detailed 
+- To hide sticky navbar and footer on scroll on small devices and on landscape using javascript.
+- The "Sent" button contact form need to be functional so the details can be sent to the server via php.
+- Change short videos of excursions on the organized group trips, which today were implemented from youtube.
+- More comprehensive Tours section write more about tours option, and more detailed.
 - Integration of Social media Page to have a live update feeds of planned trips and events.
-- Improve gallery section maybe by using javascript
+- As the owner is originally from Poland to encourage Polish visitors to explore Ireland, it is hoped to add a bilingual option (English & Polish) which will translate the page into the appropriate language.
 ---
 
 ## Technologies Used
@@ -183,6 +179,7 @@ Another feature idea
 - [pasja-informatyki](https://pasja-informatyki.pl/) - Polish learning website
 - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
+- [Responsinator](http://www.responsinator.com/) - Responsive website mockup image generator.
 - [Balsamic](https://balsamiq.com/wireframes/) - Wireframing design tool to create wireframes.
 - [Bootstrap Grid Explanation by Anna Greaves ](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
 - [freelogodesign](https://www.freelogodesign.org/ ) Logo design tool
@@ -190,109 +187,29 @@ Another feature idea
 - [css Variables](https://www.youtube.com/watch?v=PHO6TBq_auI&ab_channel=KevinPowell) - An introduction to CSS custom properties
 - [boxshadowgenerator](https://html-css-js.com/css/generator/box-shadow/) -  box shadow generator for gallery images
 
-----
-
-## References for learning
-
-
-
 ---
 ## Testing
+- Click [here](TEST.md) for the full testing process.
 
-
-
-
-
-**Project Bugs And solutions**
-
-During the development of this project, trying to use the combination of Bootstrap, CSS3 and Html5 together was a big challenge for me and I had the impression that my project is one big virus which, after fixing one problem, crashes into another. In general, it seems to me that most of the problems I had were caused by insufficient knowledge of the newly learned programs and tools as well as experimenting with them, and here are some of them:
-1. The contact links in the footer did not appeared correctly, after hover over with the mouse they fell apart, after consulting it with tutor assistance, the problem was wrong code in hover in contact-links which I set earlier by mistake. The solution was remove that line of code
-
-![alttheissue](assets/images/contact-links-footer-problem.png)  ![altfoundissue](assets/images/contact-links-footer-problem-found.png)  ![altfixedissue](assets/images/contact-links-footer-fixed.png)
-
-2. Problem with scrolling horizontal bar that appeared. To get around this after consulting it with the tutor assistance first I gave the html a value overflow:hidden which worked good, but later I found the real reason why the horizontal scrolling appeared. I noticed on the unicorn revealer that my background images were overflowing. 
-I set for the both background images and for the whole body width: 100vw; which caused the problem. To solve this I removed the with of the pictures and the body
-![altscrollingbarissue](assets/images/scrolling-bar-issue.png)
+Overview
+- [Encountered Issues](TEST.md#encounteredissues)
+- [Code Validation](TEST.md#code-validation)
+- [Testing User stories](TEST.md#testing-user-stories)
+- [Testing Functionality](TEST.md#testing-functionality)
+- [Testing Compatibility](TEST.md#testing-compatibility)
+- [Testing Accessibility](TEST.md#testing-accessibility)
+- [Testing Performance](TEST.md#testing-performance)
+- [Further Testing](TEST.md#further-testing)
 
 ---
-
-![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue.png)
-
----
-
-![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue1.png)
-
-----
-
-![altscrollingbarissue](assets/images/scrolling-horizontal-bar-issue2.png)
-
-3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem was a very large margin which I set for the images for the whole margin.The solution was to remove margin and set margin:top and margin:bottom only.
-
-![altleftsidegap](assets/images/left-side-gap.png)
-
-4. Issue with the fixed top navbar was overlying on the other content and the headings on each section were hidden behind the navbar. After consulting with the tutor assistance the solution for this was set for each section an id="about/tours/contact/gallery" and in stylesheet.css set: border-top:3px solid transparent;
-    margin-top: -3px;
-    
----
-1. As a user, I want to navigate the site easily so that I can find what I need  effectively.
-- No matter what page the user lands on, they can easily find and use navigation bar.
-- The logo image always leads back to the home page.
-- The home page call to action button leads the client to a contact form.
-
-
-2. As a user visiting Ireland I am searching for an interesting options for trips in Ireland.
-- Links clearly labelled  easy to find on the navigation bar leading to Trips page where presented a samples of video showing a beauty Ireland.
-- Links clearly labelled  easy to find on the navigation bar leading to Gallery page depict gallery from the past tours.
-- A clearly labeled About page easy to find in the navigation bar which contains photos ot the group team an text about the group.
-
-3. As a user living in Ireland I am looking for interesting ideas for hiking and spending my free time in the mountain.
-- Links clearly labelled on navigation bar easy to find leading to Trips and Gallery page to show a samples of video images from the trips.
-- Clearly labelled easy to find contact and social media links.
-
-4. As a user I want to know how I can get more information about their offer so I can decide if I am interested in buying a tour.
-- Contact details are always displayed on the sticky footer easy to find.
-- On the home page is call to action button which leads to contact page.
-- On the Tours page there is a link which lead to contact page.
-- On the Tours page call to action button on each tour lead to contact through the phone number.
-
-5. As an interested observer and potential client, I want to follow the group on social media and keep up to date with its upcoming tours as well as see the opinions of people who have already participated in the tour.
-- Clearly labelled social media links displayed on the sticky footer easy to find.
-
-6. As an interested customer I would like to see some visual examples from previous tours
-- Links clearly labelled easy to find on the navigation bar leading to Trips and Gallery page to show a samples of video images from the trips.
-
-
-Validator 
-1. Warning: The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
-- Solution - I removed all hyphens in a comments and left just two.
-2. Warning: Section lacks heading. Consider using h2-h6 elements to add identifying heading to all sections.
-- Solutions - The error was related to the sections that I set for the background images. I changed the sections to div.
-3. Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
-- Solutions - attribute removed.
-4. Error: Bad value 100% for attribute width and height on element iframe: Expected a digit but saw % instead.
-- Solution - The attributes for width and height in all iframe elements changed to its previous size. iframe wrapped with div video-wrapper and styled in css for responsive video
-1![altValidator.w3.org](assets/images/validator-w3-org.png)
-
-
-
-## Project barriers and the solutions
--
--
--
-
----
-
 ## Code validity
-
-
-
+- HTML - [Markup Validation W3C Service](https://validator.w3.org/)
+- CSS - [Jigsaw  Validation W3C Service](https://jigsaw.w3.org/css-validator/)
 ---
 
 ## Version Control
 
--
--
--
+- Used Git for version control.
 
 ---
 
@@ -328,7 +245,7 @@ The rest of the text on that website was written by me
 **Code Snippets**
 - Template code for navbar using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/)and heavily modified to suit the sites needs.
 - Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
-- Code idea for cards for tour section [JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
+- Code idea for cards for tour section used with a permission from[JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
 - Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
 - Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
 - Code for font awesome icon a list in about section [Fon Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list).
@@ -338,7 +255,7 @@ The rest of the text on that website was written by me
 I would like to thank:
 - My mentor, Aron Sinnott, for his guidance through my journey with MS1 project, lots of great advices and ideas which helped me a lot to improve my project development
 - My tutor Cormac for his big support he offered me, troubleshooting guide, his patience, and every single advice
-- I am very grateful and would like to say a special thank to the Jim JimLynks for his huge help getting started the project, and a lot of his free time he offered me, for all his support and great advices,
-- Slack Community and Student  Support CI staff for fantastic support they offered, who have helped guide me to solutions in my project.
-
+- I am very grateful and would like to say a special thank to the Jim JimLynks for his huge help getting started the project, and his free time he offered me, for all his support and great advices,
+- Tutor support staff for fantastic support they offered, help me guide to solutions in my project.
+- Slack Community
 
