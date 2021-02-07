@@ -40,8 +40,8 @@ A live demo can be found [here](https://eva-kuk.github.io/The-Hikers-MS1/)
 ----
 ## UX
 
-This website design will target at people of all ages for families and friends living in Ireland as well as those who intend to visit Ireland, potentially who like hiking and who are looking for information on the internet about hiking in Ireland.
-The purpose of this project is generally simple but effective eye catching website presenting beautiful, amazing and unforgettable views. The priority is direct contact and links to social media.
+This website design will target people of all ages, families and friends living in Ireland as well as those who intend to visit Ireland, potentially who like hiking and who are looking for information on the internet about hiking in Ireland.
+The purpose of this project is generally simple but effective. It encompasses an eye catching website presenting beautiful, amazing and unforgettable views, which prioritizes direct contact and links to social media.
 
 ---
 
@@ -53,29 +53,29 @@ My goal in this project is to promote the group THE HIKERS on the market and inc
 - Promote the new group on the market
 - Demonstrate examples of tours to show customers what they can expect
 - Increase the number of followers on social media
-- Encouraging to spend time actively and discover beautiful Ireland
+- Encourage to spend time actively and discover beautiful Ireland
 
 ### Customer Goals:
 - Easy to read information About Us, eye-catching pictures encouraging customers to  take advantage of the offer long enough to understand the content but not to overwhelm.
 - Easy to find contact details to ask questions about a trip
 - Easy to find links to social media accounts to follow the group
-- Design in mind for mobile devicesas first as this is recently the most common way searching for information
+- Design in mind for mobile devices first as this is recently the most common way of searching for information
 - Fixed navigation bar providing user easy navigation reference.
 - Fixed footer providing quick reference to Social Media links.
 
 **2. Scope**
 
 I chose the MVP (Minimal Viable Product) approach which:
-- It provides users with pure UX
-- It includes mobile-first website that is responsive on all devices.
-- It fits with my current skills.
-- It defines content quickly and focuses on contacting via email or social media. 
+- Provides users with pure UX
+- Includes mobile-first website that is responsive on all devices.
+- Fits with my current skills.
+- Defines content quickly and focuses on contacting via email or social media. 
 
 **3. Structure**
-- The purpose of the Structure has been created as a single page containing sections/sites separated by eye-catching pictures using a parallax effect to encourage and attract the visitor's interest and  to enable users to quickly navigate through the website, easily assimilate information and have overview from of the trips to show what can be expected by buyers on the offered trips.
-- Contact details have been placed in different parts of the website (footer, contact form, main page button, tours section) for easy access by the user and are provided via the e-mail, phone number and links to social media. 
-- I decided to put the Gallery site separately to facilitate faster page loading due to the large number of images
-- A form will be added to contact page with the following fields: "Full Name", "Email Address", "Tours Available" and "Subject" which are options to select. "Full Name", "Email Address" will be required in order to submit the form, "Email" input must be the valid format. User is alerted of correct input if data is invalid.
+- The purpose of the Structure has been created as a single page website containing sections separated by captivating pictures using a parallax effect to encourage and attract the visitor's interest and  to enable users to quickly navigate through the website, easily assimilate information and have an overview of the trips to show what customers can expect.
+- Contact details have been placed in different parts of the website (footer, contact form, main page button, tours section) for easy access by the user and are provided via e-mail, phone number and links to social media. 
+- I initially decided to put the Gallery site separately to facilitate faster page loading due to the large number of images. However, after careful consideration of customers scrolling habits and feedback from the peer-code community I instead decided to include the Gallery as part of one scrollable, single-page website. This allows for easier navitgation and avoids code duplication. 
+- A form will be added to the contact page with the following fields: "Full Name", "Email Address", "Tours Available" and "Subject" which are options to select. "Full Name", "Email Address" will be required in order to submit the form, "Email" input must be the valid format. User is alerted of correct input if data is invalid.
 
 **4. Skeleton**
 
@@ -96,28 +96,34 @@ I chose the MVP (Minimal Viable Product) approach which:
 **5. Surface**
 
  **Colors**
-- As a primary color, I have chosen color green (#6cd22d) that is not only associated with Ireland, but also suggest freshness, nature and green landscapes. They will also match the images I have selected for the site. 
-- As a additional color I choose a red (#dd3044) which i picked by the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will
+- As a primary color, I have chosen the color green (#6cd22d) that is not only associated with Ireland, but also suggests freshness, nature and green landscapes. They will also match the images I have selected for the site. 
+- As an additional color, I chose red (#dd3044) which I picked with the color picker from the image with skirts. That color will compliment green and make the important things like contact/sent buttons pop, so it will
  be noticed by the user immediately. The choice was made by reading this article [web builder expert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/).
  - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
- background color (#2B2D2A), body-text color (#fbfbfb), headings (#fbfbfb) and (#2B2D2A) .
+ background color (#2d2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2d2d2a).
+ 
+ ![altcolorspalette](assets/testing/colour-palette.png)
+
+ Taking into account feedback on the peer-code-review, I've decided to tone down the original bright green color
+ to a more neutral, eye-friendly one. For the website's background and text, I've chosen shades of grey, which I feel well complement the array of colors in the website.
+ ![altcolorspalette](assets/testing/colour-palette-changed.png)
 
  **Typography**
  
-- For the main headings I have chosen the same font that was used in The Hikers logo which is the "Special Elite" with the group of fall-back font of cursive
-- For the content I have chosen Oswald font with fall-back font of Sans-Serif, which is popular pairing font with "Special Elite" according to [google fonts](https://fonts.google.com/)
+- For the main headings, I selected the same font that was used in The Hikers logo which is the 'Special Elite' with the group of fall-back font of 'Cursive'
+- For the content I've chosen 'Oswald' font with fall-back font of 'Sans-Serif', which is a popular pairing font with 'Special Elite' according to [google fonts](https://fonts.google.com/)
 
  **Images**
 
-- The image selection has been chosen very carefully to visually presents to charm users of the website with the beauty of Ireland and encourage to participate in offered trips
-The hero image (View of Wicklow landscape) and background images (forest and happy-girl) and for tours section were downloaded from the Pexels and Pixaby. I have chosen a group of selected images for the about section and the gallery.
-- Video movies from the trips are from the youtube for a better quality, showing an example of tours and a beauty of Ireland
+- The image selection has been chosen very carefully to charm users of the website with the beauty of Ireland and encourage to participate in offered trips
+- The hero image (View of Wicklow landscape) and background images (forest and happy-girl) and for tours section were downloaded from the Pexels and Pixaby. I have chosen a group of selected images for the About Section and the Gallery.
+- Video movies from the trips are from the youtube platform for better quality, showing an example of tours, which customers can participate in and exemplifying wonders of Ireland
 ---
 ## Features
 
 **Existing Features**
 - Designed with HTML5, CSS and Bootstrap.
-- One page with 4 sections acting as individual pages and one separate page for the gallery images. 
+- One page with 4 sections acting as individual sections.
 - Fixed navigation allows user to easily navigate, regardless of which page visited.
 - Fixed footer allows the user to easily access to social media links and contact details like email and phone number.
 - Fixed, stacked images for mobile views.
@@ -131,9 +137,8 @@ Another feature idea
 - To hide sticky navbar and footer on scroll on small devices and on landscape using javascript.
 - The "Sent" button contact form need to be functional so the details can be sent to the server via php.
 - Change short videos of excursions on the organized group trips, which today were implemented from youtube.
-- More comprehensive Tours section write more about tours option, and more detailed.
-- Integration of Social media Page to have a live update feeds of planned trips and events.
-- As the owner is originally from Poland to encourage Polish visitors to explore Ireland, it is hoped to add a bilingual option (English & Polish) which will translate the page into the appropriate language.
+- More comprehensive Tours section, write more about tours option, and more detailed.
+- Integration of Social media Page to have a live update feed of planned trips and events.
 ---
 
 ## Technologies Used
@@ -189,17 +194,17 @@ Another feature idea
 
 ---
 ## Testing
-- Click [here](TEST.md) for the full testing process.
+- Click [here](TESTING.md) for the full testing process.
 
 Overview
-- [Encountered Issues](TEST.md#encounteredissues)
-- [Code Validation](TEST.md#code-validation)
-- [Testing User stories](TEST.md#testing-user-stories)
-- [Testing Functionality](TEST.md#testing-functionality)
-- [Testing Compatibility](TEST.md#testing-compatibility)
-- [Testing Accessibility](TEST.md#testing-accessibility)
-- [Testing Performance](TEST.md#testing-performance)
-- [Further Testing](TEST.md#further-testing)
+- [Encountered Issues](TESTING.md#encounteredissues)
+- [Code Validation](TESTING.md#code-validation)
+- [Testing User stories](TESTING.md#testing-user-stories)
+- [Testing Functionality](TESTING.md#testing-functionality)
+- [Testing Compatibility](TESTING.md#testing-compatibility)
+- [Testing Accessibility](TESTING.md#testing-accessibility)
+- [Testing Performance](TESTING.md#testing-performance)
+- [Further Testing](TESTING.md#further-testing)
 
 ---
 ## Code validity
@@ -233,13 +238,13 @@ This project has been deployed on GitHub Pages with the following process:
 ## Credits
 
 **Media**
-- The gallery images and for about section in this project are owned and provided by THE HIKERS group. I have permission from people who are in these photos to use them in this project.
-- The background images for the parallax effect, as the images for the "Tour" section were selected from a free stock photo libraries  [Pexels](https://www.pexels.com/) and  [Pixabay](https://pixabay.com/)
-- The logo was made by THE HIKERS group (myself) using [Free Logo Design](https://www.freelogodesign.org/)
+- The Gallery images and for About Section in this project are owned and provided by THE HIKERS group. I have permission from people who are in these photos to use them in this project.
+- The background images for the parallax effect, as the images for the "Tour" section were selected from a free stock photo libraries  [Pexels](https://www.pexels.com/) and  [Pixabay](https://pixabay.com/).
+- The logo was designed by THE HIKERS group and created by me using [Free Logo Design](https://www.freelogodesign.org/).
 
 **Content**
 The text for the part about the 10 Irish highest mountains was taken and modified for the website needs from [maps.ie](https://www.maps.ie/mountaineering-map-ireland.htm) and [en.wikipedia.org](https://en.wikipedia.org/wiki/Lists_of_mountains_in_Ireland)
-The rest of the text on that website was written by me
+The rest of the text on that website was written by me.
 
 
 **Code Snippets**
@@ -253,9 +258,9 @@ The rest of the text on that website was written by me
 ## Acknowledgments
 
 I would like to thank:
-- My mentor, Aron Sinnott, for his guidance through my journey with MS1 project, lots of great advices and ideas which helped me a lot to improve my project development
-- My tutor Cormac for his big support he offered me, troubleshooting guide, his patience, and every single advice
-- I am very grateful and would like to say a special thank to the Jim JimLynks for his huge help getting started the project, and his free time he offered me, for all his support and great advices,
+- My mentor, Aron Sinnott, for his guidance through my journey with MS1 project, lots of great advice and ideas which helped me a lot to improve my project development.
+- My tutor Cormac for his big support he offered me, troubleshooting guide, his patience, and every single advice.
+- I am very grateful and would like to say a special thanks to the Jim JimLynks for his huge help getting started with the project, and his precious time he offered me, for all his support and great advice.
 - Tutor support staff for fantastic support they offered, help me guide to solutions in my project.
 - Slack Community
 

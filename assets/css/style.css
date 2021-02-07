@@ -8,18 +8,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Special+Elite&display=swap');
 
 :root {
-    --primary--clr:#6cd22d;
-    --secondary--clr:#e41d34;
-    --background--clr:#2b2d2a;
-    --text--color--clr:#f3f5f2;
-    --heading--h1:#f3f5f2;
-    --heading--h2--h3:#2b2d2a;
-    --btn:#fff;
+    --primary--clr:#9BB77B;
+    --secondary--clr:#C51321;
+    --background--clr:#363636;
+    --text--clr:#F5F5F5;
+    --heading--h1:#F5F5F5;
+    --heading--h2--h3:#171717;
+    --btn:#F5F5F5;
+    --form--clr:#C2C2C2;
 }
 *{
     margin:0;
     padding:0;
     border:0;
+}
+html {
+    scroll-behavior: ;
 }
 /*
 I stopped using the followed code, 
@@ -34,7 +38,7 @@ body {
     font-family: 'Oswald', sans-serif;     
     font-size: 1.1rem;
     background-color:var(--background--clr);
-    color: var(--text--color--clr);
+    color: var(--text--clr);
     margin:0;
     height:100vh;
   /* 
@@ -117,7 +121,7 @@ h4 {
 }
 
 .navbar .navbar-toggler {
-    color: var(--text--color--clr);
+    color: var(--text--clr);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -126,16 +130,14 @@ h4 {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--text--color--clr);
+    color: var(--text--clr);
 }
-
-
 
 /* -------------------------- HOME/WELCOME - jumbotron ---------------- */
 .welcome-sign-top {
     font-size: 20px;
     letter-spacing: 1px;
-    color: var(--text--color--clr);
+    color: var(--text--clr);
     margin-bottom: 5px;
     font-weight:600;
 }
@@ -189,10 +191,12 @@ hr {
     border-color: var(--secondary--clr);
     letter-spacing: 2px;
     border-radius:0.7rem;
+    font-weight: 600;
 }
 .btn-primary:hover {
     background-color: var(--primary--clr);
     border-color: var(--primary--clr);
+    color: var(--heading--h2--h3);
 }
 .btn-style {
     padding: 9px 8px;
@@ -216,7 +220,7 @@ in the about section
 .tours-style h2 {
     text-align: left;
     font-weight: 600;
-    color: var(--text--color--clr);
+    color: var(--text--clr);
     padding-bottom: 5px;
     letter-spacing: 2px;
 }
@@ -384,7 +388,7 @@ in the about section
 }
 
 .phone-number{
-    color: var(--text--color--clr);
+    color: var(--text--clr);
 }
 
 .phone-number:hover{
@@ -440,6 +444,7 @@ in the about section
     margin-top: 25px;
     width: auto;
     margin-bottom: 5rem;
+    font-weight: 600;
 }
 
 .margin {
@@ -461,7 +466,7 @@ in the about section
 .input-box {
     width: 100%;
     display: block;
-    background-color:#a7a9ab;;
+    background-color: var(--form--clr);
     border: 2px solid #f3f3f3;
     border-radius: 3px;
 }
@@ -508,7 +513,7 @@ footer {
 	    -webkit-box-align: center;
 	    -ms-flex-align: center;
 	align-items: center;
-	position: fixed;
+	position: relative;
 }
  ul {
     margin-top: 0;
@@ -533,7 +538,7 @@ footer .contact {
 }
 
 .contact-links a:hover {
-    color:var(--text--color--clr);
+    color:var(--text--clr);
     font-weight: 300;
 }
 
@@ -544,7 +549,6 @@ footer .contact {
     font-size: 0.6rem;
 }
 .social-network {
-    font-size: 110%;
     width: 40%;
 	margin: auto 5%;
 	list-style: none;
@@ -558,7 +562,9 @@ footer .contact {
         -ms-flex-align: center;	
     align-items: center;
 }
-
+.social-network li {
+font-size: 1.3rem;
+}
 .social-network a {
     color: var(--heading--h2--h3);
 	margin:0.3rem;
@@ -566,7 +572,7 @@ footer .contact {
 }
 
 .social-network i:hover {
-    color:var(--text--color--clr);
+    color:var(--text--clr);
 }
 
 /*--------------------------Media for background images for smaller devices------------------------*/
@@ -601,9 +607,6 @@ footer .contact {
     }
     .video-card-tours {
         margin-bottom: 30px;
-    }
-    footer {
-        height: 2.3rem;
     }
 }
 
@@ -648,14 +651,20 @@ footer .contact {
         padding-left: 0px;
     }
     .contact-links i {
-        font-size:0.9rem;
+        font-size: 0.9rem;
     }
     footer .contact {
-        font-size:1rem;
+        font-size: 1rem;
     }
     .contact-links-item a {
         font-size: 0.8rem;
     }  
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }
 
 /*-------------------------------------------Media for Large devices------------------------------*/
@@ -686,10 +695,11 @@ footer .contact {
         font-size:1.2rem;
     }
     .contact-links-item a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }  
+   
     .navbar {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     h1 {
         font-size: 2.4rem;

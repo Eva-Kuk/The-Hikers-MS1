@@ -14,16 +14,16 @@
 ---
 **Project Bugs And solutions**
 
-During the development of this project, trying to use a combination of Bootstrap, CSS3 and Html5 together was a big challenge for me and I had the impression that my project is one big virus which, after fixing one problem, crashes into another. In general, it seems to me that most of the problems I had were caused by insufficient knowledge of the newly learned programs and tools as well as experimenting with them, and here are some of them:
-1. The contact links in the footer did not appeared correctly, after hover over with the mouse they fell apart.
-The problem was wrong code in hover in contact-links which I set earlier by mistake. 
+During the development of this project, trying to use a combination of Bootstrap, CSS3 and HTML5 together was a big challenge for me and I had the impression that my project is a one big virus which, after fixing one problem, crashes into another. In general, it seems to me that most of the problems I had were caused by insufficient knowledge of the newly learned programs and tools as well as experimenting with them, and here are some of them:
+1. The contact links in the footer did not appear correctly, after hover over with the mouse they fell apart.
+The problem was caused by wrong code in `.contact-links a:hover` which I set earlier by mistake. 
 
     - SOLUTION: removing the line of code which caused the problem
 
 ![alttheissue](assets/testing/contact-links-footer-problem.png) ![altfoundissue](assets/testing/contact-links-footer-problem-found.png)  ![altfixedissue](assets/testing/contact-links-footer-fixed.png)
 
 2. Scrolling horizontal bar appeared. 
-    - SOLUTION1: by giving in CSS for html a value `overflow:hidden;` which worked good, but the real reason why the horizontal scrolling appeared was that my background images were overflowing. I noticed that on the unicorn revealer.
+    - SOLUTION1: by setting in CSS for html a value `overflow:hidden;` which worked good, but the real reason why the horizontal scrolling appeared was that my background images were overflowing. I noticed that on the unicorn revealer.
     - SOLUTION2: by removing `width: 100vw;` for the body and changing `width: 100vw;` for the both background images to `width:auto;`  
 ![altscrollingbarissue](assets/testing/scrolling-bar-issue.png)
 
@@ -39,7 +39,7 @@ The problem was wrong code in hover in contact-links which I set earlier by mist
 
 ![altscrollingbarissue](assets/testing/scrolling-horizontal-bar-issue2.png)
 
-3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem was a very large margin which I set for the images for the whole margin.
+3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem occured due to a very large margin which I set for the images for the whole margin.
     - SOLUTION:by removing margin and set margin top and bottom only in CSS code: 
     `margin-top: 0.3rem;
     margin-bottom:1.2rem;`
@@ -88,11 +88,11 @@ Initially, the validator displayed the errors and warnings as shown below but th
 - **Warning:** The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
     - Fixed - by removing all hyphens in a comments and left just two.
 - **Warning:** Section lacks heading. Consider using h2-h6 elements to add identifying heading to all sections.
-    - Fixed - The errors were related to the sections that I set for the background images.Fixed by changing the name sections to div.
+    - Fixed - The errors were related to the sections that I set for the background images. Fixed by changing the name sections to div.
 - **Error:** The frameborder attribute on the iframe elements is obsolete. Use CSS instead.
     - Fixed - by removing attribute.
 - **Error:** Bad value 100% for attribute width and height on element iframe: Expected a digit but saw % instead.
-    - Fixed - by changing the attributes width:100% and height:100% which I set before in all iframe elements to its previous size. iframe wrapped with div video-wrapper and styled in css for responsive video
+    - Fixed - by changing the attributes width:100% and height:100% which I set before in all iframe elements to its previous size. iframe wrapped with div video-wrapper and styled in CSS for responsive video
 ![altvalidatorhtml1](assets/testing/validator-html1.png)
 ![altvalidatorhtml2](assets/testing/validator-html2.jpg)
 ![altvalidatrohtml3](assets/testing/validator-html3.jpg)
@@ -114,10 +114,10 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 
     ![althomepage](assets/testing/home-page.jpg)
 
-2. As a site visitor, I want to search for an interesting options for tours in Ireland, so I can decide if I am interested in buying one.
+2. As a site visitor, I want to search for interesting options for tours in Ireland, so I can decide if I am interested in buying one.
     - Links clearly labelled  easy to find on the navigation bar leading to Trips page where presented a samples of video.
     - Links clearly labelled  easy to find on the navigation bar leading to Gallery page depict gallery from the past tours.
-    - A clearly labeled About page easy to find in the navigation bar which contains a note about the group, some information about Irish mountain and map of Ireland.
+    - A clearly labelled About page easy to find in the navigation bar which contains a note about the group, some information about Irish mountains and map of Ireland.
     
     ![alttourspage](assets/testing/tours-page.jpg)
     ![altgallerypage](assets/testing/gallery-page.jpg)
@@ -138,12 +138,12 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
      
 5. As an interested customer I want to see some visual examples from previous site owner tours, so I can see what to expect.
     - Link clearly labelled easy to find on the navigation bar leading to Trips site showing a sample of videos from the trips which can be open in full screen.
-    - Link clearly labelled easy to find on the navigation bar leading to Gallery site showing a sample od images from the trips.
+    - Link clearly labelled easy to find on the navigation bar leading to Gallery site showing a sample offer images from the trips.
      
      ![alttoutsvideotrips](assets/testing/tours-video-trips.jpg)
 
 6. As a user I want to easily understand the purpose of your site.
-    - When user lands on the website the jumbotron welcome sign describes the website purpose 
+    - When user lands on the website the jumbotron welcome sign describes the website's purpose 
     
      ![altwelcomesign](assets/testing/welcome-sign.jpg)
 
@@ -152,13 +152,13 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 ---
 ### Checking for broken links
 
-1.  Expected: All menu links, including logo brand is expected to be functional and navigate to relevant sections when used(logo links to home page)
+1.  Expected: All menu links, including logo brand is expected to be functional and navigate to relevant sections when used (logo links to home page)
     - Testing: Tested all navigation links by clicking every link and buttons several times from different devices, browsers moving from one link to another from left to right
     - Result: The site acted as expected navigation bar links are functional, including logo brand menu links navigate to the relevant section
 
-2. Expected: Contact and Enquiry form performs as expected to performs accurately when user puts correct, no data or wrong data
-    - Testing: Tested the form by putting first correct data to each field, then wrong data and then no data in the required field 
-    - Result: The site did not respond due to putting the wrong email format, the warning appeared the rest of fields performed as expected. Name or surname can be added to "Enter your fill name" field with no warning which is correct
+2. Expected: Contact and Enquiry form performs as expected to perform accurately when user puts correct, no data or wrong data
+    - Testing: Tested the form by putting first correct data to each field, then wrong data and then no data in the required field
+    - Result: The site did not respond with a warning message, if the wrong email format was inputted. The rest of the fields performed as expected. Name or surname can be added to "Enter your fill name" field with no warning which is correct
     - Fix I changed `type="text"` to `type="email"` in the followed code 
 
 3. Expected: All social links, email, phone number contact links is expected to open in new tab and navigate to the relevant places
@@ -202,7 +202,7 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 ## Testing Performance
 ---
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
-The results on the end were satysfying for desctop devices bit performance od mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
+The results on the end were satisfying for desktop devices bit performance of mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
 -   Test for desktop devices
 ![altlighthouseteste](assets/testing/lighthouse-test-desktop.jpg)
 - Test for mobile devices
