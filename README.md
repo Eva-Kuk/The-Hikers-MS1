@@ -102,11 +102,11 @@ I chose the MVP (Minimal Viable Product) approach which:
  - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
  background color (#2d2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2d2d2a).
  
- ![altcolorspalette](assets/testing/colour-palette.png)
+ ![altcolorspalette](assets/testing/cologit add .r-palette.png)
 
  Taking into account feedback on the peer-code-review, I've decided to tone down the original bright green color
  to a more neutral, eye-friendly one. For the website's background and text, I've chosen shades of grey, which I feel well complement the array of colors in the website.
- ![altcolorspalette](assets/testing/colour-palette-changed.png)
+ ![altcolorspalette](assets/testing/color-palette-changed.png)
 
  **Typography**
  

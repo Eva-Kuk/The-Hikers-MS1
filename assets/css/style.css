@@ -23,7 +23,7 @@
     border:0;
 }
 html {
-    scroll-behavior: ;
+    scroll-behavior:smooth;
 }
 /*
 I stopped using the followed code, 
@@ -80,7 +80,9 @@ h4 {
  p {
     font-weight: 300;
  }
- 
+ .section-margin-bottom {
+    margin-bottom: 6rem;
+}
  /*---------------------------- NAVIGATION ------------------------*/
   .logo {
     width: 100px;
@@ -214,9 +216,7 @@ in the about section
     margin-top: -3px;
     height: auto;
 }
-.about-margin {
-    margin-bottom: 3.5rem;
-}
+
 .tours-style h2 {
     text-align: left;
     font-weight: 600;
@@ -282,9 +282,6 @@ in the about section
     border-top:3px solid transparent;
     margin-top: -3px;
     height: auto;
-}
-.tours-margin {
-    margin-bottom: 3.5rem;
 }
 
 .padding {
@@ -422,6 +419,25 @@ in the about section
             align-items: center;
     -webkit-box-shadow: 0px 0px 12px 5px #fff;
             box-shadow: 0px 0px 12px 5px #fff;
+}
+
+#image-gallery {
+   background-attachment: fixed;
+   /* ---------- Credit Photo by Lumn from Pexels ---------- */
+    background-image: url('../images/shoes.jpg');
+    background-position: center;
+    background-size: cover;
+     /*
+    I stopped using the followed code, 
+    as it caused tht horizontal scrolling
+    width: 100vw;
+    */
+    height: 800px;
+    width: auto;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 0px; 
 }
 
 /* ------------------------------------------------- CONTACT --------------------------------------------- */
@@ -577,15 +593,19 @@ font-size: 1.3rem;
 
 /*--------------------------Media for background images for smaller devices------------------------*/
  @media screen and (max-width: 1024px){
-     #image-contact {
-        /* ---------- Credit Photo by Sebastian Voortman from Pexel------- */
-        background-image: url('../images/happy-girl-mobile.jpg');
-        }
+    #image-about {
+         /* ---------- Credit Photo by Lumn from Pexels------- */
+        background-image: url('../images/shoes-mobile.jpg');
+    }
     #image-tours {
         /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
             background-image: url('../images/forest-mobile.jpg');
         }
-        /* -------- Credit Photo by Lukas Medvedevas from Pexels ------ */
+    #image-contact {
+        /* ---------- Credit Photo by Sebastian Voortman from Pexel------- */
+        background-image: url('../images/happy-girl-mobile.jpg');
+        }
+/* -------- Credit Photo by Lukas Medvedevas from Pexels ------ */
     .home-container{
             background-image: url('../images/hero-image-mobile.jpg') ;
         }
@@ -716,7 +736,6 @@ font-size: 1.3rem;
     body {
         font-size: 1.3rem;
     }
-
 }
 
 /*-------------------------------------------Media for landscape orientation------------------------------*/
@@ -726,18 +745,22 @@ font-size: 1.3rem;
 }
     .jumbotron {
         padding:10px 6px 1px 6px  ;
-      
     }
-    #image-contact {
-        /* ---------- Credit Photo by Sebastian Voortman from Pexel------- */
-        background-image: url('../images/happy-girl-landscape.jpg');
-        }
+    #image-about {
+        /* ---------- Credit Photo by Lumn from Pexels------- */
+        background-image: url('../images/shoes-landscape.jpg');
+    }
      #image-tours {
         /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
-            background-image: url('../images/forest-landscape1.jpg');
-        }
-        /* -------- Credit Photo by Lukas Medvedevas from Pexels ------ */
+        background-image: url('../images/forest-landscape.jpg');
+    }
+    #image-contact {
+        /* ---------- Credit Photo by Sebastian Voortman from Pexels------- */
+        background-image: url('../images/happy-girl-landscape.jpg');
+    }
+        
     .home-container{
+        /* -------- Credit Photo by Lukas Medvedevas from Pexels ------ */
         background-image: url('../images/hero-image-landscape.jpg');
     }
 }
