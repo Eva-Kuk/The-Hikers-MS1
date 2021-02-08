@@ -88,17 +88,27 @@ Initially, the validator displayed the errors and warnings as shown below but th
 - **Warning:** The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.
     - Fixed - by removing all hyphens in a comments and left just two.
 - **Warning:** Section lacks heading. Consider using h2-h6 elements to add identifying heading to all sections.
-    - Fixed - The errors were related to the sections that I set for the background images. Fixed by changing the name sections to div.
+    - Fixed - The errors were related to the sections that I set for the background images. 
+    Fixed by changing the name sections to div.
 - **Error:** The frameborder attribute on the iframe elements is obsolete. Use CSS instead.
     - Fixed - by removing attribute.
 - **Error:** Bad value 100% for attribute width and height on element iframe: Expected a digit but saw % instead.
-    - Fixed - by changing the attributes width:100% and height:100% which I set before in all iframe elements to its previous size. iframe wrapped with div video-wrapper and styled in CSS for responsive video
+    - Fixed - by changing the attributes width:100% and height:100% which I set before in all iframe elements
+     to its previous size. iframe wrapped with div video-wrapper and styled in CSS for responsive video
 ![altvalidatorhtml1](wireframes/testing/validator-html1.png)
 ![altvalidatorhtml2](wireframes/testing/validator-html2.jpg)
 ![altvalidatrohtml3](wireframes/testing/validator-html3.jpg)
-2. After 
 
+**ADITIONAL TESTING through the project development**
 
+After changes I've made in the project, considering advice from other users and from 
+the peer-code-review, the website was tested again, the errors that displayed were corrected.
+- **Error:** The `aria-labelledby` attribute must point to an element in the same document, displayed 16 errors.
+    - Fixed - by changing in all images `aria-labelledby="girls-in-the-forestModalLabel` to the same like
+    in `id="girls-in-the-forestModal"` and so on
+
+![altvalidatrohtml4](wireframes/testing/validator-html4.png)
+![altvalidatrohtml5](wireframes/testing/validator-html5.png)
 
 
 2. used [jigsaw W3C CSS Validation Service](https://jigsaw.w3.org/css-validator//) to validate my CSS code, came out  clean  but showed 38 warnings related to Variables values and autoprefixer vendor extensions
@@ -108,6 +118,19 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 ![altvalidatorcss1](wireframes/testing/validator-css1.jpg)
 ![altvalidatorcss2](wireframes/testing/validator-css2.jpg)
 ![altvalidatorcss3](wireframes/testing/validator-css3.jpg)
+
+**ADITIONAL TESTING through the project development**
+
+After changes I've made in the project, considering advice from other users and from 
+the peer-code-review, the website was tested again, the errors that displayed were corrected.
+- **Error:** Value Error: border-width `none` is not a `border-width` value `none`
+    - Fixed - by changing a value border to `border-width:0px;`
+- **Error:** The `aria-labelledby` attribute must point to an element in the same document, displayed 16 errors.
+    - Fixed - by changing in all images `aria-labelledby="girls-in-the-forestModalLabel` to the same like
+    in `id="girls-in-the-forestModal"` and so on
+
+![altvalidatorcss3](wireframes/testing/validator-css4.png)
+
 ---
 ## Testing User stories
 ---
@@ -200,8 +223,7 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
     - Safari.
     - Firefox (Windows 10).
     - Opera (Windows 10).
-    - The following issue was detected during browser compatibility testing:
-
+   
 ---
 ## Testing Performance
 ---
