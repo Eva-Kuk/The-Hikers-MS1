@@ -21,7 +21,7 @@ This is a fictional project created for education purposes only.
 
 ## Demo
 ---
-![altamiresponsive](assets/testing/am-i-responsive.jpg)
+![altamiresponsive](assets/testing/am-i-responsive-home.png)
 A live demo can be found [here](https://eva-kuk.github.io/The-Hikers-MS1/)
 
 ## Overview
@@ -102,10 +102,10 @@ I chose the MVP (Minimal Viable Product) approach which:
  - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
  background color (#2d2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2d2d2a).
  
- ![altcolorspalette](assets/testing/cologit add .r-palette.png)
+ ![altcolorspalette](assets/testing/color-palette.png)
 
  Taking into account feedback on the peer-code-review, I've decided to tone down the original bright green color
- to a more neutral, eye-friendly one. For the website's background and text, I've chosen shades of grey, which I feel well complement the array of colors in the website.
+ to a more neutral, to fit to scheme of the website. For the background I've chosen shades of grey, for the text off-white which  I feel well complement the array of colors in the website.
  ![altcolorspalette](assets/testing/color-palette-changed.png)
 
  **Typography**
@@ -180,18 +180,19 @@ Another feature idea
 - [CommonMark](https://commonmark.org/) - For Markdown language reference.
 - [FlexBox Froggy Game ](http://flexboxfroggy.com/) - Learning platform for FlexBox.
 - [css-diner.netlify](https://css-diner.netlify.app/#) - Learning platform for type selectors
-- [kurshtml](https://www.kurshtml.edu.pl/index.html) - Polish learning web with courses CSS and HTML
-- [pasja-informatyki](https://pasja-informatyki.pl/) - Polish learning website
+- [Kurs html](https://www.kurshtml.edu.pl/index.html) - Polish learning web with courses CSS and HTML
+- [Pasja informatyki](https://pasja-informatyki.pl/) - Polish learning website
 - [TinyPNG](https://tinypng.com/) - Efficient compression of images for site.
 - [Am I Responsive](http://ami.responsivedesign.is/) - Responsive website mockup image generator.
 - [Responsinator](http://www.responsinator.com/) - Responsive website mockup image generator.
 - [Balsamic](https://balsamiq.com/wireframes/) - Wireframing design tool to create wireframes.
 - [Bootstrap Grid Explanation by Anna Greaves ](https://ajgreaves.github.io/bootstrap-grid-demo/) - This was an invaluable resource for me to wrap my head around Grid layouts.
-- [freelogodesign](https://www.freelogodesign.org/ ) Logo design tool
-- [webbuilderexpert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/) -to choose colors for web
-- [css Variables](https://www.youtube.com/watch?v=PHO6TBq_auI&ab_channel=KevinPowell) - An introduction to CSS custom properties
-- [boxshadowgenerator](https://html-css-js.com/css/generator/box-shadow/) -  box shadow generator for gallery images
-
+- [Free logo design](https://www.freelogodesign.org/ ) Logo design tool
+- [WebBbuilder Expert](https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/) -to choose colors for web
+- [Css Variables](https://www.youtube.com/watch?v=PHO6TBq_auI&ab_channel=KevinPowell) - An introduction to CSS custom properties
+- [Boxshadowgenerator](https://html-css-js.com/css/generator/box-shadow/) -  box shadow generator for gallery images
+- [Colors](https://coolors.co/) - color schemes generator.
+- [Contrasr checker](https://webaim.org/resources/contrastchecker/) -contrast color checker
 ---
 ## Testing
 - Click [here](TESTING.md) for the full testing process.
@@ -238,7 +239,7 @@ This project has been deployed on GitHub Pages with the following process:
 ## Credits
 
 **Media**
-- The Gallery images and for About Section in this project are owned and provided by THE HIKERS group. I have permission from people who are in these photos to use them in this project.
+- The Gallery images and for About Section in this project are owned and provided by me. 
 - The background images for the parallax effect, as the images for the "Tour" section were selected from a free stock photo libraries  [Pexels](https://www.pexels.com/) and  [Pixabay](https://pixabay.com/).
 - The logo was designed by THE HIKERS group and created by me using [Free Logo Design](https://www.freelogodesign.org/).
 

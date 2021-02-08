@@ -10,6 +10,7 @@
 :root {
     --primary--clr:#9BB77B;
     --secondary--clr:#C51321;
+    --secondary--link--clr:rgb(236, 16, 34);
     --background--clr:#363636;
     --text--clr:#F5F5F5;
     --heading--h1:#F5F5F5;
@@ -23,7 +24,7 @@
     border:0;
 }
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 /*
 I stopped using the followed code, 
@@ -39,8 +40,8 @@ body {
     font-size: 1.1rem;
     background-color:var(--background--clr);
     color: var(--text--clr);
-    margin:0;
     height:100vh;
+
   /* 
   I stopped using the followed code, as it caused the
   horizontal scrolling
@@ -149,12 +150,12 @@ h4 {
     text-align: center;
 }
 
-hr {   
+.hr-line {   
     width: 35%;
-    height:3px;
+    height:4px;
     border: 0;
     background-color: var(--secondary--clr);
-    margin: 0 auto;
+    margin: 7px auto;
  }
 /* ---------- Credit Photo by Lukas Medvedevas from Pexels ---------- */
 /*------------CREDIT: inspiration/code snipped from Whiskey project in Bootstrap and customized----*/
@@ -181,7 +182,7 @@ hr {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 0;
-}
+  }
 
 .btn-lg {
     font-size: 0.9rem;
@@ -196,9 +197,9 @@ hr {
     font-weight: 600;
 }
 .btn-primary:hover {
-    background-color: var(--primary--clr);
-    border-color: var(--primary--clr);
-    color: var(--heading--h2--h3);
+    background-color: var(--secondary--link--clr);
+    border-color: var(--secondary--link--clr);
+   
 }
 .btn-style {
     padding: 9px 8px;
@@ -251,10 +252,6 @@ in the about section
     margin-bottom: 10px;
 }
 
-.card-about:hover {
-    -webkit-box-shadow: 0px 0px 7px 3px #fff;
-            box-shadow: 0px 0px 7px 3px #fff;
-}
 
 h3 {
     text-align: center;
@@ -384,12 +381,13 @@ in the about section
     border-radius: 8%;
 }
 
-.phone-number{
+a.phone-number{
     color: var(--text--clr);
+    text-decoration: none;
 }
 
-.phone-number:hover{
-    color: var(--primary--clr) ;
+a.phone-number:hover{
+    color: lightgray;
     text-decoration: none;
 }
 /* ----------------------------------------------- GALLERY ----------------------------------------------- */
@@ -398,6 +396,7 @@ in the about section
 the navbar which overlying the content
 in the about section 
 */ 
+
 #gallery {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -412,14 +411,37 @@ in the about section
     margin-top: 0.3rem;
     margin-bottom:1.2rem;
 }
+.image-modal {
+    width: 100%;
+    height: auto;
+}
 
 .image-style:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 0px 0px 12px 5px #fff;
-            box-shadow: 0px 0px 12px 5px #fff;
+    -webkit-box-shadow: 0px 0px 7px 3px #fff;
+            box-shadow: 0px 0px 7px 3px #fff;
 }
+
+.btn-check:focus+.btn-dark, .btn-dark:focus {
+    background-color:transparent; 
+    border:none; 
+}
+
+.btn-dark {
+    background-color: transparent;
+    border:none;
+    padding: 0px;
+}
+
+.btn-dark:hover {
+    background-color:transparent; 
+    border-color: transparent; 
+    border-width:none;
+    padding: 0px;
+}
+
 
 #image-gallery {
    background-attachment: fixed;
@@ -464,18 +486,19 @@ in the about section
 }
 
 .margin {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 36px;
+    margin-bottom: 36px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .contact-details {
     color:var(--secondary--clr);
+    text-decoration: none;
 }
 
 .contact-details:hover {
-    color:var(--primary--clr);
+    color:var(--secondary--link--clr);
     text-decoration: none;
 }
 
@@ -490,6 +513,7 @@ in the about section
 label {
     letter-spacing: 2px;
     margin-bottom: 0.3rem;
+    font-size: smaller;
 }
 
 .input-box {
@@ -519,7 +543,7 @@ label {
 /* ---------------------------------- FOOTER --------------------------------------- */
 footer {
     width: 100%;
-	bottom: 0px;
+    bottom: 0px;
 	height: 3.5rem;
     background-color:var(--primary--clr);
     color: var(--heading--h2--h3);
@@ -529,7 +553,8 @@ footer {
 	    -webkit-box-align: center;
 	    -ms-flex-align: center;
 	align-items: center;
-	position: relative;
+    position: fixed;
+    z-index: 1030;
 }
  ul {
     margin-top: 0;
@@ -562,7 +587,7 @@ footer .contact {
     color: var(--heading--h2--h3);
     padding-left: 2px;
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 .social-network {
     width: 40%;
@@ -590,7 +615,6 @@ font-size: 1.3rem;
 .social-network i:hover {
     color:var(--text--clr);
 }
-
 /*--------------------------Media for background images for smaller devices------------------------*/
  @media screen and (max-width: 1024px){
     #image-about {
@@ -610,7 +634,6 @@ font-size: 1.3rem;
             background-image: url('../images/hero-image-mobile.jpg') ;
         }
  }
-
 /*-------------------------------------------Media for Small devices------------------------------*/
 @media screen and (min-width:360px){
     .welcome-sign-top {
@@ -629,7 +652,6 @@ font-size: 1.3rem;
         margin-bottom: 30px;
     }
 }
-
 /*-------------------------------------------Media for Medium devices devices------------------------------*/
 @media screen and (min-width:768px){
     .welcome-sign-top {
@@ -642,9 +664,8 @@ font-size: 1.3rem;
         padding-left: 12px;
         letter-spacing: 1px;
     }
-
     .jumbotron {
-        padding: 25px 5px 25px 5px;
+        padding: 33px 5px 25px 5px;
     }
     .card-tours {
         margin-left: 7px;
@@ -679,14 +700,7 @@ font-size: 1.3rem;
     .contact-links-item a {
         font-size: 0.8rem;
     }  
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
 }
-
 /*-------------------------------------------Media for Large devices------------------------------*/
 @media screen and (min-width:1024px){
     .contact-links i {
@@ -701,13 +715,15 @@ font-size: 1.3rem;
     .navbar {
         font-size: 1.4rem;
         }
+        body {
+        font-size: 1.2rem;
     }
-
+    }
 /*-------------------------------------------Media for Extra-Large devices------------------------------*/
 @media screen and (min-width:1650px) {
     .about-margin {
     margin-bottom: 10rem;
-}
+    }
     .contact-links i {
         font-size:1.1rem;
     }
@@ -717,7 +733,6 @@ font-size: 1.3rem;
     .contact-links-item a {
         font-size: 1.2rem;
     }  
-   
     .navbar {
         font-size: 1.5rem;
     }
@@ -737,20 +752,19 @@ font-size: 1.3rem;
         font-size: 1.3rem;
     }
 }
-
 /*-------------------------------------------Media for landscape orientation------------------------------*/
 @media (max-width: 768px) and (orientation: landscape){
     footer {
         height: 2.3rem;
-}
+    }
     .jumbotron {
-        padding:10px 6px 1px 6px  ;
+        padding: 10px 6px 1px 6px;
     }
     #image-about {
         /* ---------- Credit Photo by Lumn from Pexels------- */
         background-image: url('../images/shoes-landscape.jpg');
     }
-     #image-tours {
+    #image-tours {
         /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
         background-image: url('../images/forest-landscape.jpg');
     }

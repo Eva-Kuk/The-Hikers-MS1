@@ -20,31 +20,31 @@ The problem was caused by wrong code in `.contact-links a:hover` which I set ear
 
     - SOLUTION: removing the line of code which caused the problem
 
-![alttheissue](assets/testing/contact-links-footer-problem.png) ![altfoundissue](assets/testing/contact-links-footer-problem-found.png)  ![altfixedissue](assets/testing/contact-links-footer-fixed.png)
+![alttheissue](wireframes/testing/contact-links-footer-problem.png) ![altfoundissue](wireframes/testing/contact-links-footer-problem-found.png)  ![altfixedissue](wireframes/testing/contact-links-footer-fixed.png)
 
 2. Scrolling horizontal bar appeared. 
     - SOLUTION1: by setting in CSS for html a value `overflow:hidden;` which worked good, but the real reason why the horizontal scrolling appeared was that my background images were overflowing. I noticed that on the unicorn revealer.
     - SOLUTION2: by removing `width: 100vw;` for the body and changing `width: 100vw;` for the both background images to `width:auto;`  
-![altscrollingbarissue](assets/testing/scrolling-bar-issue.png)
+![altscrollingbarissue](wireframes/testing/scrolling-bar-issue.png)
 
 ---
 
-![altscrollingbarissue](assets/testing/scrolling-horizontal-bar-issue.png)
+![altscrollingbarissue](wireframes/testing/scrolling-horizontal-bar-issue.png)
 
 ---
 
-![altscrollingbarissue](assets/testing/scrolling-horizontal-bar-issue1.png)
+![altscrollingbarissue](wireframes/testing/scrolling-horizontal-bar-issue1.png)
 
 ----
 
-![altscrollingbarissue](assets/testing/scrolling-horizontal-bar-issue2.png)
+![altscrollingbarissue](wireframes/testing/scrolling-horizontal-bar-issue2.png)
 
 3. In the Gallery page, the entire content of the page, when resizing the screen, moved to the right edge of the screen and hid behind causing the gap on the left side, the problem occured due to a very large margin which I set for the images for the whole margin.
     - SOLUTION:by removing margin and set margin top and bottom only in CSS code: 
     `margin-top: 0.3rem;
     margin-bottom:1.2rem;`
 
-![altleftsidegap](assets/testing/left-side-gap.png)
+![altleftsidegap](wireframes/testing/left-side-gap.png)
 
 4. Issue with the fixed top navbar was overlying on the other content and the headings on each section were hidden behind the navbar. 
     - SOLUTION: by setting in HTML for each section an id="about/tours/contact/gallery" and in CSS by setting: 
@@ -56,11 +56,11 @@ margin-top: -3px;`
     - SOLUTION2: by removing `background-attachment: fixed;` but didn't work as expected,
     - SOLUTION3:  by replacing in media queries pictures for smaller devices with new ones with reduced size
 
-![altmediaquerieslandscape](assets/testing/media-queries-landscape.jpg)
+![altmediaquerieslandscape](wireframes/testing/media-queries-landscape.jpg)
 
 ------
 
-![altmediaqueriessmallerdevices](assets/testing/media-queries-smaller-devices.jpg)
+![altmediaqueriessmallerdevices](wireframes/testing/media-queries-smaller-devices.jpg)
 
 6. Page sections don't adjust their size with the change of different devices and don't cover the size of the entire screen. The background image is visible at the bottom of the page
     
@@ -81,7 +81,7 @@ margin-top: -3px;`
 ## Code Validation
 ---
 1. used [W3C Markup Validation Service HTML](https://validator.w3.org/) to validate my HTML code for both pages index.html and gallery.html. 
-![altValidator.w3.org](assets/testing/validator-w3-org.png)
+![altValidator.w3.org](wireframes/testing/validator-w3-org.png)
 
 Initially, the validator displayed the errors and warnings as shown below but these have been fixed.
 
@@ -93,17 +93,21 @@ Initially, the validator displayed the errors and warnings as shown below but th
     - Fixed - by removing attribute.
 - **Error:** Bad value 100% for attribute width and height on element iframe: Expected a digit but saw % instead.
     - Fixed - by changing the attributes width:100% and height:100% which I set before in all iframe elements to its previous size. iframe wrapped with div video-wrapper and styled in CSS for responsive video
-![altvalidatorhtml1](assets/testing/validator-html1.png)
-![altvalidatorhtml2](assets/testing/validator-html2.jpg)
-![altvalidatrohtml3](assets/testing/validator-html3.jpg)
+![altvalidatorhtml1](wireframes/testing/validator-html1.png)
+![altvalidatorhtml2](wireframes/testing/validator-html2.jpg)
+![altvalidatrohtml3](wireframes/testing/validator-html3.jpg)
+2. After 
+
+
+
 
 2. used [jigsaw W3C CSS Validation Service](https://jigsaw.w3.org/css-validator//) to validate my CSS code, came out  clean  but showed 38 warnings related to Variables values and autoprefixer vendor extensions
 - warnings related to Variables values, research on the internet and found this is a non-issue after reading reports on [Stack Overflow](https://stackoverflow.com/questions/57661659/w3c-css-validation-parse-error-on-variables).
 It is also requested feature on [Github](https://github.com/w3c/css-validator/issues/111) too.
 - warnings related to unknown vendor extension i found thai is also non-issue after reading about it on different sources [Stack Overflow](https://stackoverflow.com/questions/52490004/what-are-all-of-these-w3c-css-validation-warnings-about)
-![altvalidatorcss1](assets/testing/validator-css1.jpg)
-![altvalidatorcss2](assets/testing/validator-css2.jpg)
-![altvalidatorcss3](assets/testing/validator-css3.jpg)
+![altvalidatorcss1](wireframes/testing/validator-css1.jpg)
+![altvalidatorcss2](wireframes/testing/validator-css2.jpg)
+![altvalidatorcss3](wireframes/testing/validator-css3.jpg)
 ---
 ## Testing User stories
 ---
@@ -112,16 +116,16 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
     - The logo image always leads back to the home page.
     - The home page call to action button leads the client to a contact form.
 
-    ![althomepage](assets/testing/home-page.jpg)
+    ![althomepage](wireframes/testing/home-page.jpg)
 
 2. As a site visitor, I want to search for interesting options for tours in Ireland, so I can decide if I am interested in buying one.
     - Links clearly labelled  easy to find on the navigation bar leading to Trips page where presented a samples of video.
     - Links clearly labelled  easy to find on the navigation bar leading to Gallery page depict gallery from the past tours.
     - A clearly labelled About page easy to find in the navigation bar which contains a note about the group, some information about Irish mountains and map of Ireland.
     
-    ![alttourspage](assets/testing/tours-page.jpg)
-    ![altgallerypage](assets/testing/gallery-page.jpg)
-    ![altaboutpage](assets/testing/about-page.jpg)
+    ![alttourspage](wireframes/testing/tours-page.jpg)
+    ![altgallerypage](wireframes/testing/gallery-page.jpg)
+    ![altaboutpage](wireframes/testing/about-page.jpg)
 
 3. As a user I want to be able to contact the site owner so I can get more information about their offer options.
     - Contact details are always displayed on the sticky footer easy to find.
@@ -129,23 +133,23 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
     - On the Tours page there is a link which lead to contact page.
     - On the Tours page call to action button on each tour lead to contact through the phone number.
      
-    ![altcontactpage](assets/testing/contact-page.jpg)
+    ![altcontactpage](wireframes/testing/contact-page.jpg)
 
 4. As an interested and potential customer, I want to follow the site owner on social media, so that I can keep up to date with its upcoming tours.
     - Clearly labelled social media links displayed on the sticky footer easy to find.
       
-    ![altsocialmedialinks](assets/testing/social-media-links.jpg)
+    ![altsocialmedialinks](wireframes/testing/social-media-links.jpg)
      
 5. As an interested customer I want to see some visual examples from previous site owner tours, so I can see what to expect.
     - Link clearly labelled easy to find on the navigation bar leading to Trips site showing a sample of videos from the trips which can be open in full screen.
     - Link clearly labelled easy to find on the navigation bar leading to Gallery site showing a sample offer images from the trips.
      
-     ![alttoutsvideotrips](assets/testing/tours-video-trips.jpg)
+     ![alttoutsvideotrips](wireframes/testing/tours-video-trips.jpg)
 
 6. As a user I want to easily understand the purpose of your site.
     - When user lands on the website the jumbotron welcome sign describes the website's purpose 
     
-     ![altwelcomesign](assets/testing/welcome-sign.jpg)
+     ![altwelcomesign](wireframes/testing/welcome-sign.jpg)
 
 ---
 ## Testing Functionality
@@ -204,9 +208,9 @@ It is also requested feature on [Github](https://github.com/w3c/css-validator/is
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
 The results on the end were satisfying for desktop devices bit performance of mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
 -   Test for desktop devices
-![altlighthouseteste](assets/testing/lighthouse-test-desktop.jpg)
+![altlighthouseteste](wireframes/testing/lighthouse-test-desktop.jpg)
 - Test for mobile devices
-![altlighthouseteste](assets/testing/lighthouse-test-mobile.jpg)
+![altlighthouseteste](wireframes/testing/lighthouse-test-mobile.jpg)
 
 1. Properly size images
 FIXED: by resizing in photoshop ans compressing images in [tinyPNG](https://tinypng.com/)
@@ -219,7 +223,7 @@ FIXED: by resizing in photoshop ans compressing images in [tinyPNG](https://tiny
 FIXED: by adding width and height for images in index.html
 3. Background and foreground colors do not have a sufficient contrast ratio
 FIXED: checking on the [contrast checker](https://webaim.org/resources/contrastchecker/) contrast of colors for navigation bar and footer colors changed 
-![altcontrastcheckerer](assets/testing/contrast-checker.jpg) and new navigation bar and footer
+![altcontrastcheckerer](wireframes/testing/contrast-checker.jpg) and new navigation bar and footer
 
 ## Testing Accessibility
 The website's accessibility was also tested using Lighthouse. The result was satisfying.
