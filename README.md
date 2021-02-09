@@ -140,6 +140,7 @@ Another feature idea
 - Change short videos of excursions on the organized group trips, which today were implemented from youtube.
 - More comprehensive Tours section, write more about tours option, and more detailed.
 - Integration of Social media Page to have a live update feed of planned trips and events.
+- Implement slower scrolling from one page to another using javascript.
 ---
 
 ## Technologies Used

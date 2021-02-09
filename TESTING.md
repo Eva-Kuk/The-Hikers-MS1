@@ -212,14 +212,18 @@ the peer-code-review, the website was tested again, the errors that displayed we
     Galaxy Fold, Widescreen Laptop and Desktop PC, iPad landscape · width: 1024px,  iPhone 6-8 Plump landscape · width: 736px ,iPhone 6-8 landscape · width: 667px, Android (Pixel 2) landscape · width: 684px, iPhone eXpensive landscape · width: 734px
     The following issue was detected and fixed during mobile compatibility testing:
     Background images on smaller devices and landscape needs to be set in media queries, footer on landscape devises set thinner.  
+- On the real devices was tested on:
+    - Samung galaxy S8/S6 (t)
+
+
 ---
 ## Testing Compatibility
 ---
 - The website was tested on the following browsers and operating systems:
-    - Google Chrome (Windows 10, Android 11).
+    - Google Chrome (Windows 10, Android 11, ).
     - Microsoft Edge (Windows 10).
     - Microsoft Internet Explorer 11 (Windows 10).
-    - Safari.
+    - Safari (Ipad, Iphone) 
     - Firefox (Windows 10).
     - Opera (Windows 10).
    
@@ -229,9 +233,9 @@ the peer-code-review, the website was tested again, the errors that displayed we
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
 The results on the end were satisfying for desktop devices bit performance of mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
 -   Test for desktop devices
-![altlighthouseteste](wireframes/testing/lighthouse-test-desktop.jpg)
+![altlighthousetest](wireframes/testing/lighthouse-test-desktop.jpg)
 - Test for mobile devices
-![altlighthouseteste](wireframes/testing/lighthouse-test-mobile.jpg)
+![altlighthousetest](wireframes/testing/lighthouse-test-mobile.jpg)
 
 1. Properly size images
 FIXED: by resizing in photoshop ans compressing images in [tinyPNG](https://tinypng.com/)
@@ -251,9 +255,9 @@ FIXED: checking on the [contrast checker](https://webaim.org/resources/contrastc
 After changes I've made in the project, considering advice from other users and from 
 the peer-code-review, the website was tested again,
 -   Test for desktop devices
-![altlighthouseteste](wireframes/testing/lighthouse-test-desktop1.jpg)
+![altlighthousetest](wireframes/testing/lighthouse-test-desktop1.jpg)
 - Test for mobile devices
-![altlighthouseteste](wireframes/testing/lighthouse-test-mobile1.jpg)
+![altlighthousetest](wireframes/testing/lighthouse-test-mobile1.jpg)
 
 The results were satisfactory, but there were errors that I corrected:
 **Properly size images**

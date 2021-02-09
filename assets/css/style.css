@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: 'Oswald', sans-serif;     
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color:var(--background--clr);
     color: var(--text--clr);
     height:100vh;
@@ -39,7 +39,7 @@ h1,
 h2,
 h3,
 h4 {
- font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive;
 }
 
  h1 {
