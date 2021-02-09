@@ -21,7 +21,7 @@ This is a fictional project created for education purposes only.
 
 ## Demo
 ---
-![altamiresponsive](assets/testing/am-i-responsive-home.png)
+![altamiresponsive](wireframes/testing/am-i-responsive-home.png)
 A live demo can be found [here](https://eva-kuk.github.io/The-Hikers-MS1/)
 
 ## Overview
@@ -102,11 +102,12 @@ I chose the MVP (Minimal Viable Product) approach which:
  - For the other colors I have chosen a combination of dark grey and off-white, which are the darker and lighter shades of primary green color to give a website a balanced contrast: 
  background color (#2d2d2a), body-text color (#fbfbfb), headings (#fbfbfb) and (#2d2d2a).
  
- ![altcolorspalette](assets/testing/color-palette.png)
+ ![altcolorspalette](wireframes/testing/color-palette.png)
 
  Taking into account feedback on the peer-code-review, I've decided to tone down the original bright green color
  to a more neutral, to fit to scheme of the website. For the background I've chosen shades of grey, for the text off-white which  I feel well complement the array of colors in the website.
- ![altcolorspalette](assets/testing/color-palette-changed.png)
+ 
+ ![altcolorspalette](wireframes/testing/color-palette-changed.png)
 
  **Typography**
  

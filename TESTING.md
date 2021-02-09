@@ -211,8 +211,7 @@ the peer-code-review, the website was tested again, the errors that displayed we
     for both portraits and landscape including iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 plus, iPhone 11, iPad, iPad Pro, Moto G4, Galaxy S5, Surface Duo,
     Galaxy Fold, Widescreen Laptop and Desktop PC, iPad landscape · width: 1024px,  iPhone 6-8 Plump landscape · width: 736px ,iPhone 6-8 landscape · width: 667px, Android (Pixel 2) landscape · width: 684px, iPhone eXpensive landscape · width: 734px
     The following issue was detected and fixed during mobile compatibility testing:
-    Background images on smaller devices and landscape needs to be set in media queries, footer on landscape devises set thinner.
-    
+    Background images on smaller devices and landscape needs to be set in media queries, footer on landscape devises set thinner.  
 ---
 ## Testing Compatibility
 ---
@@ -246,6 +245,22 @@ FIXED: by adding width and height for images in index.html
 3. Background and foreground colors do not have a sufficient contrast ratio
 FIXED: checking on the [contrast checker](https://webaim.org/resources/contrastchecker/) contrast of colors for navigation bar and footer colors changed 
 ![altcontrastcheckerer](wireframes/testing/contrast-checker.jpg) and new navigation bar and footer
+
+**ADITIONAL TESTING through the project development**
+
+After changes I've made in the project, considering advice from other users and from 
+the peer-code-review, the website was tested again,
+-   Test for desktop devices
+![altlighthouseteste](wireframes/testing/lighthouse-test-desktop1.jpg)
+- Test for mobile devices
+![altlighthouseteste](wireframes/testing/lighthouse-test-mobile1.jpg)
+
+The results were satisfactory, but there were errors that I corrected:
+**Properly size images**
+The photos were previously scaled down and compressed, but the larger ones I reduced once more and compressed again
+**Image elements do not have explicit width and height**
+Set the `width` and `height` attributes for the whole gallery in index.html 
+
 
 ## Testing Accessibility
 The website's accessibility was also tested using Lighthouse. The result was satisfying.

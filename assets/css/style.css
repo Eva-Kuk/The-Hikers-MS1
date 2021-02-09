@@ -26,14 +26,6 @@
 html {
     scroll-behavior: smooth;
 }
-/*
-I stopped using the followed code, 
-as the problem was with
-setting width:100vw for the 
-background images and body 
-html {
-    overflow-x: hidden; 
-}*/
 
 body {
     font-family: 'Oswald', sans-serif;     
@@ -41,11 +33,6 @@ body {
     background-color:var(--background--clr);
     color: var(--text--clr);
     height:100vh;
-
-  /* 
-  I stopped using the followed code, as it caused the
-  horizontal scrolling
-   width: 100vw;*/
 }
 
 h1,
@@ -61,15 +48,18 @@ h4 {
  }
 
  h2 {
-     font-size: 1.4rem;
+     font-size: 1.2rem;
      color: var(--heading--h2--h3);
      letter-spacing: 1px;
  }
 
  h3 {
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     color: var(--heading--h2--h3);
- }
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 1px
+}
 
  h4 {
     font-size: 1.4rem;
@@ -80,7 +70,7 @@ h4 {
 
  p {
     font-weight: 300;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
  }
 
  .section-margin-bottom {
@@ -183,11 +173,8 @@ h4 {
 .jumbotron {
     background-color:rgb(6 6 6 / 72%); 
     border-radius:0.9rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 22px 2px 3px 2px;
     margin-bottom: 0;
-    padding-left: 4px;
-    padding-right: 4px;
   }
 
 .btn-lg {
@@ -212,11 +199,6 @@ h4 {
 }
 
 /* -------------------------------- ABOUT ------------------------------- */
-/*
-#about needed to lover the header out from 
-the navbar which overlying the content 
-in the about section
-*/ 
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -253,15 +235,11 @@ in the about section
     -webkit-box-flex: 1;
             flex: 1 1 auto;
     min-height: 1px;
-    padding: 0.7rem;
-    margin-bottom: 10px;
+    padding: 0.4rem;
+    margin-bottom: 15px;
 }
 
-h3 {
-    text-align: center;
-    margin-top: 17px;
-    margin-bottom: 5px;
-}
+
 
 .fa-li {
     font-size: 0.9rem;
@@ -271,14 +249,7 @@ h3 {
     margin-left: 1.5rem;
 }
 
-
 /* ----------------------------- TOURS ---------------------------- */
-
-/*
-#tours needed to lover the header out from 
-the navbar which overlying the content 
-in the about section
-*/ 
 #tours {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -323,11 +294,6 @@ in the about section
     background-image: url('../images/forest.jpg');
     background-position: center;
     background-size: cover;
-    /*
-    I stopped using the followed code, 
-    as it caused the horizontal scrolling
-    width: 100vw;
-    */
     height: 800px;
     width: auto;
     padding-bottom: 50px;
@@ -451,11 +417,6 @@ in the about section
     background-image: url('../images/shoes.jpg');
     background-position: center;
     background-size: cover;
-     /*
-    I stopped using the followed code, 
-    as it caused tht horizontal scrolling
-    width: 100vw;
-    */
     height: 800px;
     width: auto;
     padding-bottom: 50px;
@@ -465,15 +426,11 @@ in the about section
 }
 
 /* ------------------------------------------------- CONTACT --------------------------------------------- */
-/*
-#contact needed to lover the header out from 
-the navbar which overlying the content  
-in the about section
-*/
+
 #contact {
     border-top:3px solid transparent;
     margin-top: -3px;
-    height: 100vh;
+    height: auto;
 }
 
 .contact-sent-btn {
@@ -488,19 +445,19 @@ in the about section
 }
 
 .margin {
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .contact-details {
-    color:var(--secondary--clr);
+    color:var(--secondary--link--clr);
     text-decoration: none;
 }
 
 .contact-details:hover {
-    color:var(--secondary--link--clr);
+    color:var(--secondary--clr);
     text-decoration: none;
 }
 
@@ -529,11 +486,6 @@ label {
     background-image: url('../images/happy-girl.jpg');
     background-position: center;
     background-size: cover;
-     /*
-    I stopped using the followed code, 
-    as it caused tht horizontal scrolling
-    width: 100vw;
-    */
     height: 800px;
     width: auto;
     padding-bottom: 50px;
@@ -555,9 +507,10 @@ footer {
 	    -webkit-box-align: center;
 	    -ms-flex-align: center;
 	align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 1030;
 }
+
  ul.contact-links {
     margin-top: 0;
     margin-bottom: 0;
@@ -727,11 +680,11 @@ font-size: 1.3rem;
         body {
         font-size: 1.4rem;
     }
-    }
+}
 /*-------------------------------------------Media for Extra-Large devices------------------------------*/
 @media screen and (min-width:1650px) {
     .about-margin {
-    margin-bottom: 10rem;
+        margin-bottom: 10rem;
     }
     .contact-links i {
         font-size:1.1rem;
