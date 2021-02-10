@@ -212,20 +212,25 @@ the peer-code-review, the website was tested again, the errors that displayed we
     Galaxy Fold, Widescreen Laptop and Desktop PC, iPad landscape · width: 1024px,  iPhone 6-8 Plump landscape · width: 736px ,iPhone 6-8 landscape · width: 667px, Android (Pixel 2) landscape · width: 684px, iPhone eXpensive landscape · width: 734px
     The following issue was detected and fixed during mobile compatibility testing:
     Background images on smaller devices and landscape needs to be set in media queries, footer on landscape devises set thinner.  
-- On the real devices was tested on:
-    - Samung galaxy S8/S6 (t)
-
-
+- The website was also tested on real devices both portrait and landscape:
+    - Samung Galaxy S8/S6/S10
+    - iPad Air
+    - iphone 7
+    
+ **Encountered problems while testing the site on different devices**
+- After loading, the page moves to the end to the contact form
+- Pages scroll too fast
+- Background photos do not render properly on macOS devices
 ---
 ## Testing Compatibility
 ---
 - The website was tested on the following browsers and operating systems:
-    - Google Chrome (Windows 10, Android 11, ).
+    - Google Chrome (Windows 10, Android 11, Linux).
     - Microsoft Edge (Windows 10).
     - Microsoft Internet Explorer 11 (Windows 10).
-    - Safari (Ipad, Iphone) 
+    - Safari (macOS) 
     - Firefox (Windows 10).
-    - Opera (Windows 10).
+    - Opera (Windows 10, Linux).
    
 ---
 ## Testing Performance
@@ -253,16 +258,21 @@ FIXED: checking on the [contrast checker](https://webaim.org/resources/contrastc
 **ADITIONAL TESTING through the project development**
 
 After changes I've made in the project, considering advice from other users and from 
-the peer-code-review, the website was tested again,
--   Test for desktop devices
-![altlighthousetest](wireframes/testing/lighthouse-test-desktop1.jpg)
-- Test for mobile devices
-![altlighthousetest](wireframes/testing/lighthouse-test-mobile1.jpg)
+the peer-code-review, the website was tested again on Lighthouse. 
+The tests were run multiple times and the performance scores varied considerably. 
+Tests on desctop devices came out much better than on mobile devices.
 
-The results were satisfactory, but there were errors that I corrected:
-**Properly size images**
-The photos were previously scaled down and compressed, but the larger ones I reduced once more and compressed again
-**Image elements do not have explicit width and height**
+-   Test for desktop devices
+![altlighthousetest](wireframes/testing/lighthouse-test-desktop1.png)
+
+- Test for mobile devices
+![altlighthousetest](wireframes/testing/lighthouse-test-mobile1.png)
+
+Errors that I've corrected:
+- **Properly size images**
+The photos were previously scaled down in Photoshop and compressed in TinyPNG, but the larger ones I reduced once more and compressed again
+
+- **Image elements do not have explicit width and height**
 Set the `width` and `height` attributes for the whole gallery in index.html 
 
 
