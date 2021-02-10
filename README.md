@@ -81,17 +81,33 @@ I chose the MVP (Minimal Viable Product) approach which:
 
 ## Wireframe mockups:
 
-- [Home](assets/wireframes/home-page.png)
-- [About](assets/wireframes/about-page.png)
-- [Tours](assets/wireframes/tours-page.png)
-- [Gallery](assets/wireframes/gallery-page.png)
-- [Contact](assets/wireframes/contact-page.png)
+- [Home](assets/wireframes/home-page-initial.png)
+- [About](assets/wireframes/about-page-initial.png)
+- [Tours](assets/wireframes/tours-page-initial.png)
+- [Gallery](assets/wireframes/gallery-page-initial.png)
+- [Contact](assets/wireframes/contact-page-initial.png)
 
-- Pages/Section: Home, About, Tours, Contact
-- Gallery in a separated page (changed through project development)
+- Pages/Section: Home, About, Tours, Gallery, Contact
+- Gallery in a separated page (was changed through project development)
 - Fixed navigation bar - Menu headings and pointing to each of the 5 Pages
 - Fixed footer with Contact email-link and phone number and Social Media icons, which will be opened in a new tab.
 
+**Wireframes changed througt project  development:**
+
+**HOME PAGE**
+![altcolorspalette](wireframes/home-page.png)
+
+**ABOUT PAGE**
+![altcolorspalette](wireframes/about-page.png)
+
+**TOURS PAGE**
+![altcolorspalette](wireframes/tours-page.png)
+
+**GALLERY PAGE**
+![altcolorspalette](wireframes/gallery-page.png)
+
+**CONTACT PAGE**
+![altcolorspalette](wireframes/contact-page.png)
 ---
 **5. Surface**
 
@@ -124,13 +140,31 @@ I chose the MVP (Minimal Viable Product) approach which:
 
 **Existing Features**
 - Designed with HTML5, CSS and Bootstrap.
-- One page with 4 sections acting as individual sections.
-- Fixed navigation allows user to easily navigate, regardless of which page visited.
-- Fixed footer allows the user to easily access to social media links and contact details like email and phone number.
+- One page with 5 sections acting as individual pages.
+- Fixed navigation allows user to easily navigate, regardless of which page visited, .
+- Fixed footer allows the user to easily access to social media links and contact details like email and phone number. 
+  Footer is moved to the bottom of the page on small devices and landcsapes to allow user have a bigger surface.
 - Fixed, stacked images for mobile views.
 - Home page and Contact And Enquiry Form with radio buttons.
-- Tours page and contact have additional Contact Us  and phone option.
-- In gallery page each picture has been linked and open in a new tab, so that the user can see the image in a larger size.
+- The About page contains an embedded map of Ireland from Google.
+- Tours page and contact have additional Contact Us  and phone options.
+- Tours page contains short youtube movies presenting selected tours which can be seen in full screen..
+- In gallery page each picture has been made as modal, allows the user to see images in a larger size.
+
+**HOME PAGE**
+![althomepagenew](wireframes/testing/home-page-new.png)
+
+**ABOUT PAGE**
+![altaboutpagenew](wireframes/testing/about-page-new.png)
+
+**TOURS PAGE**
+![alttourspagenew](wireframes/testing/tours-page-new.png)
+
+**GALLERY PAGE**
+![altgallerypagenew](wireframes/testing/gallery-page-new.png)
+
+**CONTACT PAGE**
+![altcontactpagenew](wireframes/testing/contact-page-new.png)
 
 **Features Left to Implement when skills develop**
 
@@ -251,7 +285,7 @@ The rest of the text on that website was written by me.
 
 
 **Code Snippets**
-- Template code for navbar and modals in Gallery using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) and heavily modified to suit the sites needs.
+- Template code for navbar and modals in Gallery section using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) and heavily modified to suit the sites needs.
 - Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
 - Code idea for cards for tour section used with a permission from [JimLynks MS1 project](https://jimlynx.github.io/CI-MS1-Explore-Ireland/#contact).
 - Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
