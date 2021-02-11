@@ -33,6 +33,7 @@ body {
     background-color:var(--background--clr);
     color: var(--text--clr);
     height:100vh;
+    width: 100%;
 }
 
 h1,
@@ -201,8 +202,78 @@ h4 {
 .btn-style {
     padding: 9px 8px;
 }
+/* -------------------------------- Background images CREDIT: solution from stackoverflow for iOS devices------------------------------- */
+.e-with-fixed-bg {
+  width: 100%;
+  height: 700px;
+  
+  /* Important */
+  position: relative;
+}
+
+.bg-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#bg-gallery {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+   /* ---------- Credit Photo by Lumn from Pexels ----------*/
+  background-image: url('../images/shoes.jpg');
+  background-color:var(--background--clr);
+  transform: translateZ(0);
+  will-change: transform;
+}
+#bg-tours {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+   /* ---------- Credit Photo by Eric Sanman from Pexels ----------*/
+  background-image: url('../images/forest.jpg');
+  background-color:var(--background--clr);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#bg-contact {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+   /* ---------- Credit Photo by Sebastian Voortman from Pexels ----------*/
+  background-image: url('../images/happy-girl.jpg');
+  background-color:var(--background--clr);
+  transform: translateZ(0);
+  will-change: transform;
+}
 
 /* -------------------------------- ABOUT ------------------------------- */
+/*
+#about needed to lover the header out from 
+the navbar which overlying the content
+in the about section 
+*/ 
+
 #about {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -246,7 +317,6 @@ h4 {
     padding-right: 16px;
 }
 
-
 .fa-li {
     font-size: 0.9rem;
 }
@@ -256,6 +326,12 @@ h4 {
 }
 
 /* ----------------------------- TOURS ---------------------------- */
+/*
+#tours needed to lover the header out from 
+the navbar which overlying the content
+in the about section 
+*/ 
+
 #tours {
     border-top:3px solid transparent;
     margin-top: -3px;
@@ -292,21 +368,6 @@ h4 {
 .tours-images-style {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-#image-tours {
-   background-attachment: fixed;
-   /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
-    background-color:var(--background--clr);
-    background-image: url('../images/forest.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    width: auto;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 0px; 
 }
 
 /* --- Credit: w3school snipped code/customized for Image Hoover Overlay Fade for the images and edited slightly to fit project needs-------------- */
@@ -384,13 +445,16 @@ in the about section
     height: auto;
     border: 6px solid white;
     border-radius: 0.3rem;  
-    padding: 4px; 
+    padding: 3px; 
     margin-top: 0.3rem;
     margin-bottom:1.2rem;
 }
 .image-modal {
     width: 100%;
     height: auto;
+}
+.modal-body {
+    padding: 0.4rem;
 }
 
 .image-style:hover {
@@ -418,22 +482,12 @@ in the about section
     padding: 0px;
 }
 
-#image-gallery {
-   background-attachment: fixed;
-   /* ---------- Credit Photo by Lumn from Pexels ---------- */
-    background-color:var(--background--clr);
-    background-image: url('../images/shoes.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    width: auto;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 0px; 
-}
-
 /* ------------------------------------------------- CONTACT --------------------------------------------- */
+/*
+#contact needed to lover the header out from 
+the navbar which overlying the content
+in the about section 
+*/ 
 
 #contact {
     border-top:3px solid transparent;
@@ -488,21 +542,6 @@ label {
     letter-spacing: 1px;
 }
 
-#image-contact {
-   background-attachment: fixed;
-   /* ---------- Credit Photo by Sebastian Voortman from Pexels ---------- */
-    background-color:var(--background--clr);
-    background-image: url('../images/happy-girl.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    width: auto;
-    padding-bottom: 50px;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 0px; 
-}
-
 /* ---------------------------------- FOOTER --------------------------------------- */
 footer {
     width: 100%;
@@ -549,7 +588,7 @@ footer .contact {
 
 .contact-links-item a {
     color: var(--heading--h2--h3);
-    padding-left: 15px;
+    padding-left: 7px;
     text-decoration: none;
     font-size: 0.6rem;
 }
@@ -585,15 +624,15 @@ font-size: 1.3rem;
 
 /*--------------------------Media for background images for smaller devices------------------------*/
  @media screen and (max-width: 1024px){
-    #image-about {
+    #bg-about {
          /* ---------- Credit Photo by Lumn from Pexels------- */
         background-image: url('../images/shoes-mobile.jpg');
     }
-    #image-tours {
+    #bg-tours {
         /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
             background-image: url('../images/forest-mobile.jpg');
         }
-    #image-contact {
+    #bg-contact {
         /* ---------- Credit Photo by Sebastian Voortman from Pexel------- */
         background-image: url('../images/happy-girl-mobile.jpg');
         }
@@ -621,6 +660,10 @@ font-size: 1.3rem;
     }
     .video-card-tours {
         margin-bottom: 30px;
+    }
+    
+.contact-links-item a {
+    padding-left: 15px;
     }
 }
 
@@ -714,21 +757,18 @@ font-size: 1.3rem;
 }
 /*-------------------------------------------Media for landscape orientation------------------------------*/
 @media (max-width: 768px) and (orientation: landscape){
-    footer {
-       position: fixed;
-    }
     .jumbotron {
         padding: 10px 6px 1px 6px;
     }
-    #image-about {
+    #bg-about {
         /* ---------- Credit Photo by Lumn from Pexels------- */
         background-image: url('../images/shoes-landscape.jpg');
     }
-    #image-tours {
+    #bg-tours {
         /* ---------- Credit Photo by Eric Sanman from Pexels ---------- */
         background-image: url('../images/forest-landscape.jpg');
     }
-    #image-contact {
+    #bg-contact {
         /* ---------- Credit Photo by Sebastian Voortman from Pexels------- */
         background-image: url('../images/happy-girl-landscape.jpg');
     }

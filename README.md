@@ -1,4 +1,4 @@
-# The Hikers
+# THE HIKERS
 
 ![altthehikers](assets/images/logo.png)
 
@@ -92,21 +92,26 @@ I chose the MVP (Minimal Viable Product) approach which:
 - Fixed navigation bar - Menu headings and pointing to each of the 5 Pages
 - Fixed footer with Contact email-link and phone number and Social Media icons, which will be opened in a new tab.
 
-**Wireframes changed througt project  development:**
+**Wireframes have changed througt project  development:**
 
 **HOME PAGE**
+
 ![altcolorspalette](wireframes/home-page.png)
 
 **ABOUT PAGE**
+
 ![altcolorspalette](wireframes/about-page.png)
 
 **TOURS PAGE**
+
 ![altcolorspalette](wireframes/tours-page.png)
 
 **GALLERY PAGE**
+
 ![altcolorspalette](wireframes/gallery-page.png)
 
 **CONTACT PAGE**
+
 ![altcolorspalette](wireframes/contact-page.png)
 ---
 **5. Surface**
@@ -145,11 +150,12 @@ I chose the MVP (Minimal Viable Product) approach which:
 - Fixed footer allows the user to easily access to social media links and contact details like email and phone number. 
   Footer is moved to the bottom of the page on small devices and landcsapes to allow user have a bigger surface.
 - Fixed, stacked images for mobile views.
-- Home page and Contact And Enquiry Form with radio buttons.
-- The About page contains an embedded map of Ireland from Google.
-- Tours page and contact have additional Contact Us  and phone options.
-- Tours page contains short youtube movies presenting selected tours which can be seen in full screen..
-- In gallery page each picture has been made as modal, allows the user to see images in a larger size.
+- Home page and Contact And Enquiry Form includes buttons.
+- The About page contains an embedded Google map of Ireland.
+- Tours page and contact have additional Contact Us and phone options.
+- Tours page contains short youtube movies presenting selected tours which can be seen in full screen.
+- In Gallery page each picture has been made as modal, allows the user to see images in a larger size.
+- Each Section is separated by the background image relating to the theme of the website.
 
 **HOME PAGE**
 ![althomepagenew](wireframes/testing/home-page-new.png)
@@ -157,11 +163,20 @@ I chose the MVP (Minimal Viable Product) approach which:
 **ABOUT PAGE**
 ![altaboutpagenew](wireframes/testing/about-page-new.png)
 
+**Background image "Forrest"**
+![altaboutpagenew](wireframes/testing/background-img-forrest.png)
+
 **TOURS PAGE**
 ![alttourspagenew](wireframes/testing/tours-page-new.png)
 
+**Background images "Shoes"**
+![altaboutpagenew](wireframes/testing/background-img-shoes.png)
+
 **GALLERY PAGE**
 ![altgallerypagenew](wireframes/testing/gallery-page-new.png)
+
+**Background image "Happy-girl"**
+![altaboutpagenew](wireframes/testing/background-img-happy-girl.png)
 
 **CONTACT PAGE**
 ![altcontactpagenew](wireframes/testing/contact-page-new.png)
@@ -257,18 +272,35 @@ Overview
 
 ## Deployment
 
-This project has been deployed on GitHub Pages with the following process:
+ ### **GitHub Pages**
 
+This project has been deployed on GitHub Page. To deploy it, follow the steps:
 - All code was written on Gitpod, an online IDE.
 - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/Eva-Kuk/The-Hikers-MS1).
-- Under the settings section of the GitHub repository, scroll down to GitHub Pages section.
-- Under 'Source' drop-down, the 'Master branch' was selected.
+- At the top of the Repository, click on the "Settings" Button on the menu.
+- Scroll down the Settings page and find the "GitHub Pages" Section.
+- Under "Source"click on the drop-down, and select the "Master" branch.
 - Once selected, this publishes the project to GitHub Pages and displays the site's url.
 - There is no difference between the deployed version and the development version.
-- The code can be run locally through clone or download.
-- You can do this by opening the repository, clicking on the green 'Code' button and selecting either 'clone or download'.
-- The Clone option provides a url, which you can use on your desktop IDE.
-- The Download ZIP option provides a link to download a ZIP file which can be unzipped on your local machine.
+
+### **To fork the GitHub Repository**
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without
+affecting the original repository by using the following steps:
+1. Log in to GitHub and locate the [Repository](https://github.com/Eva-Kuk/The-Hikers-MS1).
+2. At the top right of the Repository just above the "Settings" Button on the menu, locate and click the "Fork" Button.
+3. You should have a copy of the original repository in your GitHub account now.
+
+ ### **To make a Local Clone**
+
+1. Log in GitHub and locate the [Repository](https://github.com/Eva-Kuk/The-Hikers-MS1).
+2. At the top of the Repository locate the "Code" dropdown menu.
+3. To clone the repository using HTTPS, under "CLONE", make sure "HTTPS" is selected and copy the link then.
+4. Open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+5. Type `git clone` and past the URL you copied in Step 3.
+`$ git clone https://github.com/Eva-Kuk/The-Hikers-MS1`
+6. Press Enter and you local clone will be created.
 
 ---
 
@@ -283,7 +315,6 @@ This project has been deployed on GitHub Pages with the following process:
 The text for the part about the 10 Irish highest mountains was taken and modified for the website needs from [maps.ie](https://www.maps.ie/mountaineering-map-ireland.htm) and [en.wikipedia.org](https://en.wikipedia.org/wiki/Lists_of_mountains_in_Ireland)
 The rest of the text on that website was written by me.
 
-
 **Code Snippets**
 - Template code for navbar and modals in Gallery section using bootstrap classes was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/) and heavily modified to suit the sites needs.
 - Solution for Bootstrap collapsing back toggle menu on small devices was from [Stack Overflow - "Orel Eliyahu"](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked).
@@ -291,6 +322,7 @@ The rest of the text on that website was written by me.
 - Inspiration/and code for jumbotron and hero image was taken from Whiskey project in Bootstrap from [Code Institute](https://codeinstitute.net/) and modified to suit the sites needs.
 - Hover-overlay fade code for a tours images were taken from [w3Schools](https://www.w3schools.com/).
 - Code for font awesome icon a list in about section [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/styling/icons-in-a-list).
+- Solution for background images `background-attachment: fixed;` for iOS devices from  [Stack Overflow -Nicholas Gooding Rios](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7).
 
 ## Acknowledgments
 
@@ -299,5 +331,5 @@ I would like to thank:
 - My tutor Cormac for his big support he offered me, troubleshooting guide, his patience, and every single advice.
 - I am very grateful and would like to say a special thanks to the Jim JimLynks for his huge help getting started with the project, and his precious time he offered me, for all his support and great advice.
 - Tutor support staff for fantastic support they offered, help me guide to solutions in my project.
-- Slack Community
+- The Slack community of Code Institute for feedback.
 

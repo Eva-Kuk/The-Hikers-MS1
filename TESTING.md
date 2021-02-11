@@ -212,15 +212,16 @@ the peer-code-review, the website was tested again, the errors that displayed we
     Galaxy Fold, Widescreen Laptop and Desktop PC, iPad landscape · width: 1024px,  iPhone 6-8 Plump landscape · width: 736px ,iPhone 6-8 landscape · width: 667px, Android (Pixel 2) landscape · width: 684px, iPhone eXpensive landscape · width: 734px
     The following issue was detected and fixed during mobile compatibility testing:
     Background images on smaller devices and landscape needs to be set in media queries, footer on landscape devises set thinner.  
-- The website was also tested on real devices both portrait and landscape:
-    - Samung Galaxy S8/S6/S10
+- The website was also tested on real devices both portrait and landscape. The result on the other browsers was satisfying acept ios devices :
+    - Samung Galaxy S6/S7/S8/S10
     - iPad Air
     - iphone 7
-    
+    - BlackBerry phone
+    - Samgung Galaxy Tablet
+
  **Encountered problems while testing the site on different devices**
-- After loading, the page moves to the end to the contact form
-- Pages scroll too fast
-- Background photos do not render properly on macOS devices
+- Pages scroll too fast.
+- Background images which is set as `background attachment: fixed` don't render properly on macOS devices.
 ---
 ## Testing Compatibility
 ---
@@ -228,17 +229,32 @@ the peer-code-review, the website was tested again, the errors that displayed we
     - Google Chrome (Windows 10, Android 11, Linux).
     - Microsoft Edge (Windows 10).
     - Microsoft Internet Explorer 11 (Windows 10).
-    - Safari (macOS) 
+    - Safari 
     - Firefox (Windows 10).
     - Opera (Windows 10, Linux).
+
+    Background photos dind't render properly on macOS devices. The result on the other browsers was satisfying.
+    SOLUTION: I found the solution on
+    [stack overflow](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7) and applied to background images.
    
+
+   - Test for Opera browser
+![altlighthousetest](wireframes/testing/browsers-opera.png)
+
+   - Test for Firefox browser
+![altlighthousetest](wireframes/testing/browsers-firefox.png)
+
+   - Test for Microsoft Edge browser
+![altlighthousetest](wireframes/testing/browsers-microsoft-edge.png)
 ---
 ## Testing Performance
 ---
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
 The results on the end were satisfying for desktop devices bit performance of mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
+
 -   Test for desktop devices
 ![altlighthousetest](wireframes/testing/lighthouse-test-desktop.jpg)
+
 - Test for mobile devices
 ![altlighthousetest](wireframes/testing/lighthouse-test-mobile.jpg)
 
@@ -275,6 +291,12 @@ The photos were previously scaled down in Photoshop and compressed in TinyPNG, b
 - **Image elements do not have explicit width and height**
 Set the `width` and `height` attributes for the whole gallery in index.html 
 
+Tests performed after changing the background-images code
+-   Test for desktop devices
+![altlighthousetest](wireframes/testing/lighthouse-test-desktop2.png)
+
+- Test for mobile devices
+![altlighthousetest](wireframes/testing/lighthouse-test-mobile2.png)
 
 ## Testing Accessibility
 The website's accessibility was also tested using Lighthouse. The result was satisfying.

@@ -29,8 +29,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li data-toggle="collapse" data-target=".navbar-collapse" class="nav-item active">
-                            <a class="nav-link" id="navbar-color-home" href="#">Home<span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" id="navbar-color-home" href="#">Home
+                                <span class="sr-only">(current)</span></a>
                         </li>
                         <li data-toggle="collapse" data-target=".navbar-collapse" class="nav-item">
                             <a class="nav-link" id="navbar-color-about" href="#about">About</a>
@@ -63,8 +63,7 @@
                             Tale.<br>
                             And We Are Striving To Make It A Very Special One</p>
                         <p>
-                            <a class="btn btn-primary btn-lg btn-style" href="#contact" role="button">Book A Tour With
-                                Us!</a>
+                            <a class="btn btn-primary btn-lg btn-style" href="#contact" role="button">Book A Tour With Us!</a>
                         </p>
                     </div>
                 </div>
@@ -117,9 +116,9 @@
                         <div class="card card-map">
                             <div class="video-wrapper">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2441313.9710834716!2d-10.345289730090613!3d53.305732790519244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sireland!5e0!3m2!1spl!2sie!4v1612296675326!5m2!1spl!2sie"
-                                    title="Map of Ireland" width="800" height="600" style="border:0;" allowfullscreen=""
-                                    aria-hidden="false" tabindex="0"></iframe>
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1448634.5280357094!2d-8.648203741647182!3d53.39332085240811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485e619e5d73698f%3A0xca9b39444d6ac68d!2sIreland!5e0!3m2!1sen!2sie!4v1613079013341!5m2!1sen!2sie" 
+                                    title="Map of Ireland" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                                </iframe> 
                             </div>
                             <div class="card-desc">
                                 <h3>Map of Ireland</h3>
@@ -156,8 +155,12 @@
         </div>
     </section>
 
-    <!--section for background image with parallax effect-->
-    <div id="image-tours"></div>
+    <!--section for background image -->
+    <div  class="e-with-fixed-bg">
+        <div class="bg-wrap">
+            <div class="bg" id="bg-tours"></div>
+        </div>
+    </div>
 
     <!--Tours page-->
     <section id="tours">
@@ -320,9 +323,13 @@
         </div>
     </section>
 
-    <!-- div for background image with parallax effect -->
-    <div id="image-gallery"></div>
-
+    <!-- div for background image -->
+    <div  class="e-with-fixed-bg">
+        <div class="bg-wrap">
+            <div id="bg-gallery"></div>
+        </div>
+    </div>
+   
     <!--Gallery page-->
     <section id="gallery">
         <div class="section-margin-bottom">
@@ -589,9 +596,13 @@
         </div>
     </section>
 
-    <!-- div for background image with parallax effect -->
-    <div id="image-contact"></div>
-
+    <!-- div for background image with -->
+    <div  class="e-with-fixed-bg">
+        <div class="bg-wrap">
+            <div id="bg-contact"></div>
+        </div>
+    </div>
+    
     <!-- Contact and Enquiry Form page -->
     <section id="contact">
         <div class="container">
@@ -623,11 +634,11 @@
             <div class="col-12 px-1">
                 <form id="contact-form" autocomplete="on" aria-label="contact form">
                     <div class="form-group">
-                        <label for="full-name">Your Full Name:</label>
+                        <label for="full-name">Your Full Name*</label>
                         <input type="text" class="input-box" id="full-name" name="full-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address:</label>
+                        <label for="email">Email Address*</label>
                         <input type="email" class="input-box" id="email" name="email" required>
                     </div>
                     <div class="form-group">
@@ -649,7 +660,7 @@
                         </select>
                     </div>
                     <div>
-                        <label for="text">Your Message </label>
+                        <label for="text">Your Message*</label>
                         <textarea id="text" name="text" class="input-box" cols="40" rows="10" required></textarea>
                     </div>
                     <div class="row">
