@@ -147,7 +147,9 @@ the peer-code-review, the website was tested again, the errors that displayed we
     - A clearly labelled About page easy to find in the navigation bar which contains a note about the group, some information about Irish mountains and map of Ireland.
     
     ![alttourspage](wireframes/testing/tours-page.jpg)
+    ---
     ![altgallerypage](wireframes/testing/gallery-page.jpg)
+    ---
     ![altaboutpage](wireframes/testing/about-page.jpg)
 
 3. As a user I want to be able to contact the site owner so I can get more information about their offer options.
@@ -222,20 +224,21 @@ the peer-code-review, the website was tested again, the errors that displayed we
  **Encountered problems while testing the site on different devices**
 - Pages scroll too fast.
 - Background images which is set as `background attachment: fixed` don't render properly on macOS devices.
+    - SOLUTION: I found the solution on
+    [stack overflow](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7) and applied a new code to background images.
 ---
 ## Testing Compatibility
 ---
 - The website was tested on the following browsers and operating systems:
     - Google Chrome (Windows 10, Android 11, Linux).
     - Microsoft Edge (Windows 10).
-    - Microsoft Internet Explorer 11 (Windows 10).
-    - Safari 
+    - Safari.
     - Firefox (Windows 10).
     - Opera (Windows 10, Linux).
 
     Background photos dind't render properly on macOS devices. The result on the other browsers was satisfying.
-    SOLUTION: I found the solution on
-    [stack overflow](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7) and applied to background images.
+    - SOLUTION: I found the solution on
+    [stack overflow](https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7) and applied a new code to background images.
    
 
    - Test for Opera browser
@@ -252,10 +255,10 @@ the peer-code-review, the website was tested again, the errors that displayed we
 Performance has been tested using Lighthouse tool of Google Chrome. The results were a little bit different every time due to device performance and value estimation .
 The results on the end were satisfying for desktop devices bit performance of mobile devices need to be revieved and tested again. There were some issues which needed to be fixed:
 
--   Test for desktop devices
+-  **Test for desktop devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-desktop.jpg)
 
-- Test for mobile devices
+- **Test for mobile devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-mobile.jpg)
 
 1. Properly size images
@@ -278,10 +281,10 @@ the peer-code-review, the website was tested again on Lighthouse.
 The tests were run multiple times and the performance scores varied considerably. 
 Tests on desctop devices came out much better than on mobile devices.
 
--   Test for desktop devices
+- **Test for desktop devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-desktop1.png)
 
-- Test for mobile devices
+- **Test for mobile devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-mobile1.png)
 
 Errors that I've corrected:
@@ -292,10 +295,10 @@ The photos were previously scaled down in Photoshop and compressed in TinyPNG, b
 Set the `width` and `height` attributes for the whole gallery in index.html 
 
 Tests performed after changing the background-images code
--   Test for desktop devices
+-  **Test for desktop devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-desktop2.png)
 
-- Test for mobile devices
+- **Test for mobile devices**
 ![altlighthousetest](wireframes/testing/lighthouse-test-mobile2.png)
 
 ## Testing Accessibility
